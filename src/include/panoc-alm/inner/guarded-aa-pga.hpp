@@ -37,6 +37,9 @@ struct GuardedAAPGAParams {
     unsigned print_interval = 0;
 
     bool full_flush_on_γ_change = true;
+
+    real_t quadratic_upperbound_threshold =
+        10 * std::numeric_limits<real_t>::epsilon();
 };
 
 /// Guarded Anderson Accelerated Proximal Gradient Algorithm
@@ -215,7 +218,9 @@ GuardedAAPGA::operator()(const Problem &problem,        // in
 
         real_t old_γₖ = γₖ;
         // Decrease step size until quadratic upper bound is satisfied
-        while (ψx̂ₖ > ψₖ + margin + grad_ψₖᵀpₖ + 0.5 * Lₖ * norm_sq_pₖ) {
+        while (ψx̂ₖ > ψₖ + margin + grad_ψₖᵀpₖ + 0.5 * Lₖ * norm_sq_pₖ &&
+               std::abs(grad_ψₖᵀpₖ / ψₖ) >
+                   params.quadratic_upperbound_threshold) {
             Lₖ *= 2;
             γₖ /= 2;
 

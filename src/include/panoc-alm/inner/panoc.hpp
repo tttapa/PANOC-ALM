@@ -1,6 +1,7 @@
 #pragma once
 
 #include <panoc-alm/inner/decl/panoc.hpp>
+#include <panoc-alm/inner/detail/anderson-helpers.hpp>
 #include <panoc-alm/inner/detail/panoc-helpers.hpp>
 #include <panoc-alm/inner/directions/decl/panoc-direction-update.hpp>
 
@@ -18,15 +19,21 @@ using std::chrono::microseconds;
 template <class DirectionProviderT>
 typename PANOCSolver<DirectionProviderT>::Stats
 PANOCSolver<DirectionProviderT>::operator()(
-    const Problem &problem, ///< [in]    Problem description
-    const vec &Σ,           ///< [in]    Constraint weights @f$ \Sigma @f$
-    real_t ε,               ///< [in]    Tolerance @f$ \epsilon @f$
-    bool
-        always_overwrite_results, ///< [in] Overwrite x, y and err_z even if not converged
-    vec &x,                       ///< [inout] Decision variable @f$ x @f$
-    vec &y,                       ///< [inout] Lagrange multipliers @f$ y @f$
-    vec &err_z ///< [out]   Slack variable error @f$ g(x) - z @f$
-) {
+    /// [in]    Problem description
+    const Problem &problem,
+    /// [in]    Constraint penalty weights @f$ \Sigma @f$
+    const vec &Σ,
+    /// [in]    Primal tolerance @f$ \epsilon @f$
+    real_t ε,
+    /// [in]    Overwrite x, y and err_z even if not converged
+    bool always_overwrite_results,
+    /// [inout] Decision variable @f$ x @f$
+    vec &x,
+    /// [inout] Lagrange multipliers @f$ y @f$
+    vec &y,
+    /// [out]   Slack variable error @f$ g(x) - z @f$
+    vec &err_z) {
+
     using Direction = PANOCDirection<DirectionProvider>;
     auto start_time = std::chrono::steady_clock::now();
     Stats s;
@@ -54,6 +61,22 @@ PANOCSolver<DirectionProviderT>::operator()(
 
     vec work_n(n), work_m(m);
     direction_provider.resize(n, params.lbfgs_mem);
+
+    vec rₐₐₖ₋₁, rₐₐₖ, yₐₐₖ, xₐₐₖ, gₐₐₖ, γₐₐ_LS, ŷₐₐₖ;
+    mat Gₐₐ;
+    LimitedMemoryQR qr;
+    if (params.anderson_acceleration) {
+        auto mₐₐ = std::min(params.anderson_acceleration, problem.n);
+        rₐₐₖ₋₁.resize(n);
+        rₐₐₖ.resize(n);
+        yₐₐₖ.resize(n);
+        xₐₐₖ.resize(n);
+        gₐₐₖ.resize(n);
+        γₐₐ_LS.resize(mₐₐ);
+        ŷₐₐₖ.resize(m);
+        Gₐₐ.resize(n, mₐₐ);
+        qr.resize(n, mₐₐ);
+    }
 
     // Helper functions --------------------------------------------------------
 
@@ -89,6 +112,16 @@ PANOCSolver<DirectionProviderT>::operator()(
                   << ", ‖p‖ = " << std::setw(13) << std::sqrt(norm_sq_pₖ)
                   << ", γ = " << std::setw(13) << γₖ
                   << ", εₖ = " << std::setw(13) << εₖ << "\r\n";
+    };
+    auto anderson_changed_γ = [&](real_t γₖ, real_t old_γₖ) {
+        if (params.anderson_acceleration) {
+            // When not near the boundaries of the feasible set,
+            // r(x) = g(x) - x = Π(x - γ∇ψ(x)) - x = -γ∇ψ(x),
+            // in other words, r(x) is proportional to γ, and so is Δr,
+            // so when γ changes, these values have to be updated as well
+            qr.scale_R(γₖ / old_γₖ);
+            rₐₐₖ₋₁ *= γₖ / old_γₖ;
+        }
     };
 
     // Estimate Lipschitz constant ---------------------------------------------
@@ -157,8 +190,10 @@ PANOCSolver<DirectionProviderT>::operator()(
         }
 
         // Flush L-BFGS if γ changed
-        if (k > 0 && γₖ != old_γₖ)
+        if (k > 0 && γₖ != old_γₖ) {
             Direction::changed_γ(direction_provider, γₖ, old_γₖ);
+            anderson_changed_γ(γₖ, old_γₖ);
+        }
 
         // Initialize the L-BFGS
         if (k == 0)
@@ -213,6 +248,53 @@ PANOCSolver<DirectionProviderT>::operator()(
         if (k > 0)
             Direction::apply(direction_provider, xₖ, x̂ₖ, pₖ, /* in ⟹ out */ qₖ);
 
+        // Anderson acceleration
+        // ---------------------------------------------------------------------
+
+        bool anderson_accepted = false;
+        if (params.anderson_acceleration) {
+            if (k == 0) {
+                rₐₐₖ₋₁     = -γₖ * grad_ψₖ;
+                yₐₐₖ       = xₖ + rₐₐₖ₋₁;
+                Gₐₐ.col(0) = yₐₐₖ;
+            } else {
+                gₐₐₖ = xₖ - γₖ * grad_ψₖ;
+                rₐₐₖ = gₐₐₖ - yₐₐₖ;
+
+                // Solve Anderson acceleration least squares problem and update
+                // history
+                minimize_update_anderson(qr, Gₐₐ, rₐₐₖ, rₐₐₖ₋₁, gₐₐₖ,
+                                         /* in ⟹ out */ γₐₐ_LS, yₐₐₖ);
+
+                auto γ_LS_active = γₐₐ_LS.topRows(qr.num_columns());
+                if (not γ_LS_active.allFinite()) {
+                    // Save the latest function evaluation gₖ at the first index
+                    size_t newest_g_idx = qr.ring_tail();
+                    if (newest_g_idx != 0)
+                        Gₐₐ.col(0) = Gₐₐ.col(newest_g_idx);
+                    // Flush everything else and reset indices
+                    qr.reset();
+                }
+
+                // Project accelerated step onto feasible set
+                xₐₐₖ = project(yₐₐₖ, problem.C);
+
+                // Calculate the objective at the projected accelerated point
+                real_t ψₐₐₖ₊₁ = calc_ψ_ŷ(xₐₐₖ, /* in ⟹ out */ ŷₐₐₖ);
+
+                anderson_accepted = ψₐₐₖ₊₁ < ψx̂ₖ;
+                if (anderson_accepted) {
+                    // std::cout << "------------------------------- accepted \n";
+                    x̂ₖ.swap(xₐₐₖ);
+                    pₖ  = x̂ₖ - xₖ;
+                    ψx̂ₖ = ψₐₐₖ₊₁;
+                    calc_grad_ψ_from_ŷ(x̂ₖ, ŷₐₐₖ, /* in ⟹ out */ grad_̂ψₖ);
+                } else {
+                    // std::cout << "------------------------------- rejected \n";
+                }
+            }
+        }
+
         // Line search initialization ------------------------------------------
         real_t τ            = 1;
         real_t σ_norm_γ⁻¹pₖ = σₖ * norm_sq_pₖ / (γₖ * γₖ);
@@ -236,13 +318,16 @@ PANOCSolver<DirectionProviderT>::operator()(
             γₖ₊₁ = γₖ;
 
             // Calculate xₖ₊₁
-            if (τ / 2 < params.τ_min) // line search failed
-                xₖ₊₁.swap(x̂ₖ);        // safe prox step
-            else                      // line search not failed (yet)
+            if (τ / 2 < params.τ_min) { // line search failed
+                xₖ₊₁.swap(x̂ₖ);          // safe prox step
+                ψₖ₊₁ = ψx̂ₖ;
+                grad_ψₖ₊₁.swap(grad_̂ψₖ);
+            } else { // line search not failed (yet)
                 xₖ₊₁ = xₖ + (1 - τ) * pₖ + τ * qₖ; // faster quasi-Newton step
+                // Calculate ψ(xₖ₊₁), ∇ψ(xₖ₊₁)
+                ψₖ₊₁ = calc_ψ_grad_ψ(xₖ₊₁, /* in ⟹ out */ grad_ψₖ₊₁);
+            }
 
-            // Calculate ψ(xₖ₊₁), ∇ψ(xₖ₊₁)
-            ψₖ₊₁ = calc_ψ_grad_ψ(xₖ₊₁, /* in ⟹ out */ grad_ψₖ₊₁);
             // Calculate x̂ₖ₊₁, pₖ₊₁ (projected gradient step)
             calc_x̂(γₖ₊₁, xₖ₊₁, grad_ψₖ₊₁, /* in ⟹ out */ x̂ₖ₊₁, pₖ₊₁);
             // Calculate ψ(x̂ₖ₊₁) and ŷ(x̂ₖ₊₁)
@@ -272,8 +357,10 @@ PANOCSolver<DirectionProviderT>::operator()(
                     ψx̂ₖ₊₁ = calc_ψ_ŷ(x̂ₖ₊₁, /* in ⟹ out */ ŷx̂ₖ₊₁);
                 }
                 // Flush L-BFGS if γ changed
-                if (γₖ₊₁ != old_γₖ₊₁)
+                if (γₖ₊₁ != old_γₖ₊₁) {
                     Direction::changed_γ(direction_provider, γₖ₊₁, old_γₖ₊₁);
+                    anderson_changed_γ(γₖ₊₁, old_γₖ₊₁);
+                }
             }
 
             // Compute forward-backward envelope
@@ -298,6 +385,16 @@ PANOCSolver<DirectionProviderT>::operator()(
         // Check if we made any progress
         if (no_progress > 0 || k % params.lbfgs_mem == 0)
             no_progress = xₖ == xₖ₊₁ ? no_progress + 1 : 0;
+
+        // Update Anderson
+        if (k > 0 && params.anderson_acceleration) {
+            if (anderson_accepted) {
+                // yₐₐₖ has already been overwritten
+            } else {
+                yₐₐₖ.swap(gₐₐₖ);
+            }
+            rₐₐₖ.swap(rₐₐₖ₋₁);
+        }
 
         // Advance step --------------------------------------------------------
         Lₖ = Lₖ₊₁;
