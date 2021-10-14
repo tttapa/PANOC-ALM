@@ -1016,12 +1016,12 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
         throw std::runtime_error(
             "This version of panocpy was compiled without CasADi support");
     };
-    auto load_CasADi_problem_full = [](const char *, unsigned, unsigned,
+    auto load_CasADi_problem_full = [](const char *, unsigned, unsigned, unsigned,
                                   bool) -> pa::ProblemFull {
         throw std::runtime_error(
             "This version of panocpy was compiled without CasADi support");
     };
-    auto load_CasADi_problem_full_with_param = [](const char *, unsigned, unsigned,
+    auto load_CasADi_problem_full_with_param = [](const char *, unsigned, unsigned, unsigned,
                                              bool) -> pa::ProblemFullWithParam {
         throw std::runtime_error(
             "This version of panocpy was compiled without CasADi support");
