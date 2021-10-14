@@ -1019,6 +1019,8 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
 #else
     using pa::load_CasADi_problem;
     using pa::load_CasADi_problem_with_param;
+    using pa::load_CasADi_problem_full;
+    using pa::load_CasADi_problem_full_with_param;
 #endif
 
     m.def("load_casadi_problem", load_CasADi_problem, "so_name"_a, "n"_a, "m"_a,
