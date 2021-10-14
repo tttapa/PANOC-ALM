@@ -4,6 +4,8 @@
 namespace pa {
 template <class DirectionProviderT = LBFGS>
 class PANOCSolver;
+template <class DirectionProviderT = LBFGS>
+class PANOCSolverFull;
 template <class InnerSolverStats>
 struct InnerStatsAccumulator;
 }

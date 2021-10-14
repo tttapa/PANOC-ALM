@@ -128,6 +128,74 @@ class PANOCSolver {
     PANOCDirection<DirectionProvider> direction_provider;
 };
 
+struct PANOCFullProgressInfo {
+    unsigned k;
+    crvec x;
+    crvec p;
+    real_t norm_sq_p;
+    crvec x_hat;
+    real_t φγ;
+    real_t ψ;
+    crvec grad_ψ;
+    real_t ψ_hat;
+    crvec grad_ψ_hat;
+    real_t L;
+    real_t γ;
+    real_t τ;
+    real_t ε;
+    crvec Σ1;
+    crvec Σ2;
+    crvec y;
+    const ProblemFull &problem;
+    const PANOCParams &params;
+};
+
+template <class DirectionProviderT>
+class PANOCSolverFull {
+  public:
+    using Params            = PANOCParams;
+    using DirectionProvider = DirectionProviderT;
+    using Stats             = PANOCStats;
+    using ProgressInfo      = PANOCFullProgressInfo;
+
+    PANOCSolverFull(Params params,
+                    PANOCDirection<DirectionProvider> &&direction_provider)
+        : params(params), direction_provider(std::move(direction_provider)) {}
+    PANOCSolverFull(Params params,
+                    const PANOCDirection<DirectionProvider> &direction_provider)
+        : params(params), direction_provider(direction_provider) {}
+
+    Stats operator()(const ProblemFull &problem,    // in
+                     crvec Σ1,                      // in
+                     crvec Σ2,                      // in
+                     real_t ε,                      // in
+                     bool always_overwrite_results, // in
+                     rvec x,                        // inout
+                     rvec y,                        // inout
+                     rvec err_z1,
+                     rvec err_z2); // out
+
+    PANOCSolverFull &
+    set_progress_callback(std::function<void(const ProgressInfo &)> cb) {
+        this->progress_cb = cb;
+        return *this;
+    }
+
+    std::string get_name() const;
+
+    void stop() { stop_signal.stop(); }
+
+    const Params &get_params() const { return params; }
+
+  private:
+    Params params;
+    AtomicStopSignal stop_signal;
+    std::function<void(const ProgressInfo &)> progress_cb;
+
+  public:
+    PANOCDirection<DirectionProvider> direction_provider;
+};
+
 template <class InnerSolverStats>
 struct InnerStatsAccumulator;
 

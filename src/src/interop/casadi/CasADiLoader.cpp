@@ -104,7 +104,7 @@ pa::Problem load_CasADi_problem(const std::string &so_name, unsigned n,
     return prob;
 }
 
-ProblemWithParam load_CasADi_problem_with_param(const std::string &so_name,
+pa::ProblemWithParam load_CasADi_problem_with_param(const std::string &so_name,
                                                 unsigned n, unsigned m,
                                                 bool second_order) {
     auto prob        = ProblemWithParam(n, m);
@@ -152,6 +152,78 @@ ProblemWithParam load_CasADi_problem_with_param(const std::string &so_name,
             (pa::crvec x, pa::crvec y, pa::crvec v, pa::rvec g) {  //
                 csf(x, *p, y, v, g);
             };
+    }
+    return prob;
+}
+
+pa::ProblemFull load_CasADi_problem_full(const char *so_name, unsigned n, unsigned m1,
+                                unsigned m2, bool second_order) {
+    auto prob = pa::ProblemFull(n, m1, m2);
+    pa::vec w = pa::vec::Zero(m1);
+    auto load = [&](const char *name) {
+        return casadi::external(name, so_name);
+    };
+    prob.f           = [f{CasADiFun_1Vi1So(load("f"))} //
+    ](pa::crvec x) { return f(x); };
+    prob.grad_f      = [f{CasADiFun_1Vi1Vo(load("grad_f"))} //
+    ](pa::crvec x, pa::rvec gr) { f(x, gr); };
+    prob.g1           = [f{CasADiFun_1Vi1Vo(load("g1"))} //
+    ](pa::crvec x, pa::rvec g) { f(x, g); };
+    prob.grad_g1_prod = [f{CasADiFun_2Vi1Vo(load("grad_g1"))} //
+    ](pa::crvec x, pa::crvec y1, pa::rvec g) { f(x, y1, g); };
+    prob.g2           = [f{CasADiFun_1Vi1Vo(load("g2"))} //
+    ](pa::crvec x, pa::rvec g) { f(x, g); };
+    prob.grad_g2_prod = [f{CasADiFun_2Vi1Vo(load("grad_g2"))} //
+    ](pa::crvec x, pa::crvec y2, pa::rvec g) { f(x, y2, g); };
+    if (second_order) {
+        prob.grad_g1i = [f{CasADiFun_2Vi1Vo(load("grad_g1"))}, w //
+        ](pa::crvec x, unsigned i, pa::rvec g) mutable {
+            w(i) = 1;
+            f(x, w, g);
+            w(i) = 0;
+        };
+        prob.hess_L      = [f{CasADiFun_2Vi1Mo(load("hess_L"))} //
+        ](pa::crvec x, pa::crvec y1, pa::rvec g) { f(x, y1, g); };
+        prob.hess_L_prod = [f{CasADiFun_3Vi1Vo(load("hess_L_prod"))} //
+        ](pa::crvec x, pa::crvec y1, pa::crvec v, pa::rvec g) { f(x, y1, v, g); };
+    }
+    return prob;
+}
+
+pa::ProblemFullWithParam load_CasADi_problem_full_with_param(const char *so_name, unsigned n,
+                                                unsigned m1, unsigned m2, bool second_order) {
+    auto prob        = ProblemFullWithParam(n, m1, m2);
+    pa::vec w        = pa::vec::Zero(m1);
+    const auto param = prob.get_param_ptr();
+    auto load        = [&](const char *name) {
+        return casadi::external(name, so_name);
+    };
+    prob.f           = [f{CasADiFun_2Vi1So(load("f"))}, p{param} //
+    ](pa::crvec x) { return f(x, *p); };
+    prob.grad_f      = [f{CasADiFun_2Vi1Vo(load("grad_f"))}, p{param} //
+    ](pa::crvec x, pa::rvec gr) { f(x, *p, gr); };
+    prob.g1           = [f{CasADiFun_2Vi1Vo(load("g1"))}, p{param} //
+    ](pa::crvec x, pa::rvec g) { f(x, *p, g); };
+    prob.grad_g1_prod = [f{CasADiFun_3Vi1Vo(load("grad_g1"))}, p{param} //
+    ](pa::crvec x, pa::crvec y1, pa::rvec g) { f(x, *p, y1, g); };
+    prob.g2           = [f{CasADiFun_2Vi1Vo(load("g1"))}, p{param} //
+    ](pa::crvec x, pa::rvec g) { f(x, *p, g); };
+    prob.grad_g2_prod = [f{CasADiFun_3Vi1Vo(load("grad_g1"))}, p{param} //
+    ](pa::crvec x, pa::crvec y1, pa::rvec g) { f(x, *p, y1, g); };
+    if (second_order) {
+        prob.grad_g1i = [f{CasADiFun_3Vi1Vo(load("grad_g1"))}, p{param}, w //
+        ](pa::crvec x, unsigned i, pa::rvec g) mutable {
+            w(i) = 1;
+            f(x, *p, w, g);
+            w(i) = 0;
+        };
+        prob.hess_L      = [f{CasADiFun_3Vi1Mo(load("hess_L"))}, p{param} //
+        ](pa::crvec x, pa::crvec y1, pa::rvec g) { f(x, *p, y1, g); };
+        prob.hess_L_prod = [f{CasADiFun_4Vi1Vo(load("hess_L_prod"))}, p{param}
+                            //
+        ](pa::crvec x, pa::crvec y1, pa::crvec v, pa::rvec g) {
+            f(x, *p, y1, v, g);
+        };
     }
     return prob;
 }

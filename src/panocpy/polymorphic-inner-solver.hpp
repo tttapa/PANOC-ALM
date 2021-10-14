@@ -28,6 +28,19 @@ auto InnerSolverCallWrapper() {
     };
 }
 
+template <class InnerSolver>
+auto InnerSolverFullCallWrapper() {
+    return [](InnerSolver &solver, const pa::ProblemFull &p, pa::crvec Σ1,
+              pa::crvec Σ2, pa::real_t ε, pa::vec x, pa::vec y)
+               -> std::tuple<pa::vec, pa::vec, pa::vec, pa::vec, py::dict> {
+        pa::vec z1(p.m1);
+        pa::vec z2(p.m2);
+        (void)solver(p, Σ1, Σ2, ε, true, x, y, z1, z2);
+        return std::make_tuple(std::move(x), std::move(y), std::move(z1),
+                               std::move(z2), py::dict{});
+    };
+}
+
 class PolymorphicInnerSolverStatsAccumulatorBase
     : public std::enable_shared_from_this<
           PolymorphicInnerSolverStatsAccumulatorBase> {
@@ -363,6 +376,88 @@ class PolymorphicInnerSolver : public PolymorphicInnerSolverBase {
     InnerSolver innersolver;
 };
 
+// template <class InnerSolver>
+// class PolymorphicInnerSolverFull : public PolymorphicInnerSolverBase {
+//   public:
+//     PolymorphicInnerSolverFull(InnerSolver &&innersolver)
+//         : innersolver(std::forward<InnerSolver>(innersolver)) {}
+//     PolymorphicInnerSolverFull(const InnerSolver &innersolver)
+//         : innersolver(innersolver) {}
+//     template <class... Args>
+//     PolymorphicInnerSolverFull(Args... args)
+//         : innersolver(InnerSolver{std::forward<Args>(args)...}) {}
+
+//     struct WrappedStatsAccumulator
+//         : PolymorphicInnerSolverStatsAccumulatorBase {
+//         InnerStatsAccumulator<InnerSolver> acc;
+//         void
+//         accumulate(const PolymorphicInnerSolverStatsBase &bstats) override {
+//             auto &stats = dynamic_cast<const WrappedStats &>(bstats).stats;
+//             acc += stats;
+//         }
+//         py::dict to_dict() const override {
+//             return stats_to_dict<InnerSolver>(acc);
+//         }
+//     };
+//     struct WrappedStats : PolymorphicInnerSolverStatsBase {
+//         using Stats = typename InnerSolver::Stats;
+//         WrappedStats(const Stats &stats) : stats(stats) {}
+//         Stats stats;
+//         std::shared_ptr<PolymorphicInnerSolverStatsAccumulatorBase>
+//         accumulator() const override {
+//             return std::static_pointer_cast<
+//                 PolymorphicInnerSolverStatsAccumulatorBase>(
+//                 std::make_shared<WrappedStatsAccumulator>());
+//         }
+//         py::dict to_dict() const override {
+//             return stats_to_dict<InnerSolver>(stats);
+//         }
+//     };
+
+//     Stats operator()(
+//         /// [in]    Problem description
+//         const ProblemFull &problem,
+//         /// [in]    Constraint weights @f$ \Sigma @f$
+//         crvec Σ1,
+//         /// [in]    Constraint weights @f$ \Sigma @f$
+//         crvec Σ2,
+//         /// [in]    Tolerance @f$ \varepsilon @f$
+//         real_t ε,
+//         /// [in]    Overwrite @p x, @p y and @p err_z even if not converged
+//         bool always_overwrite_results,
+//         /// [inout] Decision variable @f$ x @f$
+//         rvec x,
+//         /// [inout] Lagrange multipliers @f$ y @f$
+//         rvec y,
+//         /// [out]   Slack variable error @f$ g(x) - z @f$
+//         rvec err_z1,
+//         /// [out]   Slack variable error @f$ g(x) - z @f$
+//         rvec err_z2) override {
+//         auto stats =
+//             innersolver(problem, Σ1, Σ1, ε, always_overwrite_results, x, y,
+//                         err_z1, err_z2);
+//         return {
+//             std::static_pointer_cast<PolymorphicInnerSolverStatsBase>(
+//                 std::make_shared<WrappedStats>(stats)),
+//             stats.status,
+//             stats.ε,
+//             stats.iterations,
+//         };
+//     }
+//     void stop() override { innersolver.stop(); }
+//     std::string get_name() const override { return innersolver.get_name(); }
+//     py::object get_params() const override {
+//         return py::cast(innersolver.get_params());
+//     }
+
+//     void set_progress_callback(
+//         std::function<void(const typename InnerSolver::ProgressInfo &)> cb) {
+//         this->innersolver.set_progress_callback(std::move(cb));
+//     }
+
+//     InnerSolver innersolver;
+// };
+
 } // namespace pa
 
 #include "polymorphic-panoc-direction.hpp"
@@ -374,6 +469,8 @@ using PolymorphicPGASolver    = PolymorphicInnerSolver<PGASolver>;
 using PolymorphicGAAPGASolver = PolymorphicInnerSolver<GAAPGASolver>;
 using PolymorphicPANOCSolver =
     PolymorphicInnerSolver<PANOCSolver<PolymorphicPANOCDirectionBase>>;
+using PolymorphicPANOCSolverFull =
+    PolymorphicInnerSolver<PANOCSolverFull<PolymorphicPANOCDirectionBase>>;
 using PolymorphicStructuredPANOCLBFGSSolver =
     PolymorphicInnerSolver<StructuredPANOCLBFGSSolver>;
 
@@ -392,6 +489,24 @@ inline py::dict stats_to_dict(const PolymorphicALMSolver::Stats &s) {
         "norm_penalty"_a               = s.norm_penalty,
         "status"_a                     = s.status,
         "inner"_a                      = s.inner.to_dict(),
+    };
+}
+
+template <class InnerSolver>
+inline py::dict
+stats_to_dict(typename pa::ALMSolverFull<PANOCSolverFull<>>::Stats &s) {
+    using py::operator""_a;
+    return py::dict{
+        "outer_iterations"_a           = s.outer_iterations,
+        "elapsed_time"_a               = s.elapsed_time,
+        "initial_penalty_reduced"_a    = s.initial_penalty_reduced,
+        "penalty_reduced"_a            = s.penalty_reduced,
+        "inner_convergence_failures"_a = s.inner_convergence_failures,
+        "ε"_a                          = s.ε,
+        "δ"_a                          = s.δ,
+        "norm_penalty"_a               = s.norm_penalty,
+        "status"_a                     = s.status,
+        "inner"_a                      = stats_to_dict(s.inner),
     };
 }
 

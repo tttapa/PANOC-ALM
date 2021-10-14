@@ -200,6 +200,118 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
             py::overload_cast<pa::crvec>(&pa::ProblemWithParam::set_param),
             "Parameter vector :math:`p` of the problem");
 
+    py::class_<pa::ProblemFull>(
+        m, "ProblemFull", "C++ documentation: :cpp:class:`pa::ProblemFull`")
+        // .def(py::init())
+        .def(py::init<unsigned, unsigned, unsigned>(), "n"_a, "m1"_a, "m2"_a,
+             ":param n: Number of unknowns\n"
+             ":param m1: Number of ALM constraints\n"
+             ":param m2: Number of quadratic penalty constraints")
+        .def_readwrite("n", &pa::ProblemFull::n,
+                       "Number of unknowns, dimension of :math:`x`")
+        .def_readwrite(
+            "m1", &pa::ProblemFull::m1,
+            "Number of general constraints, dimension of :math:`g1(x)`")
+        .def_readwrite(
+            "m2", &pa::ProblemFull::m2,
+            "Number of general constraints, dimension of :math:`g2(x)`")
+        .def_readwrite("C", &pa::ProblemFull::C, "Box constraints on :math:`x`")
+        .def_readwrite("D1", &pa::ProblemFull::D1,
+                       "Box constraints on :math:`g1(x)`")
+        .def_readwrite("D2", &pa::ProblemFull::D2,
+                       "Box constraints on :math:`g2(x)`")
+        .def_property("f", prob_full_getter_f(), prob_full_setter_f(),
+                      "Objective funcion, :math:`f(x)`")
+        .def_property(
+            "grad_f", prob_full_getter_grad_f(), prob_full_setter_grad_f(),
+            "Gradient of the objective function, :math:`\\nabla f(x)`")
+        .def_property("g1", prob_full_getter_g1(), prob_full_setter_g1(),
+                      "Constraint function, :math:`g1(x)`")
+        .def_property("grad_g1_prod", prob_full_getter_grad_g1_prod(),
+                      prob_full_setter_grad_g1_prod(),
+                      "Gradient of constraint function times vector, "
+                      ":math:`\\nabla g1(x)\\, v`")
+        .def_property("grad_g1i", prob_full_getter_grad_g1i(),
+                      prob_full_setter_grad_g1i(),
+                      "Gradient vector of the :math:`i`-th component of the "
+                      "constraint function, :math:`\\nabla g1_i(x)`")
+        .def_property("g2", prob_full_getter_g2(), prob_full_setter_g2(),
+                      "Constraint function, :math:`g2(x)`")
+        .def_property("grad_g2_prod", prob_full_getter_grad_g2_prod(),
+                      prob_full_setter_grad_g2_prod(),
+                      "Gradient of constraint function times vector, "
+                      ":math:`\\nabla g2(x)\\, v`")
+        .def_property("grad_g2i", prob_full_getter_grad_g2i(),
+                      prob_full_setter_grad_g2i(),
+                      "Gradient vector of the :math:`i`-th component of the "
+                      "constraint function, :math:`\\nabla g2_i(x)`")
+        .def_property(
+            "hess_L", prob_full_getter_hess_L(), prob_full_setter_hess_L(),
+            "Hessian of the Lagrangian function, :math:`\\nabla^2_{xx} L(x,y)`")
+        .def_property("hess_L_prod", prob_full_getter_hess_L_prod(),
+                      prob_full_setter_hess_L_prod(),
+                      "Hessian of the Lagrangian function times vector, "
+                      ":math:`\\nabla^2_{xx} L(x,y)\\, v`");
+
+    py::class_<pa::ProblemFullWithParam, pa::ProblemFull>(
+        m, "ProblemFullWithParam",
+        "C++ documentation: :cpp:class:`pa::ProblemFullWithParam`")
+        // .def(py::init())
+        .def(py::init<unsigned, unsigned, unsigned>(), "n"_a, "m1"_a, "m2"_a,
+             ":param n: Number of unknowns\n"
+             ":param m1: Number of ALM constraints\n"
+             ":param m2: Number of quadratic penalty constraints")
+        .def_readwrite("n", &pa::ProblemFullWithParam::n,
+                       "Number of unknowns, dimension of :math:`x`")
+        .def_readwrite(
+            "m1", &pa::ProblemFullWithParam::m1,
+            "Number of general constraints, dimension of :math:`g1(x)`")
+        .def_readwrite(
+            "m2", &pa::ProblemFullWithParam::m2,
+            "Number of general constraints, dimension of :math:`g2(x)`")
+        .def_readwrite("C", &pa::ProblemFullWithParam::C,
+                       "Box constraints on :math:`x`")
+        .def_readwrite("D1", &pa::ProblemFullWithParam::D1,
+                       "Box constraints on :math:`g1(x)`")
+        .def_readwrite("D2", &pa::ProblemFullWithParam::D2,
+                       "Box constraints on :math:`g2(x)`")
+        .def_property("f", prob_full_getter_f(), prob_full_setter_f(),
+                      "Objective funcion, :math:`f(x)`")
+        .def_property(
+            "grad_f", prob_full_getter_grad_f(), prob_full_setter_grad_f(),
+            "Gradient of the objective function, :math:`\\nabla f(x)`")
+        .def_property("g1", prob_full_getter_g1(), prob_full_setter_g1(),
+                      "Constraint function, :math:`g1(x)`")
+        .def_property("grad_g1_prod", prob_full_getter_grad_g1_prod(),
+                      prob_full_setter_grad_g1_prod(),
+                      "Gradient of constraint function times vector, "
+                      ":math:`\\nabla g1(x)\\, v`")
+        .def_property("grad_g1i", prob_full_getter_grad_g1i(),
+                      prob_full_setter_grad_g1i(),
+                      "Gradient vector of the :math:`i`-th component of the "
+                      "constraint function, :math:`\\nabla g1_i(x)`")
+        .def_property("g2", prob_full_getter_g2(), prob_full_setter_g2(),
+                      "Constraint function, :math:`g2(x)`")
+        .def_property("grad_g2_prod", prob_full_getter_grad_g2_prod(),
+                      prob_full_setter_grad_g2_prod(),
+                      "Gradient of constraint function times vector, "
+                      ":math:`\\nabla g2(x)\\, v`")
+        .def_property("grad_g2i", prob_full_getter_grad_g2i(),
+                      prob_full_setter_grad_g2i(),
+                      "Gradient vector of the :math:`i`-th component of the "
+                      "constraint function, :math:`\\nabla g2_i(x)`")
+        .def_property(
+            "hess_L", prob_full_getter_hess_L(), prob_full_setter_hess_L(),
+            "Hessian of the Lagrangian function, :math:`\\nabla^2_{xx} L(x,y)`")
+        .def_property("hess_L_prod", prob_full_getter_hess_L_prod(),
+                      prob_full_setter_hess_L_prod(),
+                      "Hessian of the Lagrangian function times vector, "
+                      ":math:`\\nabla^2_{xx} L(x,y)\\, v`")
+        .def_property(
+            "param", py::overload_cast<>(&pa::ProblemFullWithParam::get_param),
+            py::overload_cast<pa::crvec>(&pa::ProblemFullWithParam::set_param),
+            "Parameter vector :math:`p` of the problem");
+
     py::class_<pa::PolymorphicPANOCDirectionBase,
                std::shared_ptr<pa::PolymorphicPANOCDirectionBase>,
                pa::PolymorphicPANOCDirectionTrampoline>(
@@ -514,6 +626,40 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
                 return s.innersolver.direction_provider.direction;
             });
 
+    using PANOCFullLBFGS = pa::PANOCSolverFull<pa::LBFGS>;
+    py::class_<PANOCFullLBFGS>(
+        m, "PANOCSolverFull",
+        "C++ documentation: :cpp:class:`pa::PANOCSolverFull`")
+        .def(py::init([](pa::PANOCParams p, pa::LBFGSParams lp) {
+            return PANOCFullLBFGS(p, lp);
+        }))
+        .def(
+            "set_progress_callback", &PANOCFullLBFGS::set_progress_callback,
+            "callback"_a,
+            "Attach a callback that is called on each iteration of the solver.")
+        .def("__call__", pa::InnerSolverFullCallWrapper<PANOCFullLBFGS>(),
+             py::call_guard<py::scoped_ostream_redirect,
+                            py::scoped_estream_redirect>(),
+             "problem"_a, "Σ1"_a, "Σ2"_a, "ε"_a, "x"_a,
+             "y"_a, //
+             "Solve.\n\n"
+             ":param problem: Problem to solve\n"
+             ":param Σ1: Penalty factor\n"
+             ":param Σ2: Penalty factor\n"
+             ":param ε: Desired tolerance\n"
+             ":param x: Initial guess\n"
+             ":param y: Initial Lagrange multipliers\n\n"
+             ":return: * Solution :math:`x`\n"
+             "         * Updated Lagrange multipliers :math:`y`\n"
+             "         * Slack variable error :math:`g1(x) - z`\n"
+             "         * Slack variable error :math:`g2(x) - z`\n"
+             "         * Statistics\n\n")
+        .def("__str__", &PANOCFullLBFGS::get_name)
+        .def_property_readonly("params", &PANOCFullLBFGS::get_params)
+        .def_property_readonly("direction", [](const PANOCFullLBFGS &s) {
+            return s.direction_provider;
+        });
+
     py::class_<pa::PolymorphicPGASolver,
                std::shared_ptr<pa::PolymorphicPGASolver>,
                pa::PolymorphicInnerSolverBase>(
@@ -787,6 +933,49 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
         .def("__str__", &pa::PolymorphicALMSolver::get_name)
         .def_property_readonly("params", &pa::PolymorphicALMSolver::get_params);
 
+    using ALMFull = pa::ALMSolverFull<pa::PANOCSolverFull<pa::LBFGS>>;
+    py::class_<ALMFull>(m, "ALMSolverFull",
+                        "Main augmented Lagrangian solver.\n\n"
+                        "C++ documentation: :cpp:class:`pa::ALMSolverFull`")
+        // Default constructor
+        .def(py::init([](pa::ALMParams params, PANOCFullLBFGS &inner_solver) {
+                 return ALMFull(params, inner_solver);
+             }),
+             "Build an ALM solver using Structured PANOC as inner solver.")
+        .def(
+            "__call__",
+            [](ALMFull &solver, const pa::ProblemFull &p,
+               std::optional<pa::vec> x, std::optional<pa::vec> y)
+                -> std::tuple<pa::vec, pa::vec, py::dict> {
+                if (!x)
+                    x = pa::vec::Zero(p.n);
+                else if (x->size() != p.n)
+                    throw std::invalid_argument(
+                        "Length of x does not match problem size problem.n");
+                if (!y)
+                    y = pa::vec::Zero(p.m1);
+                else if (y->size() != p.m1)
+                    throw std::invalid_argument(
+                        "Length of y does not match problem size problem.m");
+
+                auto stats = solver(p, *y, *x);
+                return std::make_tuple(
+                    std::move(*x), std::move(*y),
+                    pa::stats_to_dict<ALMFull::InnerSolver>(stats));
+            },
+            "problem"_a, "x"_a = std::nullopt, "y"_a = std::nullopt,
+            py::call_guard<py::scoped_ostream_redirect,
+                           py::scoped_estream_redirect>(),
+            "Solve.\n\n"
+            ":param problem: Problem to solve.\n"
+            ":param y: Initial guess for Lagrange multipliers :math:`y`\n"
+            ":param x: Initial guess for decision variables :math:`x`\n\n"
+            ":return: * Lagrange multipliers :math:`y` at the solution\n"
+            "         * Solution :math:`x`\n"
+            "         * Statistics\n\n")
+        .def("__str__", &ALMFull::get_name)
+        .def_property_readonly("params", &ALMFull::get_params);
+
     constexpr auto panoc = [](std::function<pa::real_t(pa::crvec)> ψ,
                               std::function<pa::vec(pa::crvec)> grad_ψ,
                               const pa::Box &C, std::optional<pa::vec> x0,
@@ -838,6 +1027,16 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
           "C++ documentation: :cpp:func:`pa::load_CasADi_problem`");
     m.def("load_casadi_problem_with_param", load_CasADi_problem_with_param,
           "so_name"_a, "n"_a, "m"_a, "second_order"_a = false,
+          "Load a compiled CasADi problem with parameters.\n\n"
+          "C++ documentation: :cpp:func:`pa::load_CasADi_problem_with_param`");
+
+    m.def("load_casadi_problem_full", load_CasADi_problem_full, "so_name"_a,
+          "n"_a, "m1"_a, "m2"_a, "second_order"_a = false,
+          "Load a compiled CasADi problem without parameters.\n\n"
+          "C++ documentation: :cpp:func:`pa::load_CasADi_problem`");
+    m.def("load_casadi_problem_full_with_param",
+          load_CasADi_problem_full_with_param, "so_name"_a, "n"_a, "m1"_a,
+          "m2"_a, "second_order"_a = false,
           "Load a compiled CasADi problem with parameters.\n\n"
           "C++ documentation: :cpp:func:`pa::load_CasADi_problem_with_param`");
 }

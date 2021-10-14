@@ -55,12 +55,38 @@ inline void initialize_penalty(const Problem &p, const ALMParams &params,
     real_t f0 = p.f(x0);
     vec g0(p.m);
     p.g(x0, g0);
-    // TODO: reuse evaluations of f ang g in PANOC?
+    // TODO: reuse evaluations of f and g in PANOC?
     real_t σ = params.σ₀ * std::max(real_t(1), std::abs(f0)) /
                std::max(real_t(1), 0.5 * g0.squaredNorm());
     σ = std::max(σ, params.Σ_min);
     σ = std::min(σ, params.Σ_max);
     Σ.fill(σ);
+}
+
+inline void initialize_penalty(const ProblemFull &p, const ALMParams &params,
+                               crvec x0, rvec Σ1, rvec Σ2) {
+    real_t f0 = p.f(x0);
+    
+    // Penalty parameters for ALM
+    vec g1_eval(p.m1);
+    p.g1(x0, g1_eval);
+    // TODO: reuse evaluations of f and g in PANOC?
+    
+    real_t σ = params.σ₀ * std::max(real_t(1), std::abs(f0)) /
+               std::max(real_t(1), 0.5 * g1_eval.squaredNorm());
+    σ = std::max(σ, params.Σ_min);
+    σ = std::min(σ, params.Σ_max);
+    Σ1.fill(σ);
+
+    // Penalty parameters for quadratic penalty
+    vec g2_eval(p.m2);
+    p.g2(x0, g2_eval);
+    
+    σ = params.σ₀ * std::max(real_t(1), std::abs(f0)) /
+    std::max(real_t(1), 0.5 * g2_eval.squaredNorm());
+    σ = std::max(σ, params.Σ_min);
+    σ = std::min(σ, params.Σ_max);
+    Σ2.fill(σ);
 }
 
 inline void apply_preconditioning(const Problem &problem, Problem &prec_problem,

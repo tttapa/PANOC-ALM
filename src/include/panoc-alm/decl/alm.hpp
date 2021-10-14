@@ -124,4 +124,50 @@ class ALMSolver {
     InnerSolver inner_solver;
 };
 
+template <class InnerSolverT = PANOCSolverFull<>>
+class ALMSolverFull {
+  public:
+    using Params      = ALMParams;
+    using InnerSolver = InnerSolverT;
+
+    struct Stats {
+        unsigned outer_iterations = 0;
+        std::chrono::microseconds elapsed_time;
+        unsigned initial_penalty_reduced    = 0;
+        unsigned penalty_reduced            = 0;
+        unsigned inner_convergence_failures = 0;
+        real_t ε                            = inf;
+        real_t δ                            = inf;
+        real_t norm_penalty                 = 0;
+
+        SolverStatus status = SolverStatus::Unknown;
+
+        InnerStatsAccumulator<typename InnerSolver::Stats> inner;
+    };
+
+    ALMSolverFull(Params params, InnerSolver &&inner_solver)
+        : params(params),
+          inner_solver(std::forward<InnerSolver>(inner_solver)) {}
+    ALMSolverFull(Params params, const InnerSolver &inner_solver)
+        : params(params), inner_solver(inner_solver) {}
+
+    Stats operator()(const ProblemFull &problem, rvec y, rvec x);
+
+    std::string get_name() const {
+        return "ALMSolver<" + inner_solver.get_name() + ">";
+    }
+
+    /// Abort the computation and return the result so far.
+    /// Can be called from other threads or signal handlers.
+    void stop() { inner_solver.stop(); }
+
+    const Params &get_params() const { return params; }
+
+  private:
+    Params params;
+
+  public:
+    InnerSolver inner_solver;
+};
+
 } // namespace pa
