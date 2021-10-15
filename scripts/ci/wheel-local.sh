@@ -61,7 +61,7 @@ FC=gfortran \
 CXXFLAGS="-march=skylake -static-libstdc++ -static-libgcc" \
 CFLAGS="-march=skylake -static-libgcc" \
 LDFLAGS="-static-libstdc++ -static-libgcc" \
-    python setup.py bdist_wheel --build-type RelWithDebInfo -j$(nproc) --generator Ninja --skip-generator-test
+    python setup.py bdist_wheel --build-type Release -j$(nproc) --generator Ninja --skip-generator-test
 cpv=$(echo $PYTHON_VERSION | awk -F. '{print $1 $2}')
 LD_LIBRARY_PATH=$VIRTUAL_ENV/lib \
     auditwheel repair --plat manylinux_2_27_x86_64 \
