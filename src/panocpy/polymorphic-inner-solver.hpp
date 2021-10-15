@@ -503,8 +503,10 @@ stats_to_dict(typename pa::ALMSolverFull<PANOCSolverFull<>>::Stats &s) {
         "penalty_reduced"_a            = s.penalty_reduced,
         "inner_convergence_failures"_a = s.inner_convergence_failures,
         "ε"_a                          = s.ε,
-        "δ"_a                          = s.δ,
-        "norm_penalty"_a               = s.norm_penalty,
+        "δ₁"_a                          = s.δ₁,
+        "δ₂"_a                          = s.δ₂,
+        "norm_penalty₁"_a               = s.norm_penalty₁,
+        "norm_penalty₂"_a               = s.norm_penalty₂,
         "status"_a                     = s.status,
         "inner"_a                      = stats_to_dict(s.inner),
     };

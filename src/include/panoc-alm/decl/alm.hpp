@@ -137,8 +137,10 @@ class ALMSolverFull {
         unsigned penalty_reduced            = 0;
         unsigned inner_convergence_failures = 0;
         real_t ε                            = inf;
-        real_t δ                            = inf;
-        real_t norm_penalty                 = 0;
+        real_t δ₁                           = inf;
+        real_t δ₂                           = inf;
+        real_t norm_penalty₁                = 0;
+        real_t norm_penalty₂                = 0;
 
         SolverStatus status = SolverStatus::Unknown;
 

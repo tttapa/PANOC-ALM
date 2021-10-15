@@ -284,8 +284,10 @@ ALMSolverFull<InnerSolverT>::operator()(const ProblemFull &problem, rvec y, rvec
         // TODO: check penalty size?
         if (ps.status == SolverStatus::Interrupted) {
             s.ε                = ps.ε;
-            s.δ                = vec_util::norm_inf(error1₂);
-            s.norm_penalty     = Σ1.norm();
+            s.δ₁               = vec_util::norm_inf(error1₂);
+            s.δ₂               = vec_util::norm_inf(error2₂);
+            s.norm_penalty₁    = Σ1.norm();
+            s.norm_penalty₂    = Σ2.norm();
             s.outer_iterations = i + 1;
             s.elapsed_time     = duration_cast<microseconds>(time_elapsed);
             s.status           = ps.status;
@@ -324,6 +326,7 @@ ALMSolverFull<InnerSolverT>::operator()(const ProblemFull &problem, rvec y, rvec
                 // We don't have a previous Σ, simply lower the current Σ and
                 // increase ε
                 Σ1 *= params.Σ₀_lower;
+                Σ2 *= params.Σ₀_lower;
                 ε *= params.ε₀_increase;
                 ++s.initial_penalty_reduced;
             }
@@ -345,8 +348,10 @@ ALMSolverFull<InnerSolverT>::operator()(const ProblemFull &problem, rvec y, rvec
             bool exit = alm_converged || out_of_iter || out_of_time;
             if (exit) {
                 s.ε                = ps.ε;
-                s.δ                = norm_e1₁; //TODO report norm_e2₁?
-                s.norm_penalty     = Σ1.norm() + Σ2.norm(); //TODO: report both?
+                s.δ₁               = norm_e1₁;
+                s.δ₂               = norm_e2₁;
+                s.norm_penalty₁    = Σ1.norm();
+                s.norm_penalty₂    = Σ2.norm();
                 s.outer_iterations = i + 1;
                 s.elapsed_time     = duration_cast<microseconds>(time_elapsed);
                 s.status           = alm_converged ? SolverStatus::Converged
