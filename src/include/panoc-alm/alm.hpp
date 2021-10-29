@@ -72,13 +72,14 @@ ALMSolver<InnerSolverT>::operator()(const Problem &problem, rvec y, rvec x) {
 
         // Call the inner solver to minimize the augmented lagrangian for fixed
         // Lagrange multipliers y.
-        auto ps = inner_solver(p, Σ, ε, overwrite_results, x, y, error₂);
+        auto time_elapsed = std::chrono::steady_clock::now() - start_time;
+        auto ps = inner_solver(p, Σ, ε, overwrite_results, x, y, error₂, std::chrono::duration_cast<std::chrono::microseconds>(params.max_time - time_elapsed));
         bool inner_converged = ps.status == SolverStatus::Converged;
         // Accumulate the inner solver statistics
         s.inner_convergence_failures += not inner_converged;
         s.inner += ps;
 
-        auto time_elapsed = std::chrono::steady_clock::now() - start_time;
+        time_elapsed = std::chrono::steady_clock::now() - start_time;
         bool out_of_time  = time_elapsed > params.max_time;
         bool backtrack =
             not inner_converged && not overwrite_results && not out_of_time;

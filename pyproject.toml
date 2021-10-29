@@ -6,6 +6,7 @@ requires = [
     "ninja",
     "cmake",
     "scikit-build",
+    "mypy",
 ]
 
 build-backend = "setuptools.build_meta"

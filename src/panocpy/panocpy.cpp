@@ -181,7 +181,7 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
         m, "ProblemWithParam",
         "C++ documentation: :cpp:class:`pa::ProblemWithParam`\n\n"
         "See :py:class:`panocpy._panocpy.Problem` for the full documentation.")
-        .def(py::init<unsigned, unsigned>(), "n"_a, "m"_a)
+        .def(py::init<unsigned, unsigned, unsigned>(), "n"_a, "m"_a, "p"_a)
         .def_readwrite("n", &pa::Problem::n)
         .def_readwrite("m", &pa::Problem::m)
         .def_readwrite("C", &pa::Problem::C)
@@ -197,7 +197,14 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
                       prob_setter_hess_L_prod())
         .def_property(
             "param", py::overload_cast<>(&pa::ProblemWithParam::get_param),
-            py::overload_cast<pa::crvec>(&pa::ProblemWithParam::set_param),
+            [](pa::ProblemWithParam &p, pa::crvec param) {
+                if (param.size() != p.get_param().size())
+                    throw std::invalid_argument(
+                        "Invalid parameter dimension: got " +
+                        std::to_string(param.size()) + ", should be " +
+                        std::to_string(p.get_param().size()) + ".");
+                p.set_param(param);
+            },
             "Parameter vector :math:`p` of the problem");
 
     py::class_<pa::ProblemFull>(
@@ -327,22 +334,6 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
         .def("get_name", &pa::PolymorphicPANOCDirectionBase::get_name)
         .def("__str__", &pa::PolymorphicPANOCDirectionBase::get_name);
 
-    py::class_<pa::PolymorphicLBFGSDirection,
-               std::shared_ptr<pa::PolymorphicLBFGSDirection>,
-               pa::PolymorphicPANOCDirectionBase>(
-        m, "LBFGSDirection",
-        "C++ documentation: :cpp:class:`pa::LBFGSDirection`")
-        .def(py::init<pa::LBFGSParams>(), "params"_a)
-        .def("initialize", &pa::PolymorphicLBFGSDirection::initialize)
-        .def("update", &pa::PolymorphicLBFGSDirection::update)
-        .def("apply", &pa::PolymorphicLBFGSDirection::apply_ret)
-        .def("changed_γ", &pa::PolymorphicLBFGSDirection::changed_γ)
-        .def("reset", &pa::PolymorphicLBFGSDirection::reset)
-        .def("get_name", &pa::PolymorphicLBFGSDirection::get_name)
-        .def("__str__", &pa::PolymorphicLBFGSDirection::get_name)
-        .def_property_readonly("params",
-                               &pa::PolymorphicLBFGSDirection::get_params);
-
     using paLBFGSParamCBFGS = decltype(pa::LBFGSParams::cbfgs);
     py::class_<paLBFGSParamCBFGS>(
         m, "LBFGSParamsCBFGS",
@@ -362,6 +353,22 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
         .def_readwrite("cbfgs", &pa::LBFGSParams::cbfgs)
         .def_readwrite("rescale_when_γ_changes",
                        &pa::LBFGSParams::rescale_when_γ_changes);
+
+    py::class_<pa::PolymorphicLBFGSDirection,
+               std::shared_ptr<pa::PolymorphicLBFGSDirection>,
+               pa::PolymorphicPANOCDirectionBase>(
+        m, "LBFGSDirection",
+        "C++ documentation: :cpp:class:`pa::LBFGSDirection`")
+        .def(py::init<pa::LBFGSParams>(), "params"_a)
+        .def("initialize", &pa::PolymorphicLBFGSDirection::initialize)
+        .def("update", &pa::PolymorphicLBFGSDirection::update)
+        .def("apply", &pa::PolymorphicLBFGSDirection::apply_ret)
+        .def("changed_γ", &pa::PolymorphicLBFGSDirection::changed_γ)
+        .def("reset", &pa::PolymorphicLBFGSDirection::reset)
+        .def("get_name", &pa::PolymorphicLBFGSDirection::get_name)
+        .def("__str__", &pa::PolymorphicLBFGSDirection::get_name)
+        .def_property_readonly("params",
+                               &pa::PolymorphicLBFGSDirection::get_params);
 
     py::enum_<pa::LBFGSStepSize>(
         m, "LBFGSStepsize", "C++ documentation: :cpp:enum:`pa::LBFGSStepSize`")
@@ -431,6 +438,18 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
         .def("stop", &pa::PolymorphicInnerSolverBase::stop)
         .def("get_name", &pa::PolymorphicInnerSolverBase::get_name)
         .def("get_params", &pa::PolymorphicInnerSolverBase::get_params);
+
+    py::enum_<pa::PANOCStopCrit>(
+        m, "PANOCStopCrit", "C++ documentation: :cpp:enum:`pa::PANOCStopCrit`")
+        .value("ApproxKKT", pa::PANOCStopCrit::ApproxKKT)
+        .value("ApproxKKT2", pa::PANOCStopCrit::ApproxKKT2)
+        .value("ProjGradNorm", pa::PANOCStopCrit::ProjGradNorm)
+        .value("ProjGradNorm2", pa::PANOCStopCrit::ProjGradNorm2)
+        .value("ProjGradUnitNorm", pa::PANOCStopCrit::ProjGradUnitNorm)
+        .value("ProjGradUnitNorm2", pa::PANOCStopCrit::ProjGradUnitNorm2)
+        .value("FPRNorm", pa::PANOCStopCrit::FPRNorm)
+        .value("FPRNorm2", pa::PANOCStopCrit::FPRNorm2)
+        .export_values();
 
     py::class_<pa::PGAParams>(m, "PGAParams",
                               "C++ documentation: :cpp:class:`pa::PGAParams`")
@@ -716,14 +735,6 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
         .def_property_readonly("params",
                                &pa::PolymorphicGAAPGASolver::get_params);
 
-    py::enum_<pa::PANOCStopCrit>(
-        m, "PANOCStopCrit", "C++ documentation: :cpp:enum:`pa::PANOCStopCrit`")
-        .value("ApproxKKT", pa::PANOCStopCrit::ApproxKKT)
-        .value("ProjGradNorm", pa::PANOCStopCrit::ProjGradNorm)
-        .value("ProjGradUnitNorm", pa::PANOCStopCrit::ProjGradUnitNorm)
-        .value("FPRNorm", pa::PANOCStopCrit::FPRNorm)
-        .export_values();
-
     py::class_<pa::StructuredPANOCLBFGSParams>(
         m, "StructuredPANOCLBFGSParams",
         "C++ documentation: :cpp:class:`pa::StructuredPANOCLBFGSParams`")
@@ -915,6 +926,22 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
                 else if (y->size() != p.m)
                     throw std::invalid_argument(
                         "Length of y does not match problem size problem.m");
+                if (p.C.lowerbound.size() != p.n)
+                    throw std::invalid_argument(
+                        "Length of problem.C.lowerbound does not match problem "
+                        "size problem.n");
+                if (p.C.upperbound.size() != p.n)
+                    throw std::invalid_argument(
+                        "Length of problem.C.upperbound does not match problem "
+                        "size problem.n");
+                if (p.D.lowerbound.size() != p.m)
+                    throw std::invalid_argument(
+                        "Length of problem.D.lowerbound does not match problem "
+                        "size problem.m");
+                if (p.D.upperbound.size() != p.m)
+                    throw std::invalid_argument(
+                        "Length of problem.D.upperbound does not match problem "
+                        "size problem.m");
 
                 auto stats = solver(p, *y, *x);
                 return std::make_tuple(std::move(*x), std::move(*y),
@@ -989,7 +1016,7 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
             x0 = pa::vec::Zero(n);
         else if (x0->size() != n)
             throw std::invalid_argument(
-                "Length of x does not match problem size problem.n");
+                "Length of x does not match length of bounds C");
         auto grad_ψ_ = [&](pa::crvec x, pa::rvec gr) {
             auto &&t = grad_ψ(x);
             if (t.size() != x.size())
@@ -1012,6 +1039,7 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
             "This version of panocpy was compiled without CasADi support");
     };
     auto load_CasADi_problem_with_param = [](const char *, unsigned, unsigned,
+                                             unsigned,
                                              bool) -> pa::ProblemWithParam {
         throw std::runtime_error(
             "This version of panocpy was compiled without CasADi support");
@@ -1033,12 +1061,13 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
     using pa::load_CasADi_problem_full_with_param;
 #endif
 
-    m.def("load_casadi_problem", load_CasADi_problem, "so_name"_a, "n"_a, "m"_a,
-          "second_order"_a = false,
+    m.def("load_casadi_problem", load_CasADi_problem, "so_name"_a, "n"_a = 0,
+          "m"_a = 0, "second_order"_a = false,
           "Load a compiled CasADi problem without parameters.\n\n"
           "C++ documentation: :cpp:func:`pa::load_CasADi_problem`");
     m.def("load_casadi_problem_with_param", load_CasADi_problem_with_param,
-          "so_name"_a, "n"_a, "m"_a, "second_order"_a = false,
+          "so_name"_a, "n"_a = 0, "m"_a = 0, "p"_a = 0,
+          "second_order"_a = false,
           "Load a compiled CasADi problem with parameters.\n\n"
           "C++ documentation: :cpp:func:`pa::load_CasADi_problem_with_param`");
 
