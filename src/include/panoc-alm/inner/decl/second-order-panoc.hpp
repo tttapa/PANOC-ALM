@@ -89,7 +89,8 @@ class SecondOrderPANOCSolver {
                      bool always_overwrite_results, // in
                      rvec x,                        // inout
                      rvec y,                        // inout
-                     rvec err_z);                   // out
+                     rvec err_z,                    // out
+                     std::chrono::microseconds time_remaining);
 
     SecondOrderPANOCSolver &
     set_progress_callback(std::function<void(const ProgressInfo &)> cb) {

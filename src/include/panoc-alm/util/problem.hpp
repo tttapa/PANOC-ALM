@@ -364,17 +364,38 @@ struct ProblemFull {
           hess_L(std::move(hess_L)) {}
 };
 
-class ProblemFullWithParam : public pa::ProblemFull {
+// class ProblemFullWithParam : public pa::ProblemFull {
+//   public:
+//     using pa::ProblemFull::ProblemFull;
+//     void set_param(pa::crvec p) { *param = p; }
+//     void set_param(pa::vec &&p) { *param = std::move(p); }
+//     pa::vec &get_param() { return *param; }
+//     const pa::vec &get_param() const { return *param; }
+//     std::shared_ptr<pa::vec> get_param_ptr() const { return param; }
+
+//   private:
+//     std::shared_ptr<pa::vec> param = std::make_shared<pa::vec>();
+// };
+
+class ProblemFullWithParam : public ProblemFull {
   public:
-    using pa::ProblemFull::ProblemFull;
-    void set_param(pa::crvec p) { *param = p; }
-    void set_param(pa::vec &&p) { *param = std::move(p); }
-    pa::vec &get_param() { return *param; }
-    const pa::vec &get_param() const { return *param; }
-    std::shared_ptr<pa::vec> get_param_ptr() const { return param; }
+    ProblemFullWithParam(unsigned n, unsigned m1, unsigned m2, unsigned p)
+        : ProblemFull(n, m1, m2), param(std::make_shared<vec>(vec::Constant(p, NaN))) {}
+
+    void set_param(crvec p) {
+        assert(p.size() == param->size());
+        *param = p;
+    }
+    void set_param(vec &&p) {
+        assert(p.size() == param->size());
+        *param = std::move(p);
+    }
+    vec &get_param() { return *param; }
+    const vec &get_param() const { return *param; }
+    std::shared_ptr<vec> get_param_ptr() const { return param; }
 
   private:
-    std::shared_ptr<pa::vec> param = std::make_shared<pa::vec>();
+    std::shared_ptr<vec> param;
 };
 
 struct EvalCounterFull {

@@ -264,10 +264,11 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
         m, "ProblemFullWithParam",
         "C++ documentation: :cpp:class:`pa::ProblemFullWithParam`")
         // .def(py::init())
-        .def(py::init<unsigned, unsigned, unsigned>(), "n"_a, "m1"_a, "m2"_a,
+        .def(py::init<unsigned, unsigned, unsigned, unsigned>(), "n"_a, "m1"_a, "m2"_a, "p"_a
              ":param n: Number of unknowns\n"
              ":param m1: Number of ALM constraints\n"
-             ":param m2: Number of quadratic penalty constraints")
+             ":param m2: Number of quadratic penalty constraints\n"
+             ":param p: Number of parameters")
         .def_readwrite("n", &pa::ProblemFullWithParam::n,
                        "Number of unknowns, dimension of :math:`x`")
         .def_readwrite(
@@ -316,7 +317,14 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
                       ":math:`\\nabla^2_{xx} L(x,y)\\, v`")
         .def_property(
             "param", py::overload_cast<>(&pa::ProblemFullWithParam::get_param),
-            py::overload_cast<pa::crvec>(&pa::ProblemFullWithParam::set_param),
+            [](pa::ProblemFullWithParam &p, pa::crvec param) {
+                if (param.size() != p.get_param().size())
+                    throw std::invalid_argument(
+                        "Invalid parameter dimension: got " +
+                        std::to_string(param.size()) + ", should be " +
+                        std::to_string(p.get_param().size()) + ".");
+                p.set_param(param);
+            },
             "Parameter vector :math:`p` of the problem");
 
     py::class_<pa::PolymorphicPANOCDirectionBase,
@@ -1072,12 +1080,13 @@ PYBIND11_MODULE(PANOCPY_MODULE_NAME, m) {
           "C++ documentation: :cpp:func:`pa::load_CasADi_problem_with_param`");
 
     m.def("load_casadi_problem_full", load_CasADi_problem_full, "so_name"_a,
-          "n"_a, "m1"_a, "m2"_a, "second_order"_a = false,
+          "n"_a = 0, "m1"_a = 0, "m2"_a = 0, "second_order"_a = false,
           "Load a compiled CasADi problem without parameters.\n\n"
           "C++ documentation: :cpp:func:`pa::load_CasADi_problem`");
     m.def("load_casadi_problem_full_with_param",
-          load_CasADi_problem_full_with_param, "so_name"_a, "n"_a, "m1"_a,
-          "m2"_a, "second_order"_a = false,
+          load_CasADi_problem_full_with_param,
+          "so_name"_a, "n"_a = 0, "m1"_a = 0, "m2"_a = 0, "p"_a = 0,
+          "second_order"_a = false,
           "Load a compiled CasADi problem with parameters.\n\n"
-          "C++ documentation: :cpp:func:`pa::load_CasADi_problem_with_param`");
+          "C++ documentation: :cpp:func:`pa::load_CasADi_problem_full_with_param`");
 }

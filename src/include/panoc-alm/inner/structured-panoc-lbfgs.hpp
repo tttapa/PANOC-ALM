@@ -29,7 +29,8 @@ inline StructuredPANOCLBFGSSolver::Stats StructuredPANOCLBFGSSolver::operator()(
     /// [inout] Lagrange multipliers @f$ y @f$
     rvec y,
     /// [out]   Slack variable error @f$ g(x) - z @f$
-    rvec err_z) {
+    rvec err_z,
+    std::chrono::microseconds time_remaining) {
 
     auto start_time = std::chrono::steady_clock::now();
     Stats s;

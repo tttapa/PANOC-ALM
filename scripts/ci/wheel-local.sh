@@ -3,8 +3,8 @@
 cd "$(dirname "${BASH_SOURCE[0]}")"
 set -ex
 
-image=panocpy-wheel-local-img6
-container=panocpy-wheel-local-cnt6
+image=panocpy-wheel-local-img7
+container=panocpy-wheel-local-cnt7
 
 if [ -z $(docker image ls -q $image) ]; then
     docker create --interactive \

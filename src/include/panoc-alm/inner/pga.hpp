@@ -80,7 +80,8 @@ class PGASolver {
                      bool always_overwrite_results, // in
                      rvec x,                        // inout
                      rvec λ,                        // inout
-                     rvec err_z);                   // out
+                     rvec err_z,                    // out
+                     std::chrono::microseconds time_remaining);
 
     PGASolver &
     set_progress_callback(std::function<void(const ProgressInfo &)> cb) {
@@ -110,7 +111,8 @@ PGASolver::operator()(const Problem &problem,        // in
                       bool always_overwrite_results, // in
                       rvec x,                        // inout
                       rvec y,                        // inout
-                      rvec err_z                     // out
+                      rvec err_z,                    // out
+                      std::chrono::microseconds time_remaining
 ) {
     auto start_time = std::chrono::steady_clock::now();
     Stats s;

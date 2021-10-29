@@ -46,7 +46,8 @@ class LBFGSSolver {
                      bool always_overwrite_results, // in
                      rvec x,                        // inout
                      rvec y,                        // inout
-                     rvec err_z                     // out
+                     rvec err_z,                    // out
+                     std::chrono::microseconds time_remaining
     ) {
         Stats s;
         auto start_time = std::chrono::steady_clock::now();

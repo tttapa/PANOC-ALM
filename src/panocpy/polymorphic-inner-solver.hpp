@@ -22,7 +22,7 @@ auto InnerSolverCallWrapper() {
               pa::real_t ε, pa::vec x,
               pa::vec y) -> std::tuple<pa::vec, pa::vec, pa::vec, py::dict> {
         pa::vec z(p.m);
-        auto stats = solver(p, Σ, ε, true, x, y, z);
+        auto stats = solver(p, Σ, ε, true, x, y, z, std::chrono::microseconds(0));
         return std::make_tuple(std::move(x), std::move(y), std::move(z),
                                stats.ptr->to_dict());
     };
@@ -128,7 +128,8 @@ class PolymorphicInnerSolverBase
         /// [inout] Lagrange multipliers @f$ y @f$
         rvec y,
         /// [out]   Slack variable error @f$ g(x) - z @f$
-        rvec err_z)                       = 0;
+        rvec err_z,
+        std::chrono::microseconds time_remaining) = 0;
     virtual void stop()                   = 0;
     virtual std::string get_name() const  = 0;
     virtual py::object get_params() const = 0;
@@ -143,9 +144,9 @@ struct PolymorphicInnerSolverWrapper {
 
     Stats operator()(const Problem &problem, crvec Σ, real_t ε,
                      bool always_overwrite_results, rvec x, rvec y,
-                     rvec err_z) {
+                     rvec err_z, std::chrono::microseconds time_remaining) {
         return solver->operator()(problem, Σ, ε, always_overwrite_results, x, y,
-                                  err_z);
+                                  err_z, time_remaining);
     }
     void stop() { solver->stop(); }
     std::string get_name() const { return solver->get_name(); }
@@ -175,7 +176,7 @@ class PolymorphicInnerSolverTrampoline : public PolymorphicInnerSolverBase {
   public:
     Stats operator()(const Problem &problem, crvec Σ, real_t ε,
                      bool always_overwrite_results, rvec x, rvec y,
-                     rvec err_z) override {
+                     rvec err_z, std::chrono::microseconds time_remaining) override {
         py::dict stats;
         std::tie(x, y, err_z, stats) =
             call(problem, Σ, ε, always_overwrite_results, x, y);
@@ -351,9 +352,10 @@ class PolymorphicInnerSolver : public PolymorphicInnerSolverBase {
         /// [inout] Lagrange multipliers @f$ y @f$
         rvec y,
         /// [out]   Slack variable error @f$ g(x) - z @f$
-        rvec err_z) override {
+        rvec err_z,
+        std::chrono::microseconds time_remaining) override {
         auto stats =
-            innersolver(problem, Σ, ε, always_overwrite_results, x, y, err_z);
+            innersolver(problem, Σ, ε, always_overwrite_results, x, y, err_z, time_remaining);
         return {
             std::static_pointer_cast<PolymorphicInnerSolverStatsBase>(
                 std::make_shared<WrappedStats>(stats)),

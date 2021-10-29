@@ -274,128 +274,449 @@ pa::ProblemWithParam load_CasADi_problem_with_param(const std::string &so_name,
     return prob;
 }
 
-pa::ProblemFull load_CasADi_problem_full(const char *so_name, unsigned n, unsigned m1,
-                                unsigned m2, bool second_order) {
-    auto prob = pa::ProblemFull(n, m1, m2);
-    pa::vec w = pa::vec::Zero(m1);
-    auto load = [&](const char *name) {
+pa::ProblemFull load_CasADi_problem_full(const std::string &so_name, unsigned n,
+                                unsigned m1, unsigned m2, bool second_order) {
+
+    auto load = [&](const std::string &name) {
         return casadi::external(name, so_name);
     };
-    prob.f = [csf{CasADiFun_1Vi1So(load("f"))}] //
-        (pa::crvec x) {                         //
-            return csf(x);
-        };
-    prob.grad_f = [csf{CasADiFun_1Vi1Vo(load("grad_f"))}] //
-        (pa::crvec x, pa::rvec gr) {                      //
-            csf(x, gr);
-        };
-    prob.g1 = [csf{CasADiFun_1Vi1Vo(load("g1"))}] //
-        (pa::crvec x, pa::rvec g1) {             //
-            csf(x, g1);
-        };
-    prob.grad_g1_prod = [csf{CasADiFun_2Vi1Vo(load("grad_g1"))}] //
-        (pa::crvec x, pa::crvec y1, pa::rvec g1) {               //
-            if (y1.size() == 0)
-                g1.setZero();
-            else
-                csf(x, y1, g1);
-        };
-    prob.g2 = [csf{CasADiFun_1Vi1Vo(load("g2"))}] //
-        (pa::crvec x, pa::rvec g2) {             //
-            csf(x, g2);
-        };
-    prob.grad_g2_prod = [csf{CasADiFun_2Vi1Vo(load("grad_g2"))}] //
-        (pa::crvec x, pa::crvec y2, pa::rvec g2) {               //
-            if (y2.size() == 0)
-                g2.setZero();
-            else
-                csf(x, y2, g2);
-        };
-    if (second_order) {
-        prob.grad_g1i = [csf{CasADiFun_2Vi1Vo(load("grad_g1"))}, w] //
-            (pa::crvec x, unsigned i, pa::rvec g1) mutable {       //
-                if (w.size() == 0) {
+    auto wrap_load = [&so_name](const char *name, auto f) {
+        try {
+            f();
+        } catch (const std::invalid_argument &e) {
+            throw std::invalid_argument("Unable to load function '" + so_name +
+                                        ":" + name + "': " + e.what());
+        }
+    };
+
+    std::optional<CasADiFunctionEvaluator<1, 1>> g1;
+    // If not all dimensions are specified, load the function "g1" to determine
+    // the missing dimensions.
+    if (n == 0 || m1 == 0) {
+        wrap_load("g1", [&] {
+            g1 = load("g1");
+            if (g1->fun.size2_in(0) != 1)
+                throw std::invalid_argument(
+                    "First input argument should be a column vector.");
+            if (g1->fun.size2_out(0) != 1)
+                throw std::invalid_argument(
+                    "First output argument should be a column vector.");
+            if (n == 0)
+                n = g1->fun.size1_in(0);
+            if (m1 == 0)
+                m1 = g1->fun.size1_out(0);
+            g1->validate_dimensions({{n, 1}}, {{m1, 1}});
+        });
+    }
+    // Otherwise, load the function "g" and compare its dimensions to the
+    // dimensions specified by the user.
+    else {
+        wrap_load("g1", [&] { g1 = {load("g1"), {{n, 1}}, {{m1, 1}}}; });
+    }
+
+    std::optional<CasADiFunctionEvaluator<1, 1>> g2;
+    // If not all dimensions are specified, load the function "g1" to determine
+    // the missing dimensions.
+    if (m2 == 0) {
+        wrap_load("g2", [&] {
+            g2 = load("g2");
+            if (g2->fun.size2_in(0) != 1)
+                throw std::invalid_argument(
+                    "First input argument should be a column vector.");
+            if (g2->fun.size2_out(0) != 1)
+                throw std::invalid_argument(
+                    "First output argument should be a column vector.");
+            m2 = g2->fun.size1_out(0);
+            g2->validate_dimensions({{n, 1}}, {{m2, 1}});
+        });
+    }
+    // Otherwise, load the function "g" and compare its dimensions to the
+    // dimensions specified by the user.
+    else {
+        wrap_load("g2", [&] { g2 = {load("g2"), {{n, 1}}, {{m2, 1}}}; });
+    }
+
+    auto prob = pa::ProblemFull(n, m1, m2);
+    pa::vec w = pa::vec::Zero(m1);
+
+    wrap_load("f", [&] {
+        prob.f = [csf{CasADiFun_1Vi1So(load("f"), n)}] //
+            (pa::crvec x) {                            //
+                return csf(x);
+            };
+    });
+    wrap_load("grad_f", [&] {
+        prob.grad_f = [csf{CasADiFun_1Vi1Vo(load("grad_f"), n, n)}] //
+            (pa::crvec x, pa::rvec gr) {                            //
+                csf(x, gr);
+            };
+    });
+    wrap_load("g1", [&] {
+        prob.g1 = [csf{CasADiFun_1Vi1Vo(std::move(*g1))}] //
+            (pa::crvec x, pa::rvec g1) {                 //
+                csf(x, g1);
+            };
+    });
+    wrap_load("grad_g1", [&] {
+        prob.grad_g1_prod = [csf{CasADiFun_2Vi1Vo(load("grad_g1"), {n, m1}, n)}] //
+            (pa::crvec x, pa::crvec y, pa::rvec g1) {                          //
+                if (y.size() == 0)
                     g1.setZero();
-                } else {
-                    w(i) = 1;
-                    csf(x, w, g1);
-                    w(i) = 0;
-                }
+                else
+                    csf(x, y, g1);
             };
-        //todo: check L
-        prob.hess_L = [csf{CasADiFun_2Vi1Mo(load("hess_L"))}] // 
-            (pa::crvec x, pa::crvec y, pa::rvec g) {          //
-                csf(x, y, g);
+    });
+    wrap_load("g2", [&] {
+        prob.g2 = [csf{CasADiFun_1Vi1Vo(std::move(*g2))}] //
+            (pa::crvec x, pa::rvec g2) {                 //
+                csf(x, g2);
             };
-        prob.hess_L_prod = [csf{CasADiFun_3Vi1Vo(load("hess_L_prod"))}] //
-            (pa::crvec x, pa::crvec y, pa::crvec v, pa::rvec g) {       //
-                csf(x, y, v, g);
+    });
+    wrap_load("grad_g2", [&] {
+        prob.grad_g2_prod = [csf{CasADiFun_2Vi1Vo(load("grad_g2"), {n, m2}, n)}] //
+            (pa::crvec x, pa::crvec y, pa::rvec g2) {                          //
+                if (y.size() == 0)
+                    g2.setZero();
+                else
+                    csf(x, y, g2);
             };
+    });
+    if (second_order) {
+        wrap_load("grad_g1i", [&] {
+            prob.grad_g1i =
+                [csf{CasADiFun_2Vi1Vo(load("grad_g1"), {n, m1}, n)}, w] //
+                (pa::crvec x, unsigned i, pa::rvec g1) mutable {       //
+                    if (w.size() == 0) {
+                        g1.setZero();
+                    } else {
+                        w(i) = 1;
+                        csf(x, w, g1);
+                        w(i) = 0;
+                    }
+                };
+        });
+        wrap_load("grad_g2i", [&] {
+            prob.grad_g2i =
+                [csf{CasADiFun_2Vi1Vo(load("grad_g2"), {n, m2}, n)}, w] //
+                (pa::crvec x, unsigned i, pa::rvec g2) mutable {       //
+                    if (w.size() == 0) {
+                        g2.setZero();
+                    } else {
+                        w(i) = 1;
+                        csf(x, w, g2);
+                        w(i) = 0;
+                    }
+                };
+        });
+        //TODO: Fix Hessian
+        wrap_load("hess_L", [&] {
+            prob.hess_L =
+                [csf{CasADiFun_2Vi1Mo(load("hess_L"), {n, m1}, {n, n})}] //
+                (pa::crvec x, pa::crvec y, pa::rvec g) {                //
+                    csf(x, y, g);
+                };
+        });
+        wrap_load("hess_L_prod", [&] {
+            prob.hess_L_prod =
+                [csf{CasADiFun_3Vi1Vo(load("hess_L_prod"), {n, m1, n}, n)}] //
+                (pa::crvec x, pa::crvec y, pa::crvec v, pa::rvec g) {      //
+                    csf(x, y, v, g);
+                };
+        });
     }
     return prob;
 }
 
-pa::ProblemFullWithParam load_CasADi_problem_full_with_param(const char *so_name, unsigned n,
-                                                unsigned m1, unsigned m2, bool second_order) {
-    auto prob        = ProblemFullWithParam(n, m1, m2);
-    pa::vec w        = pa::vec::Zero(m1);
-    const auto param = prob.get_param_ptr();
-    auto load        = [&](const char *name) {
+pa::ProblemFullWithParam load_CasADi_problem_full_with_param(const std::string &so_name,
+                                                unsigned n, unsigned m1, unsigned m2,
+                                                unsigned p, bool second_order) {
+
+    auto load = [&](const std::string &name) {
         return casadi::external(name, so_name);
     };
-    prob.f = [csf{CasADiFun_2Vi1So(load("f"))}, p{param}] //
-        (pa::crvec x) {                                   //
-            return csf(x, *p);
-        };
-    prob.grad_f = [csf{CasADiFun_2Vi1Vo(load("grad_f"))}, p{param}] //
-        (pa::crvec x, pa::rvec gr) {                                //
-            csf(x, *p, gr);
-        };
-    prob.g1 = [csf{CasADiFun_2Vi1Vo(load("g1"))}, p{param}] //
-        (pa::crvec x, pa::rvec g1) {                       //
-            csf(x, *p, g1);
-        };
-    prob.grad_g1_prod = [csf{CasADiFun_3Vi1Vo(load("grad_g1"))}, p{param}] //
-        (pa::crvec x, pa::crvec y1, pa::rvec g1) {                         //
-            if (y1.size() == 0)
-                g1.setZero();
-            else
-                csf(x, *p, y1, g1);
-        };
-    prob.g2 = [csf{CasADiFun_2Vi1Vo(load("g2"))}, p{param}] //
-        (pa::crvec x, pa::rvec g2) {                       //
-            csf(x, *p, g2);
-        };
-    prob.grad_g2_prod = [csf{CasADiFun_3Vi1Vo(load("grad_g2"))}, p{param}] //
-        (pa::crvec x, pa::crvec y2, pa::rvec g2) {                         //
-            if (y2.size() == 0)
-                g2.setZero();
-            else
-                csf(x, *p, y2, g2);
-        };
-    if (second_order) {
-        prob.grad_g1i = [csf{CasADiFun_3Vi1Vo(load("grad_g1"))}, p{param}, w] //
-            (pa::crvec x, unsigned i, pa::rvec g1) mutable {                 //
-                if (w.size() == 0) {
+    auto wrap_load = [&so_name](const char *name, auto f) {
+        try {
+            f();
+        } catch (const std::invalid_argument &e) {
+            throw std::invalid_argument("Unable to load function '" + so_name +
+                                        ":" + name + "': " + e.what());
+        }
+    };
+
+    std::optional<CasADiFunctionEvaluator<2, 1>> g1;
+    // If not all dimensions are specified, load the function "g" to determine
+    // the missing dimensions.
+    if (n == 0 || m1 == 0 || p == 0) {
+        wrap_load("g1", [&] {
+            g1 = load("g1");
+            if (g1->fun.size2_in(0) != 1)
+                throw std::invalid_argument(
+                    "First input argument should be a column vector.");
+            if (g1->fun.size2_in(1) != 1)
+                throw std::invalid_argument(
+                    "Second input argument should be a column vector.");
+            if (g1->fun.size2_out(0) != 1)
+                throw std::invalid_argument(
+                    "First output argument should be a column vector.");
+            if (n == 0)
+                n = g1->fun.size1_in(0);
+            if (m1 == 0)
+                m1 = g1->fun.size1_out(0);
+            if (p == 0)
+                p = g1->fun.size1_in(1);
+            g1->validate_dimensions({{n, 1}, {p, 1}}, {{m1, 1}});
+        });
+    }
+    // Otherwise, load the function "g" and compare its dimensions to the
+    // dimensions specified by the user.
+    else {
+        wrap_load("g1", [&] { g1 = {load("g1"), {{n, 1}, {p, 1}}, {{m1, 1}}}; });
+    }
+
+    std::optional<CasADiFunctionEvaluator<2, 1>> g2;
+    // If not all dimensions are specified, load the function "g" to determine
+    // the missing dimensions.
+    if (m2 == 0) {
+        wrap_load("g2", [&] {
+            g1 = load("g2");
+            if (g2->fun.size2_in(0) != 1)
+                throw std::invalid_argument(
+                    "First input argument should be a column vector.");
+            if (g2->fun.size2_in(1) != 1)
+                throw std::invalid_argument(
+                    "Second input argument should be a column vector.");
+            if (g2->fun.size2_out(0) != 1)
+                throw std::invalid_argument(
+                    "First output argument should be a column vector.");
+            m2 = g2->fun.size1_out(0);
+            g2->validate_dimensions({{n, 1}, {p, 1}}, {{m2, 1}});
+        });
+    }
+    // Otherwise, load the function "g" and compare its dimensions to the
+    // dimensions specified by the user.
+    else {
+        wrap_load("g2", [&] { g2 = {load("g2"), {{n, 1}, {p, 1}}, {{m2, 1}}}; });
+    }
+
+    auto prob        = ProblemFullWithParam(n, m1, m2, p);
+    pa::vec w        = pa::vec::Zero(m1);
+    const auto param = prob.get_param_ptr();
+
+    wrap_load("f", [&] {
+        prob.f = [csf{CasADiFun_2Vi1So(load("f"), {n, p})}, p{param}] //
+            (pa::crvec x) {                                           //
+                return csf(x, *p);
+            };
+    });
+    wrap_load("grad_f", [&] {
+        prob.grad_f =
+            [csf{CasADiFun_2Vi1Vo(load("grad_f"), {n, p}, n)}, p{param}] //
+            (pa::crvec x, pa::rvec gr) {                                 //
+                csf(x, *p, gr);
+            };
+    });
+    wrap_load("g1", [&] {
+        prob.g1 = [csf{CasADiFun_2Vi1Vo(std::move(*g1))}, p{param}] //
+            (pa::crvec x, pa::rvec g1) {                           //
+                csf(x, *p, g1);
+            };
+    });
+    wrap_load("grad_g1", [&] {
+        prob.grad_g1_prod =
+            [csf{CasADiFun_3Vi1Vo(load("grad_g1"), {n, p, m1}, n)}, p{param}] //
+            (pa::crvec x, pa::crvec y, pa::rvec g1) {                        //
+                if (y.size() == 0)
                     g1.setZero();
-                } else {
-                    w(i) = 1;
-                    csf(x, *p, w, g1);
-                    w(i) = 0;
-                }
+                else
+                    csf(x, *p, y, g1);
             };
-        //todo: check L
-        prob.hess_L = [csf{CasADiFun_3Vi1Mo(load("hess_L"))}, p{param}] //
-            (pa::crvec x, pa::crvec y, pa::rvec g) {                    //
-                csf(x, *p, y, g);
+    });
+    wrap_load("g2", [&] {
+        prob.g2 = [csf{CasADiFun_2Vi1Vo(std::move(*g2))}, p{param}] //
+            (pa::crvec x, pa::rvec g2) {                           //
+                csf(x, *p, g2);
             };
-        prob.hess_L_prod =
-            [csf{CasADiFun_4Vi1Vo(load("hess_L_prod"))}, p{param}] //
-            (pa::crvec x, pa::crvec y, pa::crvec v, pa::rvec g) {  //
-                csf(x, *p, y, v, g);
+    });
+    wrap_load("grad_g2", [&] {
+        prob.grad_g2_prod =
+            [csf{CasADiFun_3Vi1Vo(load("grad_g2"), {n, p, m2}, n)}, p{param}] //
+            (pa::crvec x, pa::crvec y, pa::rvec g2) {                        //
+                if (y.size() == 0)
+                    g2.setZero();
+                else
+                    csf(x, *p, y, g2);
             };
+    });
+    if (second_order) {
+        wrap_load("grad_g1", [&] {
+            prob.grad_g1i = [csf{CasADiFun_3Vi1Vo(load("grad_g1"), {n, p, m1}, n)},
+                            p{param}, w]                        //
+                (pa::crvec x, unsigned i, pa::rvec g1) mutable { //
+                    if (w.size() == 0) {
+                        g1.setZero();
+                    } else {
+                        w(i) = 1;
+                        csf(x, *p, w, g1);
+                        w(i) = 0;
+                    }
+                };
+        });
+        wrap_load("grad_g2", [&] {
+            prob.grad_g2i = [csf{CasADiFun_3Vi1Vo(load("grad_g2"), {n, p, m2}, n)},
+                            p{param}, w]                        //
+                (pa::crvec x, unsigned i, pa::rvec g2) mutable { //
+                    if (w.size() == 0) {
+                        g2.setZero();
+                    } else {
+                        w(i) = 1;
+                        csf(x, *p, w, g2);
+                        w(i) = 0;
+                    }
+                };
+        });
+        //TODO: Fix Hessian
+        wrap_load("hess_L", [&] {
+            prob.hess_L =
+                [csf{CasADiFun_3Vi1Mo(load("hess_L"), {n, p, m1}, {n, n})},
+                 p{param}]                               //
+                (pa::crvec x, pa::crvec y, pa::rvec g) { //
+                    csf(x, *p, y, g);
+                };
+        });
+        wrap_load("hess_L_prod", [&] {
+            prob.hess_L_prod =
+                [csf{CasADiFun_4Vi1Vo(load("hess_L_prod"), {n, p, m1, n}, n)},
+                 p{param}]                                            //
+                (pa::crvec x, pa::crvec y, pa::crvec v, pa::rvec g) { //
+                    csf(x, *p, y, v, g);
+                };
+        });
     }
     return prob;
 }
+
+// pa::ProblemFull load_CasADi_problem_full(const char *so_name, unsigned n, unsigned m1,
+//                                 unsigned m2, bool second_order) {
+//     auto prob = pa::ProblemFull(n, m1, m2);
+//     pa::vec w = pa::vec::Zero(m1);
+//     auto load = [&](const char *name) {
+//         return casadi::external(name, so_name);
+//     };
+//     prob.f = [csf{CasADiFun_1Vi1So(load("f"))}] //
+//         (pa::crvec x) {                         //
+//             return csf(x);
+//         };
+//     prob.grad_f = [csf{CasADiFun_1Vi1Vo(load("grad_f"))}] //
+//         (pa::crvec x, pa::rvec gr) {                      //
+//             csf(x, gr);
+//         };
+//     prob.g1 = [csf{CasADiFun_1Vi1Vo(load("g1"))}] //
+//         (pa::crvec x, pa::rvec g1) {             //
+//             csf(x, g1);
+//         };
+//     prob.grad_g1_prod = [csf{CasADiFun_2Vi1Vo(load("grad_g1"))}] //
+//         (pa::crvec x, pa::crvec y1, pa::rvec g1) {               //
+//             if (y1.size() == 0)
+//                 g1.setZero();
+//             else
+//                 csf(x, y1, g1);
+//         };
+//     prob.g2 = [csf{CasADiFun_1Vi1Vo(load("g2"))}] //
+//         (pa::crvec x, pa::rvec g2) {             //
+//             csf(x, g2);
+//         };
+//     prob.grad_g2_prod = [csf{CasADiFun_2Vi1Vo(load("grad_g2"))}] //
+//         (pa::crvec x, pa::crvec y2, pa::rvec g2) {               //
+//             if (y2.size() == 0)
+//                 g2.setZero();
+//             else
+//                 csf(x, y2, g2);
+//         };
+//     if (second_order) {
+//         prob.grad_g1i = [csf{CasADiFun_2Vi1Vo(load("grad_g1"))}, w] //
+//             (pa::crvec x, unsigned i, pa::rvec g1) mutable {       //
+//                 if (w.size() == 0) {
+//                     g1.setZero();
+//                 } else {
+//                     w(i) = 1;
+//                     csf(x, w, g1);
+//                     w(i) = 0;
+//                 }
+//             };
+//         //todo: check L
+//         prob.hess_L = [csf{CasADiFun_2Vi1Mo(load("hess_L"))}] // 
+//             (pa::crvec x, pa::crvec y, pa::rvec g) {          //
+//                 csf(x, y, g);
+//             };
+//         prob.hess_L_prod = [csf{CasADiFun_3Vi1Vo(load("hess_L_prod"))}] //
+//             (pa::crvec x, pa::crvec y, pa::crvec v, pa::rvec g) {       //
+//                 csf(x, y, v, g);
+//             };
+//     }
+//     return prob;
+// }
+
+// pa::ProblemFullWithParam load_CasADi_problem_full_with_param(const char *so_name, unsigned n,
+//                                                 unsigned m1, unsigned m2, unsigned p, bool second_order) {
+//     auto prob        = ProblemFullWithParam(n, m1, m2);
+//     pa::vec w        = pa::vec::Zero(m1);
+//     const auto param = prob.get_param_ptr();
+//     auto load        = [&](const char *name) {
+//         return casadi::external(name, so_name);
+//     };
+//     prob.f = [csf{CasADiFun_2Vi1So(load("f"))}, p{param}] //
+//         (pa::crvec x) {                                   //
+//             return csf(x, *p);
+//         };
+//     prob.grad_f = [csf{CasADiFun_2Vi1Vo(load("grad_f"))}, p{param}] //
+//         (pa::crvec x, pa::rvec gr) {                                //
+//             csf(x, *p, gr);
+//         };
+//     prob.g1 = [csf{CasADiFun_2Vi1Vo(load("g1"))}, p{param}] //
+//         (pa::crvec x, pa::rvec g1) {                       //
+//             csf(x, *p, g1);
+//         };
+//     prob.grad_g1_prod = [csf{CasADiFun_3Vi1Vo(load("grad_g1"))}, p{param}] //
+//         (pa::crvec x, pa::crvec y1, pa::rvec g1) {                         //
+//             if (y1.size() == 0)
+//                 g1.setZero();
+//             else
+//                 csf(x, *p, y1, g1);
+//         };
+//     prob.g2 = [csf{CasADiFun_2Vi1Vo(load("g2"))}, p{param}] //
+//         (pa::crvec x, pa::rvec g2) {                       //
+//             csf(x, *p, g2);
+//         };
+//     prob.grad_g2_prod = [csf{CasADiFun_3Vi1Vo(load("grad_g2"))}, p{param}] //
+//         (pa::crvec x, pa::crvec y2, pa::rvec g2) {                         //
+//             if (y2.size() == 0)
+//                 g2.setZero();
+//             else
+//                 csf(x, *p, y2, g2);
+//         };
+//     if (second_order) {
+//         prob.grad_g1i = [csf{CasADiFun_3Vi1Vo(load("grad_g1"))}, p{param}, w] //
+//             (pa::crvec x, unsigned i, pa::rvec g1) mutable {                 //
+//                 if (w.size() == 0) {
+//                     g1.setZero();
+//                 } else {
+//                     w(i) = 1;
+//                     csf(x, *p, w, g1);
+//                     w(i) = 0;
+//                 }
+//             };
+//         //todo: check L
+//         prob.hess_L = [csf{CasADiFun_3Vi1Mo(load("hess_L"))}, p{param}] //
+//             (pa::crvec x, pa::crvec y, pa::rvec g) {                    //
+//                 csf(x, *p, y, g);
+//             };
+//         prob.hess_L_prod =
+//             [csf{CasADiFun_4Vi1Vo(load("hess_L_prod"))}, p{param}] //
+//             (pa::crvec x, pa::crvec y, pa::crvec v, pa::rvec g) {  //
+//                 csf(x, *p, y, v, g);
+//             };
+//     }
+//     return prob;
+// }
 
 } // namespace pa
