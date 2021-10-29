@@ -1,5 +1,6 @@
 #pragma once
 
+#include <chrono>
 #include <panoc-alm/inner/decl/panoc.hpp>
 #include <panoc-alm/inner/detail/panoc-helpers.hpp>
 #include <panoc-alm/inner/directions/decl/panoc-direction-update.hpp>
@@ -36,7 +37,14 @@ PANOCSolver<DirectionProviderT>::operator()(
     /// [inout] Lagrange multipliers @f$ y @f$
     rvec y,
     /// [out]   Slack variable error @f$ g(x) - z @f$
-    rvec err_z) {
+    rvec err_z,
+    /// [in]    Time remaining
+    std::chrono::microseconds time_remaining) {
+    
+    std::chrono::microseconds delta_time = std::chrono::microseconds(0);
+    if (time_remaining > std::chrono::microseconds(0) && params.max_time > time_remaining) {
+        delta_time = params.max_time - time_remaining;
+    }
 
     auto start_time = std::chrono::steady_clock::now();
     Stats s;
@@ -174,7 +182,7 @@ PANOCSolver<DirectionProviderT>::operator()(
 
         auto time_elapsed = std::chrono::steady_clock::now() - start_time;
         auto stop_status  = detail::check_all_stop_conditions(
-            params, time_elapsed, k, stop_signal, ε, εₖ, no_progress);
+            params, time_elapsed + delta_time, k, stop_signal, ε, εₖ, no_progress);
         if (stop_status != SolverStatus::Unknown) {
             // TODO: We could cache g(x) and ẑ, but would that faster?
             //       It saves 1 evaluation of g per ALM iteration, but requires
@@ -182,6 +190,7 @@ PANOCSolver<DirectionProviderT>::operator()(
             // TODO: move the computation of ẑ and g(x) to ALM?
             if (stop_status == SolverStatus::Converged ||
                 stop_status == SolverStatus::Interrupted ||
+                stop_status == SolverStatus::MaxTime ||
                 always_overwrite_results) {
                 calc_err_z(x̂ₖ, /* in ⟹ out */ err_z);
                 x = std::move(x̂ₖ);
@@ -335,7 +344,14 @@ PANOCSolverFull<DirectionProviderT>::operator()(
     /// [out]   Slack variable error @f$ g(x) - z @f$
     rvec err_z1,
     /// [out]   Slack variable error @f$ g(x) - z @f$
-    rvec err_z2) {
+    rvec err_z2,
+    /// [in]    Time remaining
+    std::chrono::microseconds time_remaining) {
+    
+    std::chrono::microseconds delta_time = std::chrono::microseconds(0);
+    if (time_remaining > std::chrono::microseconds(0) && params.max_time > time_remaining) {
+        delta_time = params.max_time - time_remaining;
+    }
 
     auto start_time = std::chrono::steady_clock::now();
     Stats s;
@@ -475,7 +491,7 @@ PANOCSolverFull<DirectionProviderT>::operator()(
 
         auto time_elapsed = std::chrono::steady_clock::now() - start_time;
         auto stop_status  = detail::check_all_stop_conditions(
-            params, time_elapsed, k, stop_signal, ε, εₖ, no_progress);
+            params, time_elapsed + delta_time, k, stop_signal, ε, εₖ, no_progress);
         if (stop_status != SolverStatus::Unknown) {
             // TODO: We could cache g(x) and ẑ, but would that faster?
             //       It saves 1 evaluation of g per ALM iteration, but requires
@@ -483,6 +499,7 @@ PANOCSolverFull<DirectionProviderT>::operator()(
             // TODO: move the computation of ẑ and g(x) to ALM?
             if (stop_status == SolverStatus::Converged ||
                 stop_status == SolverStatus::Interrupted ||
+                stop_status == SolverStatus::MaxTime ||
                 always_overwrite_results) {
                 calc_err_z(x̂ₖ, /* in ⟹ out */ err_z1, err_z2);
                 x = std::move(x̂ₖ);

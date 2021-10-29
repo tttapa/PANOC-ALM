@@ -141,10 +141,13 @@ class ALMSolverFull {
         real_t δ₂                           = inf;
         real_t norm_penalty₁                = 0;
         real_t norm_penalty₂                = 0;
+        vec penalty₂;
 
         SolverStatus status = SolverStatus::Unknown;
 
         InnerStatsAccumulator<typename InnerSolver::Stats> inner;
+
+        Stats(int m2) : penalty₂(m2) {}
     };
 
     ALMSolverFull(Params params, InnerSolver &&inner_solver)

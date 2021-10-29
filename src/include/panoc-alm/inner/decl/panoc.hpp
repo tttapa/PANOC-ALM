@@ -105,7 +105,8 @@ class PANOCSolver {
                      bool always_overwrite_results, // in
                      rvec x,                        // inout
                      rvec y,                        // inout
-                     rvec err_z);                   // out
+                     rvec err_z,                    // out
+                     std::chrono::microseconds time_remaining = std::chrono::microseconds(0));  // in
 
     PANOCSolver &
     set_progress_callback(std::function<void(const ProgressInfo &)> cb) {
@@ -172,8 +173,9 @@ class PANOCSolverFull {
                      bool always_overwrite_results, // in
                      rvec x,                        // inout
                      rvec y,                        // inout
-                     rvec err_z1,
-                     rvec err_z2); // out
+                     rvec err_z1,                   // out
+                     rvec err_z2,                   // out
+                     std::chrono::microseconds time_remaining = std::chrono::microseconds(0));  // in
 
     PANOCSolverFull &
     set_progress_callback(std::function<void(const ProgressInfo &)> cb) {
