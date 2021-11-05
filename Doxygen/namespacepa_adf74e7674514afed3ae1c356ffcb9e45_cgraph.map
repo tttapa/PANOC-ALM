@@ -1,0 +1,24 @@
+<map id="panoc" name="panoc">
+<area shape="rect" id="node1" title=" " alt="" coords="5,269,67,295"/>
+<area shape="rect" id="node2" href="$namespacepa.html#a2b97bf67604c439eca0a540664930d61" title=" " alt="" coords="149,218,247,245"/>
+<area shape="rect" id="node21" href="$classpa_1_1vec__allocator.html#a259cb5a711406a8c3e5d937eb9350cca" title=" " alt="" coords="115,269,281,295"/>
+<area shape="rect" id="node22" href="$classpa_1_1vec__allocator.html#a2e036dd8859f446200ade78fabcc9a6a" title=" " alt="" coords="127,320,269,361"/>
+<area shape="rect" id="node3" href="$classpa_1_1vec__allocator.html#afa36e1f076dd1627a83324e717038836" title=" " alt="" coords="351,5,492,47"/>
+<area shape="rect" id="node4" href="$namespacepa_1_1detail.html#ad4d033d8e69bebca614098fa2df0a4a1" title="Compute the ε from the stopping criterion, see PANOCStopCrit." alt="" coords="569,64,723,105"/>
+<area shape="rect" id="node10" href="$namespacepa_1_1detail.html#ac32d0e6b012b801731e55225b7505fa9" title=" " alt="" coords="580,195,712,222"/>
+<area shape="rect" id="node11" href="$namespacepa_1_1detail.html#aa916ebec71616d1d0379aaaaca02fc19" title="Check all stop conditions (required tolerance reached, out of time, maximum number of iterations exce..." alt="" coords="345,123,497,164"/>
+<area shape="rect" id="node13" href="$namespacepa_1_1detail.html#ac7d4fa127500b38a8cec94984c4f598d" title="Increase the estimate of the Lipschitz constant of the objective gradient and decrease the step size ..." alt="" coords="350,240,493,281"/>
+<area shape="rect" id="node15" href="$classpa_1_1vec__allocator.html#a455bb0797853d67addd58875c671acef" title=" " alt="" coords="338,306,505,333"/>
+<area shape="rect" id="node16" href="$namespacepa_1_1detail.html#a92963cadf7f44fcf9f3ab6bddff08796" title="Estimate the Lipschitz constant of the gradient &#160;using finite differences." alt="" coords="347,357,495,399"/>
+<area shape="rect" id="node20" href="$namespacepa_1_1detail.html#aea72ee13ae482d948d1b994deb457578" title=" " alt="" coords="329,423,513,450"/>
+<area shape="rect" id="node5" href="$namespacepa_1_1vec__util.html#a9fe5014a9c51ca2202dc5d526dce6823" title="Get the 1&#45;norm of the given vector." alt="" coords="783,22,937,49"/>
+<area shape="rect" id="node6" href="$namespacepa_1_1vec__util.html#af8e650634ec3d7b82a78a4d313632ed0" title="Get the maximum or infinity&#45;norm of the given vector." alt="" coords="779,73,941,99"/>
+<area shape="rect" id="node7" href="$namespacepa_1_1detail.html#a8ed4d487878856942843707b5a131b85" title="Projected gradient step." alt="" coords="784,177,936,219"/>
+<area shape="rect" id="node8" href="$namespacepa.html#aee505a26e46aa4c0ce09d0fed72f0dac" title="Get the difference between the given vector and its projection." alt="" coords="989,247,1148,274"/>
+<area shape="rect" id="node9" href="$namespacepa.html#a5414901c2fb62f1fd47857642964cc71" title="Project a vector onto a box." alt="" coords="1196,247,1263,274"/>
+<area shape="rect" id="node12" href="$classpa_1_1AtomicStopSignal.html#aa0097deccc19b49f8ab5344d8d6d5cf6" title=" " alt="" coords="565,129,727,171"/>
+<area shape="rect" id="node14" href="$namespacepa_1_1detail.html#a82a03662e6ce5bcfd57ee2df719aec21" title="Calculate both ψ(x) and the vector ŷ that can later be used to compute ∇ψ." alt="" coords="786,247,934,274"/>
+<area shape="rect" id="node17" href="$namespacepa_1_1detail.html#a6572cf745448d2b40e9d5e977d17d5e2" title="Calculate the gradient ∇ψ(x)." alt="" coords="561,365,731,391"/>
+<area shape="rect" id="node18" href="$namespacepa_1_1detail.html#aa986daa1d5f0dfdbc75c143d2aae2919" title="Calculate both ψ(x) and its gradient ∇ψ(x)." alt="" coords="579,299,713,340"/>
+<area shape="rect" id="node19" href="$namespacepa_1_1detail.html#a908a0589ddf8734417f5481395e197d2" title="Calculate ∇ψ(x) using ŷ." alt="" coords="783,299,937,340"/>
+</map>

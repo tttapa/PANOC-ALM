@@ -1,0 +1,8 @@
+<map id="PANOCFullProgressInfo" name="PANOCFullProgressInfo">
+<area shape="rect" id="node1" title=" " alt="" coords="254,564,425,876"/>
+<area shape="rect" id="node2" href="$namespacepa.html#structpa_1_1PANOCParams" title="Tuning parameters for the PANOC algorithm." alt="" coords="131,233,351,487"/>
+<area shape="rect" id="node3" href="$namespacepa.html#structpa_1_1LipschitzEstimateParams" title=" " alt="" coords="5,5,191,127"/>
+<area shape="rect" id="node4" title=" " alt="" coords="215,27,327,105"/>
+<area shape="rect" id="node5" href="$structpa_1_1ProblemFull.html" title="Problem description for minimization problems." alt="" coords="375,219,501,501"/>
+<area shape="rect" id="node6" href="$namespacepa.html#structpa_1_1Box" title=" " alt="" coords="381,20,495,112"/>
+</map>

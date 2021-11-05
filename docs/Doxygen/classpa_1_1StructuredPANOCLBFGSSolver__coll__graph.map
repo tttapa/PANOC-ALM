@@ -1,0 +1,9 @@
+<map id="StructuredPANOCLBFGSSolver" name="StructuredPANOCLBFGSSolver">
+<area shape="rect" id="node1" title="Second order PANOC solver for ALM." alt="" coords="341,667,583,817"/>
+<area shape="rect" id="node2" href="$namespacepa.html#structpa_1_1StructuredPANOCLBFGSParams" title="Tuning parameters for the second order PANOC algorithm." alt="" coords="149,248,373,545"/>
+<area shape="rect" id="node3" href="$namespacepa.html#structpa_1_1LipschitzEstimateParams" title=" " alt="" coords="5,5,191,127"/>
+<area shape="rect" id="node4" title=" " alt="" coords="215,27,327,105"/>
+<area shape="rect" id="node5" href="$classpa_1_1LBFGS.html" title="Limited memory Broyden–Fletcher–Goldfarb–Shanno (L&#45;BFGS) algorithm." alt="" coords="397,189,527,604"/>
+<area shape="rect" id="node6" href="$namespacepa.html#structpa_1_1LBFGSParams" title="Parameters for the LBFGS and SpecializedLBFGS classes." alt="" coords="361,13,563,119"/>
+<area shape="rect" id="node7" href="$classpa_1_1AtomicStopSignal.html" title=" " alt="" coords="551,314,714,479"/>
+</map>

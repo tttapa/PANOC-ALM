@@ -1,0 +1,15 @@
+<map id="calc_grad_ψ_from_ŷ" name="calc_grad_ψ_from_ŷ">
+<area shape="rect" id="node1" title="Calculate ∇ψ(x) using ŷ." alt="" coords="1049,305,1203,331"/>
+<area shape="rect" id="node2" href="$namespacepa_1_1detail.html#aa986daa1d5f0dfdbc75c143d2aae2919" title="Calculate both ψ(x) and its gradient ∇ψ(x)." alt="" coords="885,266,1001,293"/>
+<area shape="rect" id="node4" href="$classpa_1_1SecondOrderPANOCSolver.html#acb04b3f19dafad9b4e7e7c1c19018d19" title=" " alt="" coords="351,103,565,144"/>
+<area shape="rect" id="node5" href="$classpa_1_1StructuredPANOCLBFGSSolver.html#ade95d8a7a1892d4087d6fffc958cde6e" title=" " alt="" coords="337,5,579,47"/>
+<area shape="rect" id="node6" href="$classpa_1_1GAAPGASolver.html#a570ec001ea8eee359be8a1b90b782cfb" title=" " alt="" coords="351,266,565,293"/>
+<area shape="rect" id="node7" href="$classpa_1_1PGASolver.html#af516b794e244432023aea7ba3cd0d1d8" title=" " alt="" coords="365,367,551,394"/>
+<area shape="rect" id="node11" href="$classpa_1_1PANOCSolver.html#aaa9758a40bd362331202fb232b4bb7ae" title=" " alt="" coords="629,418,835,445"/>
+<area shape="rect" id="node3" href="$namespacepa_1_1detail.html#a92963cadf7f44fcf9f3ab6bddff08796" title="Estimate the Lipschitz constant of the gradient &#160;using finite differences." alt="" coords="639,165,825,191"/>
+<area shape="rect" id="node12" href="$classpa_1_1LBFGSSolver.html#a8540540028b02dfe8b7e3ec0c49c07dd" title=" " alt="" coords="631,215,833,242"/>
+<area shape="rect" id="node13" href="$classpa_1_1LBFGSBSolver.html#a8540540028b02dfe8b7e3ec0c49c07dd" title=" " alt="" coords="627,317,837,343"/>
+<area shape="rect" id="node8" href="$namespacepa.html#a2b97bf67604c439eca0a540664930d61" title=" " alt="" coords="397,169,519,195"/>
+<area shape="rect" id="node9" href="$namespacepa.html#adf74e7674514afed3ae1c356ffcb9e45" title=" " alt="" coords="204,169,289,195"/>
+<area shape="rect" id="node10" href="$alpaqa_8cpp.html#a52c00cccef0976f125d4a27f9906c36b" title=" " alt="" coords="5,169,156,195"/>
+</map>

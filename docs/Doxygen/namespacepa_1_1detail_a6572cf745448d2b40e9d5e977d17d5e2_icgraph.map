@@ -1,0 +1,9 @@
+<map id="calc_grad_ψ" name="calc_grad_ψ">
+<area shape="rect" id="node1" title="Calculate the gradient ∇ψ(x)." alt="" coords="557,77,657,103"/>
+<area shape="rect" id="node2" href="$namespacepa_1_1detail.html#a384dd0255096b08c79472df49f7f9388" title="Compute the Hessian matrix of the augmented Lagrangian function multiplied by the given vector,..." alt="" coords="299,8,505,49"/>
+<area shape="rect" id="node4" href="$namespacepa_1_1detail.html#a24c0ce181607512a70dae43aa90fea5f" title=" " alt="" coords="309,77,495,103"/>
+<area shape="rect" id="node7" href="$classpa_1_1GAAPGASolver.html#a570ec001ea8eee359be8a1b90b782cfb" title=" " alt="" coords="295,127,509,154"/>
+<area shape="rect" id="node3" href="$classpa_1_1StructuredPANOCLBFGSSolver.html#ade95d8a7a1892d4087d6fffc958cde6e" title=" " alt="" coords="5,5,247,47"/>
+<area shape="rect" id="node5" href="$classpa_1_1SecondOrderPANOCSolver.html#acb04b3f19dafad9b4e7e7c1c19018d19" title=" " alt="" coords="19,71,233,112"/>
+<area shape="rect" id="node6" href="$classpa_1_1PGASolver.html#af516b794e244432023aea7ba3cd0d1d8" title=" " alt="" coords="33,137,219,163"/>
+</map>

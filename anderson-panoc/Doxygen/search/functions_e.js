@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['r_5fpred_612',['r_pred',['../d6/df1/classpa_1_1LimitedMemoryQR.html#a6e0de5c03f836ba30eab386837b31be4',1,'pa::LimitedMemoryQR']]],
+  ['r_5fsucc_613',['r_succ',['../d6/df1/classpa_1_1LimitedMemoryQR.html#abb2e912e6196e7c6996d3f43fea78237',1,'pa::LimitedMemoryQR']]],
+  ['rbegin_614',['rbegin',['../d7/d0f/classpa_1_1CircularRange.html#a4da62c698565a7f1bab4a15a86b167e1',1,'pa::CircularRange::rbegin()'],['../de/d3c/classpa_1_1ReverseCircularRange.html#a4da62c698565a7f1bab4a15a86b167e1',1,'pa::ReverseCircularRange::rbegin()']]],
+  ['reinitialize_615',['reinitialize',['../da/db8/classpa_1_1AndersonAccel.html#af1f7f1b0b1868cb2e03aa548c0ae2e85',1,'pa::AndersonAccel']]],
+  ['remove_5fcolumn_616',['remove_column',['../d6/df1/classpa_1_1LimitedMemoryQR.html#a436c4dbbf0476354ca67a104bc005e55',1,'pa::LimitedMemoryQR']]],
+  ['rend_617',['rend',['../d7/d0f/classpa_1_1CircularRange.html#ab3fe1cdacc9a53cc2d0cbe27599036c4',1,'pa::CircularRange::rend()'],['../de/d3c/classpa_1_1ReverseCircularRange.html#ab3fe1cdacc9a53cc2d0cbe27599036c4',1,'pa::ReverseCircularRange::rend()']]],
+  ['reset_618',['reset',['../d6/df1/classpa_1_1LimitedMemoryQR.html#ad20897c5c8bd47f5d4005989bead0e55',1,'pa::LimitedMemoryQR::reset()'],['../da/db8/classpa_1_1AndersonAccel.html#ad20897c5c8bd47f5d4005989bead0e55',1,'pa::AndersonAccel::reset()'],['../dc/df2/classpa_1_1LBFGS.html#ad20897c5c8bd47f5d4005989bead0e55',1,'pa::LBFGS::reset()'],['../d0/d6d/classpa_1_1SpecializedLBFGS.html#ad20897c5c8bd47f5d4005989bead0e55',1,'pa::SpecializedLBFGS::reset()'],['../d7/d06/structpa_1_1EvalCounter.html#ad20897c5c8bd47f5d4005989bead0e55',1,'pa::EvalCounter::reset()']]],
+  ['resize_619',['resize',['../d6/df1/classpa_1_1LimitedMemoryQR.html#a94d70718a4b923a645b928bc68524916',1,'pa::LimitedMemoryQR::resize()'],['../da/db8/classpa_1_1AndersonAccel.html#a94d70718a4b923a645b928bc68524916',1,'pa::AndersonAccel::resize()'],['../dc/df2/classpa_1_1LBFGS.html#ab94b4f1bcda8e0f0bace15126f54b6d3',1,'pa::LBFGS::resize()'],['../d0/d6d/classpa_1_1SpecializedLBFGS.html#ab94b4f1bcda8e0f0bace15126f54b6d3',1,'pa::SpecializedLBFGS::resize()']]],
+  ['reversecircularindexiterator_620',['ReverseCircularIndexIterator',['../d3/ded/structpa_1_1ReverseCircularIndexIterator.html#a58df30249927e8a84830b12b8c59f226',1,'pa::ReverseCircularIndexIterator::ReverseCircularIndexIterator()'],['../d3/ded/structpa_1_1ReverseCircularIndexIterator.html#a5ee2c4b0baf8565d1f352399fb573a0c',1,'pa::ReverseCircularIndexIterator::ReverseCircularIndexIterator(Indices i, Index max)'],['../d3/ded/structpa_1_1ReverseCircularIndexIterator.html#aff8499827161f19dcf3661ba5380772b',1,'pa::ReverseCircularIndexIterator::ReverseCircularIndexIterator(ForwardIterator forwardit)']]],
+  ['reversecircularrange_621',['ReverseCircularRange',['../de/d3c/classpa_1_1ReverseCircularRange.html#a035915c144e0729fab81d4a1b1a5f28c',1,'pa::ReverseCircularRange::ReverseCircularRange(const ForwardRange &amp;forwardrange)'],['../de/d3c/classpa_1_1ReverseCircularRange.html#a31984406c6c58ac9a65b8674fd926c2c',1,'pa::ReverseCircularRange::ReverseCircularRange(Index size, Index idx1, Index idx2, Index max)']]],
+  ['ring_5fhead_622',['ring_head',['../d6/df1/classpa_1_1LimitedMemoryQR.html#ae577ae74935577fb5ab0298e3147cbcc',1,'pa::LimitedMemoryQR']]],
+  ['ring_5fiter_623',['ring_iter',['../d6/df1/classpa_1_1LimitedMemoryQR.html#a7a0e06dceccc0bbe82ebd81247a5a412',1,'pa::LimitedMemoryQR']]],
+  ['ring_5fnext_624',['ring_next',['../d6/df1/classpa_1_1LimitedMemoryQR.html#af7f8c95bb4f88ce659d9eee262afae4b',1,'pa::LimitedMemoryQR']]],
+  ['ring_5fprev_625',['ring_prev',['../d6/df1/classpa_1_1LimitedMemoryQR.html#a1cd3db75f0cb9d7315d073ce5d96df41',1,'pa::LimitedMemoryQR']]],
+  ['ring_5freverse_5fiter_626',['ring_reverse_iter',['../d6/df1/classpa_1_1LimitedMemoryQR.html#a53110c85b0c151a290bf8d29533cd370',1,'pa::LimitedMemoryQR']]],
+  ['ring_5ftail_627',['ring_tail',['../d6/df1/classpa_1_1LimitedMemoryQR.html#a25b6259a3ee886a9a54f3a66ab019084',1,'pa::LimitedMemoryQR']]],
+  ['riskaverse_5fmpc_5fproblem_628',['riskaverse_mpc_problem',['../df/d11/namespacepa_1_1problems.html#a2d9ea6eb0de6679e1b7a6d72ae6ab38b',1,'pa::problems']]],
+  ['riskaverseproblem_629',['RiskaverseProblem',['../de/d47/structpa_1_1problems_1_1RiskaverseProblem.html#aef0b45b2e08c64a48344e9541742a25c',1,'pa::problems::RiskaverseProblem']]]
+];

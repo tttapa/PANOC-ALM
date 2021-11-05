@@ -1,0 +1,9 @@
+<map id="initial_lipschitz_estimate" name="initial_lipschitz_estimate">
+<area shape="rect" id="node1" title="Estimate the Lipschitz constant of the gradient &#160;using finite differences." alt="" coords="5,49,191,75"/>
+<area shape="rect" id="node2" href="$classpa_1_1vec__allocator.html#afa36e1f076dd1627a83324e717038836" title=" " alt="" coords="251,9,393,51"/>
+<area shape="rect" id="node5" href="$classpa_1_1vec__allocator.html#a455bb0797853d67addd58875c671acef" title=" " alt="" coords="239,78,405,105"/>
+<area shape="rect" id="node3" href="$classpa_1_1vec__allocator.html#ac6f0ae398f6cbe67f4b845dcede0874a" title=" " alt="" coords="453,5,595,47"/>
+<area shape="rect" id="node4" href="$classpa_1_1vec__allocator.html#a259cb5a711406a8c3e5d937eb9350cca" title=" " alt="" coords="643,13,809,39"/>
+<area shape="rect" id="node6" href="$structpa_1_1vec__allocator_1_1findstack.html#ad950587c89b4306f927b08b5e5cb7e89" title=" " alt="" coords="453,71,595,112"/>
+<area shape="rect" id="node7" href="$structpa_1_1vec__allocator_1_1findstack.html#a7727305d5e1ec66a181e22c43af9a581" title=" " alt="" coords="453,136,595,177"/>
+</map>

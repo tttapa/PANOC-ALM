@@ -1,0 +1,9 @@
+<map id="solve_col" name="solve_col">
+<area shape="rect" id="node1" title="Solve the least squares problem Ax = b." alt="" coords="719,97,801,123"/>
+<area shape="rect" id="node2" href="$de/d4f/namespacepa.html#a04d9e05002d02fd15c58766c259ef0d7" title="Solve one step of Anderson acceleration to find a fixed point of a function g(x):" alt="" coords="512,60,671,101"/>
+<area shape="rect" id="node6" href="$d6/df1/classpa_1_1LimitedMemoryQR.html#a9ec3e86c6cbb239ba0642378b564af41" title="Solve the least squares problem AX = B." alt="" coords="563,126,620,153"/>
+<area shape="rect" id="node3" href="$da/db8/classpa_1_1AndersonAccel.html#a631bbbe30343f7e51af52d3d4e7804c6" title=" " alt="" coords="279,5,430,47"/>
+<area shape="rect" id="node5" href="$d8/d33/classpa_1_1GuardedAAPGA.html#a656a1117248ac02387eb817ee135df0e" title=" " alt="" coords="245,71,464,98"/>
+<area shape="rect" id="node4" href="$db/d62/structpa_1_1PANOCDirection_3_01AndersonAccel_01_4.html#ab6c112897f55aafb9f1aeef9541a5272" title=" " alt="" coords="5,5,197,47"/>
+<area shape="rect" id="node7" href="$d6/df1/classpa_1_1LimitedMemoryQR.html#a1a581dbbeed876108b943e45451d0abf" title="Solve the least squares problem AX = B." alt="" coords="326,126,383,153"/>
+</map>

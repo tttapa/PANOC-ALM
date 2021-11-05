@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['n_215',['n',['../d4/da7/structpa_1_1Problem.html#a7d46b74409bd32b539089ef4721ea544',1,'pa::Problem::n()'],['../de/d47/structpa_1_1problems_1_1RiskaverseProblem.html#a079528bb7fc5a12e84dee1bbbe451563',1,'pa::problems::RiskaverseProblem::n()'],['../d6/df1/classpa_1_1LimitedMemoryQR.html#ac88f0961aa7ed7c7415550ab2cad49c8',1,'pa::LimitedMemoryQR::n()'],['../dc/df2/classpa_1_1LBFGS.html#ac88f0961aa7ed7c7415550ab2cad49c8',1,'pa::LBFGS::n()'],['../d0/d6d/classpa_1_1SpecializedLBFGS.html#ac88f0961aa7ed7c7415550ab2cad49c8',1,'pa::SpecializedLBFGS::n()']]],
+  ['name_216',['name',['../d4/d2f/structCUTEstProblem_1_1Report.html#a9b45b3e13bd9167aab02e17e08916231',1,'CUTEstProblem::Report::name()'],['../de/d1d/classCUTEstProblem.html#a9b45b3e13bd9167aab02e17e08916231',1,'CUTEstProblem::name()']]],
+  ['nan_217',['NaN',['../de/d4f/namespacepa.html#a30c5e56e62aa2be84b0af067ab4be243',1,'pa']]],
+  ['ncon_218',['ncon',['../d4/d2f/structCUTEstProblem_1_1Report.html#aa5552aeaa9932c04ad55144b57c9bb9a',1,'CUTEstProblem::Report::ncon()'],['../de/d74/classCUTEstLoader.html#a1228c6f733c6d7d7e1520add237f6b38',1,'CUTEstLoader::ncon()']]],
+  ['newton_2ehpp_219',['newton.hpp',['../de/d34/newton_8hpp.html',1,'']]],
+  ['noprogress_220',['NoProgress',['../de/d4f/namespacepa.html#a5e401127b1d3c1fbf7b3e1b0fbca1b27ab644b4f0de4cf0c46acb4583602e168c',1,'pa']]],
+  ['norm_5finf_221',['norm_inf',['../db/d43/namespacepa_1_1vec__util.html#af8e650634ec3d7b82a78a4d313632ed0',1,'pa::vec_util']]],
+  ['norm_5fpenalty_222',['norm_penalty',['../d4/de2/classpa_1_1ALMSolver.html#a43bddff71a2a061986e5a016abe3fff9',1,'pa::ALMSolver::Stats']]],
+  ['norm_5fsq_5fp_223',['norm_sq_p',['../db/d9c/classpa_1_1PANOCSolver.html#a436c2e14e4f1545412df824088634d06',1,'pa::PANOCSolver::ProgressInfo']]],
+  ['norm_5fsquared_5fweighted_224',['norm_squared_weighted',['../db/d43/namespacepa_1_1vec__util.html#a018b7a5d472a4016ce2371b9146a5784',1,'pa::vec_util']]],
+  ['notfinite_225',['NotFinite',['../de/d4f/namespacepa.html#a5e401127b1d3c1fbf7b3e1b0fbca1b27aff6e97b110349dae9c6e8be0ff7a85c3',1,'pa']]],
+  ['ns_226',['ns',['../de/d47/structpa_1_1problems_1_1RiskaverseProblem.html#aa5dbce80514b18f899a2dea9007d0c2a',1,'pa::problems::RiskaverseProblem']]],
+  ['nu_227',['nu',['../de/d47/structpa_1_1problems_1_1RiskaverseProblem.html#adfafd84a875dc99d62caff9e1f07b871',1,'pa::problems::RiskaverseProblem']]],
+  ['num_5fcolumns_228',['num_columns',['../d6/df1/classpa_1_1LimitedMemoryQR.html#a98e2d9685769a3ebb2c0c9600a4c77b2',1,'pa::LimitedMemoryQR']]],
+  ['number_5fbox_5fconstraints_229',['number_box_constraints',['../de/d1d/classCUTEstProblem.html#a7948a684fb527b21e3b0f34308cc5986',1,'CUTEstProblem']]],
+  ['nvar_230',['nvar',['../d4/d2f/structCUTEstProblem_1_1Report.html#ae418bbd8e03c4354121068e749e13a7d',1,'CUTEstProblem::Report::nvar()'],['../de/d74/classCUTEstLoader.html#a912077ba059d2b501757eaa28ec7c8e0',1,'CUTEstLoader::nvar()']]],
+  ['nx_231',['nx',['../de/d47/structpa_1_1problems_1_1RiskaverseProblem.html#a01f2135f182338889b70db21c894b53a',1,'pa::problems::RiskaverseProblem']]],
+  ['ny_232',['ny',['../de/d47/structpa_1_1problems_1_1RiskaverseProblem.html#a056ff439271a897bc4506ca293d5861a',1,'pa::problems::RiskaverseProblem']]]
+];

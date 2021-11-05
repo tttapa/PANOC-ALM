@@ -1,0 +1,5 @@
+<map id="Problem" name="Problem">
+<area shape="rect" id="node1" title="Problem description for minimization problems." alt="" coords="130,5,211,200"/>
+<area shape="rect" id="node2" href="$d5/df5/classpa_1_1ProblemOnlyD.html" title="Moves the state constraints in the set C to the set D, resulting in an unconstraint inner problem." alt="" coords="5,277,147,399"/>
+<area shape="rect" id="node3" href="$d1/d6a/classpa_1_1ProblemWithCounters.html" title=" " alt="" coords="171,248,360,428"/>
+</map>

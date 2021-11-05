@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['initialize_573',['initialize',['../da/db8/classpa_1_1AndersonAccel.html#a5bf602959286abbe8dc15941a3fe13c4',1,'pa::AndersonAccel::initialize()'],['../db/d62/structpa_1_1PANOCDirection_3_01AndersonAccel_01_4.html#a8d56ef3c6f283dfef94c099adbe6ec12',1,'pa::PANOCDirection&lt; AndersonAccel &gt;::initialize()'],['../d5/d28/structpa_1_1PANOCDirection.html#a878c161352d908c0c95213b84bfacd6a',1,'pa::PANOCDirection::initialize()'],['../d0/d6d/classpa_1_1SpecializedLBFGS.html#ac635435dc083d4ac90f811818e3e1526',1,'pa::SpecializedLBFGS::initialize()'],['../dd/d35/structpa_1_1PANOCDirection_3_01LBFGS_01_4.html#ae07fa879457020e57f58b6462361f580',1,'pa::PANOCDirection&lt; LBFGS &gt;::initialize()'],['../d3/df9/structpa_1_1PANOCDirection_3_01SpecializedLBFGS_01_4.html#a5a764dbf1d1d45d461b299ab91c8b0df',1,'pa::PANOCDirection&lt; SpecializedLBFGS &gt;::initialize()']]],
+  ['initialize_5fpenalty_574',['initialize_penalty',['../d0/d51/namespacepa_1_1detail.html#a3d07ab6e878c2b23d25c372ca867fa96',1,'pa::detail']]]
+];

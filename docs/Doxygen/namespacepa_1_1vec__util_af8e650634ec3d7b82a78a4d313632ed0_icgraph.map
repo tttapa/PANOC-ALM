@@ -1,0 +1,9 @@
+<map id="norm_inf" name="norm_inf">
+<area shape="rect" id="node1" title="Get the maximum or infinity&#45;norm of the given vector." alt="" coords="531,137,611,163"/>
+<area shape="rect" id="node2" href="$namespacepa_1_1detail.html#a886972efd9fe413c62efea5eb2cdd0e9" title=" " alt="" coords="311,100,466,141"/>
+<area shape="rect" id="node7" href="$classpa_1_1ALMSolver.html#a3383f0f2b3a6516f8f031396e1a1289c" title=" " alt="" coords="295,166,483,193"/>
+<area shape="rect" id="node3" href="$classpa_1_1SecondOrderPANOCSolver.html#acb04b3f19dafad9b4e7e7c1c19018d19" title=" " alt="" coords="19,5,233,47"/>
+<area shape="rect" id="node4" href="$classpa_1_1StructuredPANOCLBFGSSolver.html#ade95d8a7a1892d4087d6fffc958cde6e" title=" " alt="" coords="5,71,247,112"/>
+<area shape="rect" id="node5" href="$classpa_1_1GAAPGASolver.html#a570ec001ea8eee359be8a1b90b782cfb" title=" " alt="" coords="19,137,233,163"/>
+<area shape="rect" id="node6" href="$classpa_1_1PGASolver.html#af516b794e244432023aea7ba3cd0d1d8" title=" " alt="" coords="33,187,219,214"/>
+</map>

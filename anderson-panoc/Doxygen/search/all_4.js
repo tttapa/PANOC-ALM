@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['elapsed_5ftime_84',['elapsed_time',['../d4/de2/classpa_1_1ALMSolver.html#ab2b9760993bdf68ade85cb39efecd0ba',1,'pa::ALMSolver::Stats::elapsed_time()'],['../db/d9c/classpa_1_1PANOCSolver.html#ab2b9760993bdf68ade85cb39efecd0ba',1,'pa::PANOCSolver::Stats::elapsed_time()'],['../d8/d33/classpa_1_1GuardedAAPGA.html#ab2b9760993bdf68ade85cb39efecd0ba',1,'pa::GuardedAAPGA::Stats::elapsed_time()'],['../d4/db1/classpa_1_1LBFGSSolver.html#ab2b9760993bdf68ade85cb39efecd0ba',1,'pa::LBFGSSolver::Stats::elapsed_time()'],['../dc/d82/classpa_1_1LBFGSBSolver.html#ab2b9760993bdf68ade85cb39efecd0ba',1,'pa::LBFGSBSolver::Stats::elapsed_time()'],['../d1/d91/classpa_1_1PGA.html#ab2b9760993bdf68ade85cb39efecd0ba',1,'pa::PGA::Stats::elapsed_time()']]],
+  ['end_85',['end',['../d7/d0f/classpa_1_1CircularRange.html#a68b688a51bd0cf6fb5bc2cba292209a8',1,'pa::CircularRange::end()'],['../de/d3c/classpa_1_1ReverseCircularRange.html#a68b688a51bd0cf6fb5bc2cba292209a8',1,'pa::ReverseCircularRange::end()']]],
+  ['enum_5fname_86',['enum_name',['../d9/dcf/CUTEstLoader_8cpp.html#add547f3c36f3a08cf870efc3583f1c10',1,'enum_name():&#160;CUTEstLoader.cpp'],['../de/d4f/namespacepa.html#af51c23bcaa38aa73d425872b5020993d',1,'pa::enum_name()']]],
+  ['equatn_87',['equatn',['../de/d74/classCUTEstLoader.html#ad642d9b6adcf5992d0397c1fc5ed7835',1,'CUTEstLoader']]],
+  ['eval_5fconstraints_88',['eval_constraints',['../de/d74/classCUTEstLoader.html#ab5b3f8393f5e6f7f70666da241cc7b0b',1,'CUTEstLoader']]],
+  ['eval_5fconstraints_5fgrad_89',['eval_constraints_grad',['../de/d74/classCUTEstLoader.html#a89e5b176dab619d965bb96b63641f1af',1,'CUTEstLoader']]],
+  ['eval_5fconstraints_5fgrad_5fp_90',['eval_constraints_grad_p',['../de/d74/classCUTEstLoader.html#a385650cafe3c1f010b0b90496d264db4',1,'CUTEstLoader']]],
+  ['eval_5fconstraints_5fp_91',['eval_constraints_p',['../de/d74/classCUTEstLoader.html#a46cf539409c5082edeee252e4a616039',1,'CUTEstLoader']]],
+  ['eval_5flagrangian_5fhess_92',['eval_lagrangian_hess',['../de/d74/classCUTEstLoader.html#a4bbb5712c7989522e03d321167b11252',1,'CUTEstLoader']]],
+  ['eval_5flagrangian_5fhess_5fp_93',['eval_lagrangian_hess_p',['../de/d74/classCUTEstLoader.html#a6fb40d47b205d2641629fa0f1962aefa',1,'CUTEstLoader']]],
+  ['eval_5fobjective_5fconstrained_94',['eval_objective_constrained',['../de/d74/classCUTEstLoader.html#a52046344371d2767a63317ee7a671c12',1,'CUTEstLoader']]],
+  ['eval_5fobjective_5fgrad_5fconstrained_95',['eval_objective_grad_constrained',['../de/d74/classCUTEstLoader.html#a4e0c634cdecb5ac1d06e555433dfb404',1,'CUTEstLoader']]],
+  ['eval_5fobjective_5fgrad_5fp_96',['eval_objective_grad_p',['../de/d74/classCUTEstLoader.html#a60a94bf16d87b9e4bf57918304568a2d',1,'CUTEstLoader']]],
+  ['eval_5fobjective_5fgrad_5funconstrained_97',['eval_objective_grad_unconstrained',['../de/d74/classCUTEstLoader.html#ae361434890eed60066491a3a2f1cd2f7',1,'CUTEstLoader']]],
+  ['eval_5fobjective_5fp_98',['eval_objective_p',['../de/d74/classCUTEstLoader.html#a8b963ad0e0ac9be04eaa67faab73b35b',1,'CUTEstLoader']]],
+  ['eval_5fobjective_5funconstrained_99',['eval_objective_unconstrained',['../de/d74/classCUTEstLoader.html#a11300de0fd0b9d76ebb39ffd6a60bac2',1,'CUTEstLoader']]],
+  ['eval_5fspecific_5fconstraint_5fgrad_5fp_100',['eval_specific_constraint_grad_p',['../de/d74/classCUTEstLoader.html#a9f2d4f1a441e4272b89666699d36c161',1,'CUTEstLoader']]],
+  ['evalcounter_101',['EvalCounter',['../d7/d06/structpa_1_1EvalCounter.html',1,'pa']]],
+  ['evaluationerror_102',['EvaluationError',['../d4/d2f/structCUTEstProblem_1_1Report.html#a67a0db04d321a74b7e7fcfd3f1a3f70baa94ffa66afcaec3ed6579b73e1cb5bb5',1,'CUTEstProblem::Report']]],
+  ['evaluations_103',['evaluations',['../d1/d6a/classpa_1_1ProblemWithCounters.html#ae5aec00061e95e75da9b673229f4a068',1,'pa::ProblemWithCounters']]],
+  ['experiment_2ecpp_104',['experiment.cpp',['../d1/d5a/experiment_8cpp.html',1,'']]],
+  ['external_2dresources_2emd_105',['External-Resources.md',['../de/d8e/External-Resources_8md.html',1,'']]],
+  ['external_20problem_20loaders_106',['External problem loaders',['../d3/dcc/group__grp__ExternalProblemLoaders.html',1,'']]],
+  ['external_20resources_107',['External Resources',['../da/d57/md_pages_External-Resources.html',1,'']]]
+];

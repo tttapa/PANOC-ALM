@@ -1,0 +1,7 @@
+<map id="n" name="n">
+<area shape="rect" id="node1" title=" " alt="" coords="368,31,407,57"/>
+<area shape="rect" id="node2" href="$d6/df1/classpa_1_1LimitedMemoryQR.html#a32367fb2ecbdf71d6071bddc4dc3ce5d" title="Get the matrix Q such that Q times R is the original matrix." alt="" coords="259,5,319,32"/>
+<area shape="rect" id="node3" href="$d6/df1/classpa_1_1LimitedMemoryQR.html#a94d70718a4b923a645b928bc68524916" title="Re&#45;allocate storage for a problem with a different size." alt="" coords="259,56,320,83"/>
+<area shape="rect" id="node4" href="$db/d9c/classpa_1_1PANOCSolver.html#a046eb909dc292ea710c9e93ff49d66ab" title=" " alt="" coords="5,27,211,53"/>
+<area shape="rect" id="node5" href="$da/db8/classpa_1_1AndersonAccel.html#a94d70718a4b923a645b928bc68524916" title=" " alt="" coords="33,78,183,119"/>
+</map>

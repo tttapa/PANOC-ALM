@@ -1,0 +1,7 @@
+<map id="calc_error_stop_crit" name="calc_error_stop_crit">
+<area shape="rect" id="node1" title=" " alt="" coords="295,107,444,134"/>
+<area shape="rect" id="node2" href="$classpa_1_1SecondOrderPANOCSolver.html#acb04b3f19dafad9b4e7e7c1c19018d19" title=" " alt="" coords="19,5,233,47"/>
+<area shape="rect" id="node3" href="$classpa_1_1StructuredPANOCLBFGSSolver.html#ade95d8a7a1892d4087d6fffc958cde6e" title=" " alt="" coords="5,71,247,112"/>
+<area shape="rect" id="node4" href="$classpa_1_1GAAPGASolver.html#a570ec001ea8eee359be8a1b90b782cfb" title=" " alt="" coords="19,137,233,163"/>
+<area shape="rect" id="node5" href="$classpa_1_1PGASolver.html#af516b794e244432023aea7ba3cd0d1d8" title=" " alt="" coords="33,187,219,214"/>
+</map>

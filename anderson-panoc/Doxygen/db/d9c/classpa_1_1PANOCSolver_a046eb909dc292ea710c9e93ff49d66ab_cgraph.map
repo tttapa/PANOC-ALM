@@ -1,0 +1,12 @@
+<map id="operator()" name="operator()">
+<area shape="rect" id="node1" title=" " alt="" coords="5,82,92,109"/>
+<area shape="rect" id="node2" href="$d0/d51/namespacepa_1_1detail.html#a04141b21eae7f6171a7cd031d7305ed8" title="Calculate both ψ(x) and its gradient ∇ψ(x)." alt="" coords="157,16,291,57"/>
+<area shape="rect" id="node4" href="$d0/d51/namespacepa_1_1detail.html#a2482fb93eca998a4c4dc815e784f526e" title="Calculate both ψ(x) and the vector ŷ that can later be used to compute ∇ψ." alt="" coords="377,71,525,98"/>
+<area shape="rect" id="node7" href="$d6/df1/classpa_1_1LimitedMemoryQR.html#a94d70718a4b923a645b928bc68524916" title="Re&#45;allocate storage for a problem with a different size." alt="" coords="140,144,308,185"/>
+<area shape="rect" id="node3" href="$d0/d51/namespacepa_1_1detail.html#a89856462be50fa798aca7917874da8e8" title="Calculate ∇ψ(x) using ŷ." alt="" coords="374,5,527,47"/>
+<area shape="rect" id="node5" href="$de/d4f/namespacepa.html#aee505a26e46aa4c0ce09d0fed72f0dac" title="Get the difference between the given vector and its projection." alt="" coords="593,71,776,98"/>
+<area shape="rect" id="node6" href="$de/d4f/namespacepa.html#a5414901c2fb62f1fd47857642964cc71" title="Project a vector onto a box." alt="" coords="824,71,915,98"/>
+<area shape="rect" id="node8" href="$d6/df1/classpa_1_1LimitedMemoryQR.html#af83f6287b8ea07acdcfa4670af30cbbf" title=" " alt="" coords="356,122,545,149"/>
+<area shape="rect" id="node9" href="$d6/df1/classpa_1_1LimitedMemoryQR.html#ac88f0961aa7ed7c7415550ab2cad49c8" title=" " alt="" coords="359,173,543,199"/>
+<area shape="rect" id="node10" href="$d6/df1/classpa_1_1LimitedMemoryQR.html#ad20897c5c8bd47f5d4005989bead0e55" title="Reset all indices, clearing the Q and R matrices." alt="" coords="367,224,535,265"/>
+</map>

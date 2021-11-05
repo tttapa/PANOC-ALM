@@ -1,0 +1,13 @@
+<map id="projecting_difference" name="projecting_difference">
+<area shape="rect" id="node1" title="Get the difference between the given vector and its projection." alt="" coords="671,199,829,225"/>
+<area shape="rect" id="node2" href="$d0/d51/namespacepa_1_1detail.html#a2d370812ad8bb9dd2e4d2362b8c410e8" title="Calculate the gradient ∇ψ(x)." alt="" coords="453,47,623,73"/>
+<area shape="rect" id="node6" href="$d0/d51/namespacepa_1_1detail.html#a2482fb93eca998a4c4dc815e784f526e" title="Calculate both ψ(x) and the vector ŷ that can later be used to compute ∇ψ." alt="" coords="464,199,612,225"/>
+<area shape="rect" id="node11" href="$de/d4f/namespacepa.html#a6dfe1ad7846f0becf790c95f9303c392" title="Get the distance squared between the given vector and its projection." alt="" coords="485,249,591,276"/>
+<area shape="rect" id="node3" href="$d3/dba/secondorderpanoc_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="311,72,366,99"/>
+<area shape="rect" id="node4" href="$d8/d33/classpa_1_1GuardedAAPGA.html#a656a1117248ac02387eb817ee135df0e" title=" " alt="" coords="5,123,224,149"/>
+<area shape="rect" id="node5" href="$d1/d91/classpa_1_1PGA.html#a2524c14cb1e9f67d7b3694ab5dbb24e4" title=" " alt="" coords="41,173,188,200"/>
+<area shape="rect" id="node7" href="$d0/d51/namespacepa_1_1detail.html#a04141b21eae7f6171a7cd031d7305ed8" title="Calculate both ψ(x) and its gradient ∇ψ(x)." alt="" coords="272,275,405,317"/>
+<area shape="rect" id="node8" href="$db/d9c/classpa_1_1PANOCSolver.html#a046eb909dc292ea710c9e93ff49d66ab" title=" " alt="" coords="12,309,217,336"/>
+<area shape="rect" id="node9" href="$d4/db1/classpa_1_1LBFGSSolver.html#a0502175e94da732139ba833c02a80ff5" title=" " alt="" coords="13,364,216,391"/>
+<area shape="rect" id="node10" href="$dc/d82/classpa_1_1LBFGSBSolver.html#a0502175e94da732139ba833c02a80ff5" title=" " alt="" coords="9,257,220,284"/>
+</map>

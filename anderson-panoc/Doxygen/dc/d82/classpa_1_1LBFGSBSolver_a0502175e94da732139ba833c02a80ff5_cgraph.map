@@ -1,0 +1,10 @@
+<map id="operator()" name="operator()">
+<area shape="rect" id="node1" title=" " alt="" coords="5,88,92,114"/>
+<area shape="rect" id="node2" href="$d0/d51/namespacepa_1_1detail.html#a225d0fe6546c099f7ce35cc4bc6113e1" title="Calculate the error between ẑ and g(x)." alt="" coords="564,17,720,44"/>
+<area shape="rect" id="node4" href="$d0/d51/namespacepa_1_1detail.html#a04141b21eae7f6171a7cd031d7305ed8" title="Calculate both ψ(x) and its gradient ∇ψ(x)." alt="" coords="154,51,287,92"/>
+<area shape="rect" id="node6" href="$d0/d51/namespacepa_1_1detail.html#a2482fb93eca998a4c4dc815e784f526e" title="Calculate both ψ(x) and the vector ŷ that can later be used to compute ∇ψ." alt="" coords="352,117,500,144"/>
+<area shape="rect" id="node8" href="$d5/db1/classpa_1_1AtomicStopSignal.html#aa0097deccc19b49f8ab5344d8d6d5cf6" title=" " alt="" coords="140,168,301,210"/>
+<area shape="rect" id="node3" href="$de/d4f/namespacepa.html#a5414901c2fb62f1fd47857642964cc71" title="Project a vector onto a box." alt="" coords="781,58,872,85"/>
+<area shape="rect" id="node5" href="$d0/d51/namespacepa_1_1detail.html#a89856462be50fa798aca7917874da8e8" title="Calculate ∇ψ(x) using ŷ." alt="" coords="349,51,503,92"/>
+<area shape="rect" id="node7" href="$de/d4f/namespacepa.html#aee505a26e46aa4c0ce09d0fed72f0dac" title="Get the difference between the given vector and its projection." alt="" coords="551,84,733,110"/>
+</map>

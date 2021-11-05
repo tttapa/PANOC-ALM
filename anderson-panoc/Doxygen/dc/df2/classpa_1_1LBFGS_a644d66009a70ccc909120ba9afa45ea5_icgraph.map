@@ -1,0 +1,7 @@
+<map id="s" name="s">
+<area shape="rect" id="node1" title=" " alt="" coords="319,46,357,73"/>
+<area shape="rect" id="node2" href="$dc/df2/classpa_1_1LBFGS.html#a37dd0ce624f9914a61118d8f02fa1c7f" title="Apply the inverse Hessian approximation to the given vector q." alt="" coords="208,17,267,43"/>
+<area shape="rect" id="node4" href="$dc/df2/classpa_1_1LBFGS.html#a677a5dd81ca75f82285e954dd44f5d55" title="Update the inverse Hessian approximation using the new vectors xₖ₊₁ and pₖ₊₁." alt="" coords="204,71,271,98"/>
+<area shape="rect" id="node3" href="$dd/d35/structpa_1_1PANOCDirection_3_01LBFGS_01_4.html#a086ef300ea233088638220edcbabfe98" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" id="node5" href="$dd/d35/structpa_1_1PANOCDirection_3_01LBFGS_01_4.html#ab8e196bebf1bd26d5fd8012a236a6c3d" title=" " alt="" coords="5,71,156,112"/>
+</map>

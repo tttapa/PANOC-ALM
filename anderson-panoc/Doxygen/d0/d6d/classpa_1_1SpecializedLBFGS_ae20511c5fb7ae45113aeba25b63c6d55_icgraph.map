@@ -1,0 +1,5 @@
+<map id="standard_update" name="standard_update">
+<area shape="rect" id="node1" title="Standard L&#45;BFGS update without changing the step size γ." alt="" coords="336,20,467,47"/>
+<area shape="rect" id="node2" href="$d0/d6d/classpa_1_1SpecializedLBFGS.html#a8032c3cbff7a91765be22979ccd4f79b" title="Update the inverse Hessian approximation using the new vectors xₖ₊₁ and pₖ₊₁." alt="" coords="221,20,288,47"/>
+<area shape="rect" id="node3" href="$d3/df9/structpa_1_1PANOCDirection_3_01SpecializedLBFGS_01_4.html#a1932af68886cf467a0300e371e94a2c3" title=" " alt="" coords="5,5,173,61"/>
+</map>

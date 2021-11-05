@@ -1,0 +1,8 @@
+<map id="ALMSolver&lt; InnerSolverT &gt;" name="ALMSolver&lt; InnerSolverT &gt;">
+<area shape="rect" id="node1" title="Augmented Lagrangian Method solver." alt="" coords="306,1001,509,1137"/>
+<area shape="rect" id="node2" href="$db/d9c/classpa_1_1PANOCSolver.html" title=" " alt="" coords="219,773,409,939"/>
+<area shape="rect" id="node3" href="$de/d4f/namespacepa.html#d4/dde/structpa_1_1PANOCParams" title="Tuning parameters for the PANOC algorithm." alt="" coords="5,145,225,369"/>
+<area shape="rect" id="node4" title=" " alt="" coords="262,5,374,83"/>
+<area shape="rect" id="node6" href="$de/d4f/namespacepa.html#db/d32/structpa_1_1ALMParams" title="Parameters for the Augmented Lagrangian solver." alt="" coords="405,393,599,749"/>
+<area shape="rect" id="node5" href="$d5/db1/classpa_1_1AtomicStopSignal.html" title=" " alt="" coords="250,175,413,340"/>
+</map>

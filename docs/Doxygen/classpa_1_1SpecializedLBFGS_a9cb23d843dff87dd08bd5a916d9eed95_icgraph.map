@@ -1,0 +1,6 @@
+<map id="p" name="p">
+<area shape="rect" id="node1" title=" " alt="" coords="479,20,517,47"/>
+<area shape="rect" id="node2" href="$classpa_1_1SpecializedLBFGS.html#a71d9f5b74a18b1ef994683c1aa4914da" title="L&#45;BFGS update when changing the step size γ, recomputing everything." alt="" coords="336,20,431,47"/>
+<area shape="rect" id="node3" href="$classpa_1_1SpecializedLBFGS.html#a8032c3cbff7a91765be22979ccd4f79b" title="Update the inverse Hessian approximation using the new vectors xₖ₊₁ and pₖ₊₁." alt="" coords="221,20,288,47"/>
+<area shape="rect" id="node4" href="$structpa_1_1PANOCDirection_3_01SpecializedLBFGS_01_4.html#a1932af68886cf467a0300e371e94a2c3" title=" " alt="" coords="5,5,173,61"/>
+</map>

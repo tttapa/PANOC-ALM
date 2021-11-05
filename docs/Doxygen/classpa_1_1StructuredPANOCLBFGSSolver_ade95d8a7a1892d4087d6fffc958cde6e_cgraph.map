@@ -1,0 +1,31 @@
+<map id="operator()" name="operator()">
+<area shape="rect" id="node1" title=" " alt="" coords="5,357,92,383"/>
+<area shape="rect" id="node2" href="$classpa_1_1LBFGS.html#a33d8dd6fd12e1394c9637610086dae4c" title="Apply the inverse Hessian approximation to the given vector q." alt="" coords="423,845,555,871"/>
+<area shape="rect" id="node9" href="$namespacepa_1_1detail.html#a384dd0255096b08c79472df49f7f9388" title="Compute the Hessian matrix of the augmented Lagrangian function multiplied by the given vector,..." alt="" coords="140,5,351,47"/>
+<area shape="rect" id="node13" href="$namespacepa_1_1detail.html#a22e222a3f2d7f01ceee380154e140ea9" title="Calculate the error between ẑ and g(x)." alt="" coords="841,397,997,423"/>
+<area shape="rect" id="node14" href="$namespacepa_1_1detail.html#a886972efd9fe413c62efea5eb2cdd0e9" title=" " alt="" coords="168,408,323,449"/>
+<area shape="rect" id="node17" href="$namespacepa_1_1detail.html#a908a0589ddf8734417f5481395e197d2" title="Calculate ∇ψ(x) using ŷ." alt="" coords="627,239,780,280"/>
+<area shape="rect" id="node18" href="$namespacepa_1_1detail.html#ac32d0e6b012b801731e55225b7505fa9" title=" " alt="" coords="423,322,555,349"/>
+<area shape="rect" id="node19" href="$namespacepa_1_1detail.html#aa986daa1d5f0dfdbc75c143d2aae2919" title="Calculate both ψ(x) and its gradient ∇ψ(x)." alt="" coords="422,155,555,196"/>
+<area shape="rect" id="node20" href="$namespacepa_1_1detail.html#a82a03662e6ce5bcfd57ee2df719aec21" title="Calculate both ψ(x) and the vector ŷ that can later be used to compute ∇ψ." alt="" coords="629,162,777,189"/>
+<area shape="rect" id="node21" href="$namespacepa_1_1detail.html#aa916ebec71616d1d0379aaaaca02fc19" title="Check all stop conditions (required tolerance reached, out of time, maximum number of iterations exce..." alt="" coords="169,525,321,567"/>
+<area shape="rect" id="node23" href="$namespacepa_1_1detail.html#adb5e65f5b5c52143daa1fc61c0f95d4e" title="Increase the estimate of the Lipschitz constant of the objective gradient and decrease the step size ..." alt="" coords="174,240,317,281"/>
+<area shape="rect" id="node24" href="$namespacepa_1_1detail.html#a24c0ce181607512a70dae43aa90fea5f" title=" " alt="" coords="171,123,319,164"/>
+<area shape="rect" id="node25" href="$classpa_1_1LBFGS.html#a57b2556ee8993b06958b9c14511fd4ba" title="Re&#45;allocate storage for a problem with a different size." alt="" coords="178,591,313,618"/>
+<area shape="rect" id="node27" href="$classpa_1_1LBFGS.html#a8141345d2afd4f95cd57da8285e1226b" title="Update the inverse Hessian approximation using the new vectors xₖ₊₁ and pₖ₊₁." alt="" coords="175,755,316,782"/>
+<area shape="rect" id="node3" href="$classpa_1_1LBFGS.html#a5b5fd504f983f6b5f9beb1576ebf591a" title="Get the number of previous vectors s and y stored in the buffer." alt="" coords="633,693,774,719"/>
+<area shape="rect" id="node4" href="$classpa_1_1LBFGS.html#a644d66009a70ccc909120ba9afa45ea5" title=" " alt="" coords="652,895,755,922"/>
+<area shape="rect" id="node6" href="$classpa_1_1LBFGS.html#ac18c0672e61d25800877a42a1def3215" title=" " alt="" coords="651,743,755,770"/>
+<area shape="rect" id="node7" href="$classpa_1_1LBFGS.html#a66eb6e38840a556b4c0f0bff0901f80c" title=" " alt="" coords="651,794,756,821"/>
+<area shape="rect" id="node8" href="$classpa_1_1LBFGS.html#a630280b47996370bdb569a2799ffdb9f" title=" " alt="" coords="651,845,755,871"/>
+<area shape="rect" id="node5" href="$classpa_1_1LBFGS.html#ac88f0961aa7ed7c7415550ab2cad49c8" title="Get the size of the s and y vectors in the buffer." alt="" coords="867,794,971,821"/>
+<area shape="rect" id="node10" href="$namespacepa_1_1detail.html#a6572cf745448d2b40e9d5e977d17d5e2" title="Calculate the gradient ∇ψ(x)." alt="" coords="404,21,573,47"/>
+<area shape="rect" id="node11" href="$namespacepa.html#aee505a26e46aa4c0ce09d0fed72f0dac" title="Get the difference between the given vector and its projection." alt="" coords="828,162,1011,189"/>
+<area shape="rect" id="node12" href="$namespacepa.html#a5414901c2fb62f1fd47857642964cc71" title="Project a vector onto a box." alt="" coords="1059,241,1149,267"/>
+<area shape="rect" id="node15" href="$namespacepa_1_1vec__util.html#af8e650634ec3d7b82a78a4d313632ed0" title="Get the maximum or infinity&#45;norm of the given vector." alt="" coords="407,373,570,399"/>
+<area shape="rect" id="node16" href="$namespacepa_1_1detail.html#a8ed4d487878856942843707b5a131b85" title="Projected gradient step." alt="" coords="627,343,779,384"/>
+<area shape="rect" id="node22" href="$classpa_1_1AtomicStopSignal.html#aa0097deccc19b49f8ab5344d8d6d5cf6" title=" " alt="" coords="408,525,569,567"/>
+<area shape="rect" id="node26" href="$classpa_1_1LBFGS.html#ad20897c5c8bd47f5d4005989bead0e55" title="Throw away the approximation and all previous vectors s and y." alt="" coords="424,591,553,618"/>
+<area shape="rect" id="node28" href="$classpa_1_1LBFGS.html#a0df701f7bb07249c37bcbf20d9c980fe" title="Get the next index in the circular buffer of previous s and y vectors." alt="" coords="426,693,551,719"/>
+<area shape="rect" id="node29" href="$classpa_1_1LBFGS.html#aaf9c6519c7a7d7ab977113f33c88e2e3" title="Check if the new vectors s and y allow for a valid BFGS update that preserves the positive definitene..." alt="" coords="399,794,579,821"/>
+</map>

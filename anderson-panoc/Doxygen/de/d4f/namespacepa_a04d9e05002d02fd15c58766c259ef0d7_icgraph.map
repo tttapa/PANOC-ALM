@@ -1,0 +1,6 @@
+<map id="minimize_update_anderson" name="minimize_update_anderson">
+<area shape="rect" id="node1" title="Solve one step of Anderson acceleration to find a fixed point of a function g(x):" alt="" coords="512,42,715,69"/>
+<area shape="rect" id="node2" href="$da/db8/classpa_1_1AndersonAccel.html#a631bbbe30343f7e51af52d3d4e7804c6" title=" " alt="" coords="279,5,430,47"/>
+<area shape="rect" id="node4" href="$d8/d33/classpa_1_1GuardedAAPGA.html#a656a1117248ac02387eb817ee135df0e" title=" " alt="" coords="245,71,464,98"/>
+<area shape="rect" id="node3" href="$db/d62/structpa_1_1PANOCDirection_3_01AndersonAccel_01_4.html#ab6c112897f55aafb9f1aeef9541a5272" title=" " alt="" coords="5,5,197,47"/>
+</map>

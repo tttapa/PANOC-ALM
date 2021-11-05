@@ -1,0 +1,10 @@
+<map id="check_all_stop_conditions" name="check_all_stop_conditions">
+<area shape="rect" id="node1" title="Check all stop conditions (required tolerance reached, out of time, maximum number of iterations exce..." alt="" coords="627,137,819,163"/>
+<area shape="rect" id="node2" href="$classpa_1_1SecondOrderPANOCSolver.html#acb04b3f19dafad9b4e7e7c1c19018d19" title=" " alt="" coords="351,5,565,47"/>
+<area shape="rect" id="node3" href="$classpa_1_1StructuredPANOCLBFGSSolver.html#ade95d8a7a1892d4087d6fffc958cde6e" title=" " alt="" coords="337,71,579,112"/>
+<area shape="rect" id="node4" href="$classpa_1_1GAAPGASolver.html#a570ec001ea8eee359be8a1b90b782cfb" title=" " alt="" coords="351,137,565,163"/>
+<area shape="rect" id="node5" href="$classpa_1_1PANOCSolverFull.html#adc37030e7641b91004d8c509489bc917" title=" " alt="" coords="381,188,535,229"/>
+<area shape="rect" id="node6" href="$namespacepa.html#a2b97bf67604c439eca0a540664930d61" title=" " alt="" coords="397,254,519,281"/>
+<area shape="rect" id="node7" href="$namespacepa.html#adf74e7674514afed3ae1c356ffcb9e45" title=" " alt="" coords="204,254,289,281"/>
+<area shape="rect" id="node8" href="$panocpy_8cpp.html#a874ce6effe8570e8994966f291e5e321" title=" " alt="" coords="5,254,156,281"/>
+</map>

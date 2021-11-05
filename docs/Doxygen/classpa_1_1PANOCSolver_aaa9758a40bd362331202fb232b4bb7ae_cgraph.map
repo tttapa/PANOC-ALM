@@ -1,0 +1,12 @@
+<map id="operator()" name="operator()">
+<area shape="rect" id="node1" title=" " alt="" coords="5,140,92,167"/>
+<area shape="rect" id="node2" href="$namespacepa_1_1detail.html#a22e222a3f2d7f01ceee380154e140ea9" title="Calculate the error between ẑ and g(x)." alt="" coords="545,5,701,32"/>
+<area shape="rect" id="node4" href="$namespacepa_1_1detail.html#a908a0589ddf8734417f5481395e197d2" title="Calculate ∇ψ(x) using ŷ." alt="" coords="331,166,484,207"/>
+<area shape="rect" id="node5" href="$namespacepa_1_1detail.html#ac32d0e6b012b801731e55225b7505fa9" title=" " alt="" coords="341,260,473,287"/>
+<area shape="rect" id="node7" href="$namespacepa_1_1detail.html#aa986daa1d5f0dfdbc75c143d2aae2919" title="Calculate both ψ(x) and its gradient ∇ψ(x)." alt="" coords="145,99,278,141"/>
+<area shape="rect" id="node8" href="$namespacepa_1_1detail.html#a82a03662e6ce5bcfd57ee2df719aec21" title="Calculate both ψ(x) and the vector ŷ that can later be used to compute ∇ψ." alt="" coords="333,100,481,127"/>
+<area shape="rect" id="node10" href="$namespacepa_1_1detail.html#adb5e65f5b5c52143daa1fc61c0f95d4e" title="Increase the estimate of the Lipschitz constant of the objective gradient and decrease the step size ..." alt="" coords="140,165,283,206"/>
+<area shape="rect" id="node3" href="$namespacepa.html#a5414901c2fb62f1fd47857642964cc71" title="Project a vector onto a box." alt="" coords="763,45,853,72"/>
+<area shape="rect" id="node6" href="$namespacepa_1_1detail.html#a8ed4d487878856942843707b5a131b85" title="Projected gradient step." alt="" coords="547,253,699,294"/>
+<area shape="rect" id="node9" href="$namespacepa.html#aee505a26e46aa4c0ce09d0fed72f0dac" title="Get the difference between the given vector and its projection." alt="" coords="532,85,715,112"/>
+</map>

@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['ψ_1246',['ψ',['../namespacepa.html#abcfc556e8060b1ac1c280a907e8cd10a',1,'pa::PANOCProgressInfo::ψ()'],['../classpa_1_1SecondOrderPANOCSolver.html#abcfc556e8060b1ac1c280a907e8cd10a',1,'pa::SecondOrderPANOCSolver::ProgressInfo::ψ()'],['../namespacepa.html#abcfc556e8060b1ac1c280a907e8cd10a',1,'pa::StructuredPANOCLBFGSProgressInfo::ψ()'],['../namespacepa.html#abcfc556e8060b1ac1c280a907e8cd10a',1,'pa::GAAPGAProgressInfo::ψ()'],['../namespacepa.html#abcfc556e8060b1ac1c280a907e8cd10a',1,'pa::PGAProgressInfo::ψ()']]],
+  ['ψ_5fhat_1247',['ψ_hat',['../namespacepa.html#af942d66f50b31e893cca0a1666e3f5a9',1,'pa::PANOCProgressInfo::ψ_hat()'],['../classpa_1_1SecondOrderPANOCSolver.html#af942d66f50b31e893cca0a1666e3f5a9',1,'pa::SecondOrderPANOCSolver::ProgressInfo::ψ_hat()'],['../namespacepa.html#af942d66f50b31e893cca0a1666e3f5a9',1,'pa::StructuredPANOCLBFGSProgressInfo::ψ_hat()'],['../namespacepa.html#af942d66f50b31e893cca0a1666e3f5a9',1,'pa::GAAPGAProgressInfo::ψ_hat()'],['../namespacepa.html#af942d66f50b31e893cca0a1666e3f5a9',1,'pa::PGAProgressInfo::ψ_hat()']]]
+];

@@ -1,0 +1,12 @@
+<map id="calc_err_z" name="calc_err_z">
+<area shape="rect" id="node1" title="Calculate the error between ẑ and g(x)." alt="" coords="295,253,381,279"/>
+<area shape="rect" id="node2" href="$classpa_1_1PANOCSolverFull.html#a0789ba541bd61b1b394ff4d411a40790" title=" " alt="" coords="49,5,203,47"/>
+<area shape="rect" id="node3" href="$classpa_1_1SecondOrderPANOCSolver.html#acb04b3f19dafad9b4e7e7c1c19018d19" title=" " alt="" coords="19,71,233,112"/>
+<area shape="rect" id="node4" href="$classpa_1_1StructuredPANOCLBFGSSolver.html#ade95d8a7a1892d4087d6fffc958cde6e" title=" " alt="" coords="5,136,247,177"/>
+<area shape="rect" id="node5" href="$classpa_1_1LBFGSSolver.html#a8540540028b02dfe8b7e3ec0c49c07dd" title=" " alt="" coords="25,202,227,229"/>
+<area shape="rect" id="node6" href="$classpa_1_1LBFGSBSolver.html#a8540540028b02dfe8b7e3ec0c49c07dd" title=" " alt="" coords="21,253,231,279"/>
+<area shape="rect" id="node7" href="$classpa_1_1PANOCSolver.html#aa782dc3f118d5447eeed004c17bd91f5" title=" " alt="" coords="23,303,229,330"/>
+<area shape="rect" id="node8" href="$classpa_1_1GAAPGASolver.html#a570ec001ea8eee359be8a1b90b782cfb" title=" " alt="" coords="19,354,233,381"/>
+<area shape="rect" id="node9" href="$classpa_1_1PGASolver.html#af516b794e244432023aea7ba3cd0d1d8" title=" " alt="" coords="33,405,219,431"/>
+<area shape="rect" id="node10" href="$classpa_1_1PANOCSolverFull.html#adc37030e7641b91004d8c509489bc917" title=" " alt="" coords="49,456,203,497"/>
+</map>

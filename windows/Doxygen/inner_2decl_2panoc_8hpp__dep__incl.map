@@ -1,0 +1,14 @@
+<map id="panoc.hpp" name="panoc.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="662,5,752,32"/>
+<area shape="rect" id="node2" href="$inner_2panoc_8hpp.html" title=" " alt="" coords="293,80,382,107"/>
+<area shape="rect" id="node3" href="$panocpy_8cpp.html" title="This file defines all Python bindings." alt="" coords="460,304,562,331"/>
+<area shape="rect" id="node9" href="$standalone_2panoc_8hpp.html" title=" " alt="" coords="637,229,726,256"/>
+<area shape="rect" id="node10" href="$kwargs-to-struct_8hpp.html" title="This file defines mappings from Python dicts (kwargs) to simple parameter structs." alt="" coords="751,229,908,256"/>
+<area shape="rect" id="node11" href="$CasADi_2Rosenbrock_2main_8cpp.html" title=" " alt="" coords="770,80,852,107"/>
+<area shape="rect" id="node12" href="$CUTEst_2Rosenbrock_2main_8cpp.html" title=" " alt="" coords="876,80,959,107"/>
+<area shape="rect" id="node4" href="$polymorphic-inner-solver_8hpp.html" title=" " alt="" coords="51,229,264,256"/>
+<area shape="rect" id="node5" href="$polymorphic-panoc-direction_8hpp.html" title=" " alt="" coords="39,155,276,181"/>
+<area shape="rect" id="node6" href="$alm_8cpp.html" title=" " alt="" coords="300,155,375,181"/>
+<area shape="rect" id="node7" href="$panoc_8cpp.html" title=" " alt="" coords="399,155,487,181"/>
+<area shape="rect" id="node8" href="$Presentation_2Cpp_2main_8cpp.html" title=" " alt="" coords="511,155,594,181"/>
+</map>

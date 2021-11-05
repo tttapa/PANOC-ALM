@@ -1,0 +1,11 @@
+<map id="stop" name="stop">
+<area shape="rect" id="node1" title=" " alt="" coords="295,224,345,251"/>
+<area shape="rect" id="node2" href="$classpa_1_1PANOCSolver.html#a8c528baf37154d347366083f0f816846" title=" " alt="" coords="31,5,221,32"/>
+<area shape="rect" id="node3" href="$classpa_1_1PANOCSolverFull.html#a8c528baf37154d347366083f0f816846" title=" " alt="" coords="49,57,203,98"/>
+<area shape="rect" id="node4" href="$classpa_1_1SecondOrderPANOCSolver.html#a8c528baf37154d347366083f0f816846" title=" " alt="" coords="19,122,233,163"/>
+<area shape="rect" id="node5" href="$classpa_1_1StructuredPANOCLBFGSSolver.html#a8c528baf37154d347366083f0f816846" title=" " alt="" coords="5,187,247,229"/>
+<area shape="rect" id="node6" href="$classpa_1_1GAAPGASolver.html#a8c528baf37154d347366083f0f816846" title=" " alt="" coords="37,253,215,280"/>
+<area shape="rect" id="node7" href="$classpa_1_1LBFGSSolver.html#a8c528baf37154d347366083f0f816846" title=" " alt="" coords="43,304,209,331"/>
+<area shape="rect" id="node8" href="$classpa_1_1LBFGSBSolver.html#a8c528baf37154d347366083f0f816846" title=" " alt="" coords="39,355,213,381"/>
+<area shape="rect" id="node9" href="$classpa_1_1PGASolver.html#a8c528baf37154d347366083f0f816846" title=" " alt="" coords="51,405,201,432"/>
+</map>

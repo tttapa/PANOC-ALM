@@ -1,0 +1,10 @@
+<map id="apply" name="apply">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,64,133"/>
+<area shape="rect" id="node2" href="$dc/df2/classpa_1_1LBFGS.html#a37dd0ce624f9914a61118d8f02fa1c7f" title="Apply the inverse Hessian approximation to the given vector q." alt="" coords="112,107,244,133"/>
+<area shape="rect" id="node3" href="$dc/df2/classpa_1_1LBFGS.html#a5b5fd504f983f6b5f9beb1576ebf591a" title="Get the number of previous vectors s and y stored in the buffer." alt="" coords="292,5,433,32"/>
+<area shape="rect" id="node4" href="$dc/df2/classpa_1_1LBFGS.html#a644d66009a70ccc909120ba9afa45ea5" title=" " alt="" coords="311,56,414,83"/>
+<area shape="rect" id="node6" href="$dc/df2/classpa_1_1LBFGS.html#ac18c0672e61d25800877a42a1def3215" title=" " alt="" coords="311,107,415,133"/>
+<area shape="rect" id="node7" href="$dc/df2/classpa_1_1LBFGS.html#a66eb6e38840a556b4c0f0bff0901f80c" title=" " alt="" coords="310,157,415,184"/>
+<area shape="rect" id="node8" href="$dc/df2/classpa_1_1LBFGS.html#a630280b47996370bdb569a2799ffdb9f" title=" " alt="" coords="311,208,415,235"/>
+<area shape="rect" id="node5" href="$dc/df2/classpa_1_1LBFGS.html#ac88f0961aa7ed7c7415550ab2cad49c8" title="Get the size of the s and y vectors in the buffer." alt="" coords="481,132,585,159"/>
+</map>

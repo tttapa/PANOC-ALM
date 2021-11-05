@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['a_0',['A',['../de/d47/structpa_1_1problems_1_1RiskaverseProblem.html#a5e2a768f3eeca441659be5eaf8c9ec70',1,'pa::problems::RiskaverseProblem']]],
+  ['accelerated_5fsteps_5faccepted_1',['accelerated_steps_accepted',['../d8/d33/classpa_1_1GuardedAAPGA.html#acddb09d8b2901d0b0a4a830c36a86219',1,'pa::GuardedAAPGA::Stats']]],
+  ['acitve_5fsolver_2',['acitve_solver',['../d1/d5a/experiment_8cpp.html#a7bea89330cb5f307aef21f97b3bfbb27',1,'acitve_solver():&#160;experiment.cpp'],['../db/dbf/panocexperiment_8cpp.html#a7bea89330cb5f307aef21f97b3bfbb27',1,'acitve_solver():&#160;panocexperiment.cpp']]],
+  ['add_5fcolumn_3',['add_column',['../d6/df1/classpa_1_1LimitedMemoryQR.html#a5e3077223e98c1e4e286e01503f220d5',1,'pa::LimitedMemoryQR']]],
+  ['allocationerror_4',['AllocationError',['../d4/d2f/structCUTEstProblem_1_1Report.html#a67a0db04d321a74b7e7fcfd3f1a3f70baeee6c5de5a46b6d7aa1722931aec304d',1,'CUTEstProblem::Report']]],
+  ['alm_2dhelpers_2ehpp_5',['alm-helpers.hpp',['../d6/de7/alm-helpers_8hpp.html',1,'']]],
+  ['alm_2ecpp_6',['alm.cpp',['../d4/db5/alm_8cpp.html',1,'']]],
+  ['alm_2ehpp_7',['alm.hpp',['../d2/ddc/alm_8hpp.html',1,'']]],
+  ['almparams_8',['ALMParams',['../de/d4f/namespacepa.html#db/d32/structpa_1_1ALMParams',1,'pa']]],
+  ['almsolver_9',['ALMSolver',['../d4/de2/classpa_1_1ALMSolver.html',1,'ALMSolver&lt; InnerSolverT &gt;'],['../d4/de2/classpa_1_1ALMSolver.html#ad2351a2e80b1024b954fd4a458ac571b',1,'pa::ALMSolver::ALMSolver()']]],
+  ['alternative_5flinesearch_5fcond_10',['alternative_linesearch_cond',['../de/d4f/namespacepa.html#a1ae30f5740f90172d0312d307111eb56',1,'pa::PANOCParams']]],
+  ['anderson_2dacceleration_2ehpp_11',['anderson-acceleration.hpp',['../dd/dfe/anderson-acceleration_8hpp.html',1,'']]],
+  ['anderson_2dhelpers_2ehpp_12',['anderson-helpers.hpp',['../da/d9f/anderson-helpers_8hpp.html',1,'']]],
+  ['anderson_5facceleration_13',['anderson_acceleration',['../de/d4f/namespacepa.html#a889b49ad10d9584537d5d3ef17c47250',1,'pa::PANOCParams']]],
+  ['andersonaccel_14',['AndersonAccel',['../da/db8/classpa_1_1AndersonAccel.html',1,'pa']]],
+  ['apply_15',['apply',['../db/d62/structpa_1_1PANOCDirection_3_01AndersonAccel_01_4.html#ab6c112897f55aafb9f1aeef9541a5272',1,'pa::PANOCDirection&lt; AndersonAccel &gt;::apply()'],['../dc/df2/classpa_1_1LBFGS.html#a37dd0ce624f9914a61118d8f02fa1c7f',1,'pa::LBFGS::apply()'],['../d5/d28/structpa_1_1PANOCDirection.html#a82a11bd781d49cb466f18176df67a001',1,'pa::PANOCDirection::apply()'],['../d0/d6d/classpa_1_1SpecializedLBFGS.html#a37dd0ce624f9914a61118d8f02fa1c7f',1,'pa::SpecializedLBFGS::apply()'],['../dd/d35/structpa_1_1PANOCDirection_3_01LBFGS_01_4.html#a086ef300ea233088638220edcbabfe98',1,'pa::PANOCDirection&lt; LBFGS &gt;::apply()'],['../d3/df9/structpa_1_1PANOCDirection_3_01SpecializedLBFGS_01_4.html#a9fcc23cdeeeabf2b3b549ba045d0779a',1,'pa::PANOCDirection&lt; SpecializedLBFGS &gt;::apply()']]],
+  ['apply_5fpreconditioning_16',['apply_preconditioning',['../d0/d51/namespacepa_1_1detail.html#a09046c9d0e2fb430e3f3d9dc09c2dbe7',1,'pa::detail']]],
+  ['arraybounderror_17',['ArrayBoundError',['../d4/d2f/structCUTEstProblem_1_1Report.html#a67a0db04d321a74b7e7fcfd3f1a3f70bac45f528ae772345a56f784e39386e747',1,'CUTEstProblem::Report']]],
+  ['atomic_5fstop_5fsignal_2ehpp_18',['atomic_stop_signal.hpp',['../d4/d52/atomic__stop__signal_8hpp.html',1,'']]],
+  ['atomicstopsignal_19',['AtomicStopSignal',['../d5/db1/classpa_1_1AtomicStopSignal.html',1,'AtomicStopSignal'],['../d5/db1/classpa_1_1AtomicStopSignal.html#abdeeaa33939f7917562d546adf93a942',1,'pa::AtomicStopSignal::AtomicStopSignal()=default'],['../d5/db1/classpa_1_1AtomicStopSignal.html#a9fa1ba5fc2e35170c16e94d81492b432',1,'pa::AtomicStopSignal::AtomicStopSignal(const AtomicStopSignal &amp;)=delete'],['../d5/db1/classpa_1_1AtomicStopSignal.html#ac94b58380a7784c45e647e616e700153',1,'pa::AtomicStopSignal::AtomicStopSignal(AtomicStopSignal &amp;&amp;)']]],
+  ['attach_5fcounters_20',['attach_counters',['../d1/d6a/classpa_1_1ProblemWithCounters.html#ac683a3be9794882ddac13a5c3d0de20d',1,'pa::ProblemWithCounters']]],
+  ['augmented_20lagrangian_20method_20solver_21',['Augmented Lagrangian Method solver',['../d9/dcc/group__grp__ALMSolver.html',1,'']]]
+];

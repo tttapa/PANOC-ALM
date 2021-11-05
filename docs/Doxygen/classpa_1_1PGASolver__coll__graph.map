@@ -1,0 +1,7 @@
+<map id="PGASolver" name="PGASolver">
+<area shape="rect" id="node1" title="Standard Proximal Gradient Algorithm without any bells and whistles." alt="" coords="49,417,239,568"/>
+<area shape="rect" id="node2" href="$classpa_1_1AtomicStopSignal.html" title=" " alt="" coords="5,189,168,355"/>
+<area shape="rect" id="node3" href="$namespacepa.html#structpa_1_1PGAParams" title=" " alt="" coords="193,197,375,347"/>
+<area shape="rect" id="node4" href="$namespacepa.html#structpa_1_1LipschitzEstimateParams" title=" " alt="" coords="105,5,290,127"/>
+<area shape="rect" id="node5" title=" " alt="" coords="315,27,427,105"/>
+</map>

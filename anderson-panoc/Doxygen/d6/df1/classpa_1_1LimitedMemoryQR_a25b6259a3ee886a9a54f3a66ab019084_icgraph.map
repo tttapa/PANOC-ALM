@@ -1,0 +1,10 @@
+<map id="ring_tail" name="ring_tail">
+<area shape="rect" id="node1" title="Get the tail index of the circular buffer (points to one past the most recent element)." alt="" coords="753,71,828,98"/>
+<area shape="rect" id="node2" href="$de/d4f/namespacepa.html#a04d9e05002d02fd15c58766c259ef0d7" title="Solve one step of Anderson acceleration to find a fixed point of a function g(x):" alt="" coords="547,5,705,47"/>
+<area shape="rect" id="node5" href="$d8/d33/classpa_1_1GuardedAAPGA.html#a656a1117248ac02387eb817ee135df0e" title=" " alt="" coords="280,71,499,98"/>
+<area shape="rect" id="node6" href="$da/db8/classpa_1_1AndersonAccel.html#ad20897c5c8bd47f5d4005989bead0e55" title=" " alt="" coords="551,123,701,164"/>
+<area shape="rect" id="node3" href="$da/db8/classpa_1_1AndersonAccel.html#a631bbbe30343f7e51af52d3d4e7804c6" title=" " alt="" coords="314,5,465,47"/>
+<area shape="rect" id="node4" href="$db/d62/structpa_1_1PANOCDirection_3_01AndersonAccel_01_4.html#ab6c112897f55aafb9f1aeef9541a5272" title=" " alt="" coords="23,5,215,47"/>
+<area shape="rect" id="node7" href="$da/db8/classpa_1_1AndersonAccel.html#af1f7f1b0b1868cb2e03aa548c0ae2e85" title=" " alt="" coords="314,123,465,164"/>
+<area shape="rect" id="node8" href="$db/d62/structpa_1_1PANOCDirection_3_01AndersonAccel_01_4.html#aec1a817f12307745a2f7b39cce9b0a9b" title=" " alt="" coords="5,123,232,164"/>
+</map>

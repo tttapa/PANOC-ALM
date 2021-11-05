@@ -1,0 +1,31 @@
+<map id="panoc.hpp" name="panoc.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="1885,5,1975,32"/>
+<area shape="rect" id="node2" href="$inner_2decl_2panoc_8hpp.html" title=" " alt="" coords="805,80,964,121"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1811,266,1897,293"/>
+<area shape="rect" id="node9" href="$panoc-direction-update_8hpp.html" title=" " alt="" coords="5,169,241,211"/>
+<area shape="rect" id="node17" title=" " alt="" coords="1522,266,1591,293"/>
+<area shape="rect" id="node26" href="$panoc-helpers_8hpp.html" title=" " alt="" coords="1544,80,1713,121"/>
+<area shape="rect" id="node27" title=" " alt="" coords="1993,87,2056,114"/>
+<area shape="rect" id="node28" title=" " alt="" coords="2081,87,2155,114"/>
+<area shape="rect" id="node29" title=" " alt="" coords="2179,87,2259,114"/>
+<area shape="rect" id="node3" href="$lbfgs-stepsize_8hpp.html" title=" " alt="" coords="265,169,424,211"/>
+<area shape="rect" id="node4" href="$panoc-fwd_8hpp.html" title=" " alt="" coords="448,169,607,211"/>
+<area shape="rect" id="node6" href="$panoc-stop-crit_8hpp.html" title=" " alt="" coords="1657,169,1816,211"/>
+<area shape="rect" id="node13" href="$atomic__stop__signal_8hpp.html" title=" " alt="" coords="989,169,1154,211"/>
+<area shape="rect" id="node14" title=" " alt="" coords="905,266,971,293"/>
+<area shape="rect" id="node15" href="$lipschitz_8hpp.html" title=" " alt="" coords="678,266,881,293"/>
+<area shape="rect" id="node16" href="$include_2panoc-alm_2util_2problem_8hpp.html" title=" " alt="" coords="1178,177,1381,203"/>
+<area shape="rect" id="node21" href="$solverstatus_8hpp.html" title=" " alt="" coords="1405,177,1633,203"/>
+<area shape="rect" id="node23" title=" " alt="" coords="631,177,698,203"/>
+<area shape="rect" id="node24" title=" " alt="" coords="722,177,781,203"/>
+<area shape="rect" id="node25" title=" " alt="" coords="855,177,914,203"/>
+<area shape="rect" id="node5" href="$lbfgs-fwd_8hpp.html" title=" " alt="" coords="429,259,625,300"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1704,266,1780,293"/>
+<area shape="rect" id="node10" href="$box_8hpp.html" title=" " alt="" coords="996,266,1168,293"/>
+<area shape="rect" id="node11" href="$vec_8hpp.html" title=" " alt="" coords="893,348,967,375"/>
+<area shape="rect" id="node12" title=" " alt="" coords="884,423,976,449"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1192,266,1279,293"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1303,266,1381,293"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1405,266,1497,293"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1615,266,1679,293"/>
+</map>

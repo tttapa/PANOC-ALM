@@ -1,0 +1,19 @@
+<map id="operator()" name="operator()">
+<area shape="rect" id="node1" title=" " alt="" coords="5,269,92,295"/>
+<area shape="rect" id="node2" href="$namespacepa_1_1detail.html#afa4897c33999179a21da8a5cfde12178" title="Compute the Hessian matrix of the augmented Lagrangian function." alt="" coords="140,5,339,47"/>
+<area shape="rect" id="node3" href="$namespacepa_1_1detail.html#a22e222a3f2d7f01ceee380154e140ea9" title="Calculate the error between ẑ and g(x)." alt="" coords="828,101,984,127"/>
+<area shape="rect" id="node5" href="$namespacepa_1_1detail.html#a886972efd9fe413c62efea5eb2cdd0e9" title=" " alt="" coords="162,459,317,500"/>
+<area shape="rect" id="node8" href="$namespacepa_1_1detail.html#a908a0589ddf8734417f5481395e197d2" title="Calculate ∇ψ(x) using ŷ." alt="" coords="605,333,759,375"/>
+<area shape="rect" id="node9" href="$namespacepa_1_1detail.html#ac32d0e6b012b801731e55225b7505fa9" title=" " alt="" coords="402,407,534,434"/>
+<area shape="rect" id="node10" href="$namespacepa_1_1detail.html#aa986daa1d5f0dfdbc75c143d2aae2919" title="Calculate both ψ(x) and its gradient ∇ψ(x)." alt="" coords="401,232,535,273"/>
+<area shape="rect" id="node11" href="$namespacepa_1_1detail.html#a82a03662e6ce5bcfd57ee2df719aec21" title="Calculate both ψ(x) and the vector ŷ that can later be used to compute ∇ψ." alt="" coords="608,235,756,262"/>
+<area shape="rect" id="node13" href="$namespacepa_1_1detail.html#aa916ebec71616d1d0379aaaaca02fc19" title="Check all stop conditions (required tolerance reached, out of time, maximum number of iterations exce..." alt="" coords="163,541,315,583"/>
+<area shape="rect" id="node15" href="$namespacepa_1_1detail.html#adb5e65f5b5c52143daa1fc61c0f95d4e" title="Increase the estimate of the Lipschitz constant of the objective gradient and decrease the step size ..." alt="" coords="168,291,311,332"/>
+<area shape="rect" id="node16" href="$namespacepa_1_1detail.html#a24c0ce181607512a70dae43aa90fea5f" title=" " alt="" coords="165,173,313,215"/>
+<area shape="rect" id="node4" href="$namespacepa.html#a5414901c2fb62f1fd47857642964cc71" title="Project a vector onto a box." alt="" coords="1045,155,1136,182"/>
+<area shape="rect" id="node6" href="$namespacepa_1_1vec__util.html#af8e650634ec3d7b82a78a4d313632ed0" title="Get the maximum or infinity&#45;norm of the given vector." alt="" coords="387,509,549,535"/>
+<area shape="rect" id="node7" href="$namespacepa_1_1detail.html#a8ed4d487878856942843707b5a131b85" title="Projected gradient step." alt="" coords="606,416,758,457"/>
+<area shape="rect" id="node12" href="$namespacepa.html#aee505a26e46aa4c0ce09d0fed72f0dac" title="Get the difference between the given vector and its projection." alt="" coords="815,181,997,207"/>
+<area shape="rect" id="node14" href="$classpa_1_1AtomicStopSignal.html#aa0097deccc19b49f8ab5344d8d6d5cf6" title=" " alt="" coords="387,560,549,601"/>
+<area shape="rect" id="node17" href="$namespacepa_1_1detail.html#a6572cf745448d2b40e9d5e977d17d5e2" title="Calculate the gradient ∇ψ(x)." alt="" coords="597,181,767,207"/>
+</map>

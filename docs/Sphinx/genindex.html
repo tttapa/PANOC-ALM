@@ -1,0 +1,2688 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="#" /><link rel="search" title="Search" href="search.html" />
+
+    <link rel="shortcut icon" href="_static/panocpy_favicon.png"/><meta name="generator" content="sphinx-4.2.0+, furo 2021.08.17.beta43"/><title>Index - PanocPy documentation</title>
+<link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=910ac4ccc9d7c023151c34010d7b500fb9777a51" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=16fb25fabf47304eee183a5e9af80b1ba98259b1" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+</style>
+    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="_static/pygments_dark.css"></head>
+  <body>
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">PanocPy  documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="_static/panocpy_logo.svg" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">PanocPy  documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="about/algorithm.html">About PANOC + ALM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/gettingstarted.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install/installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="examples/examples_landing_page.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples/example_minimal.html">Minimal example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/regression_problem.html">Nonlinear regression problem</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/python-api.html">Python API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/cpp-api.html">C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribution/how_to_contribute.html">How to contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+</div>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <article role="main">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        
+<section class="genindex-section">
+  <h1 id="index">Index</h1>
+  <div class="genindex-jumpbox"><a href="#_"><strong>_</strong></a> | <a href="#A"><strong>A</strong></a> | <a href="#B"><strong>B</strong></a> | <a href="#C"><strong>C</strong></a> | <a href="#D"><strong>D</strong></a> | <a href="#F"><strong>F</strong></a> | <a href="#G"><strong>G</strong></a> | <a href="#H"><strong>H</strong></a> | <a href="#I"><strong>I</strong></a> | <a href="#K"><strong>K</strong></a> | <a href="#L"><strong>L</strong></a> | <a href="#M"><strong>M</strong></a> | <a href="#N"><strong>N</strong></a> | <a href="#P"><strong>P</strong></a> | <a href="#Q"><strong>Q</strong></a> | <a href="#R"><strong>R</strong></a> | <a href="#S"><strong>S</strong></a> | <a href="#T"><strong>T</strong></a> | <a href="#U"><strong>U</strong></a> | <a href="#V"><strong>V</strong></a> | <a href="#X"><strong>X</strong></a> | <a href="#Y"><strong>Y</strong></a> | <a href="#Α"><strong>Α</strong></a> | <a href="#Γ"><strong>Γ</strong></a> | <a href="#Δ"><strong>Δ</strong></a> | <a href="#Ε"><strong>Ε</strong></a> | <a href="#Θ"><strong>Θ</strong></a> | <a href="#Ρ"><strong>Ρ</strong></a> | <a href="#Σ"><strong>Σ</strong></a> | <a href="#Τ"><strong>Τ</strong></a> | <a href="#Φ"><strong>Φ</strong></a> | <a href="#Ψ"><strong>Ψ</strong></a> | <a href="#Ε"><strong>Ε</strong></a></div>
+</section>
+<section id="_" class="genindex-section">
+  <h2>_</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMSolver.__call__">__call__() (panocpy._panocpy.ALMSolver method)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGASolver.__call__">(panocpy._panocpy.GAAPGASolver method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.InnerSolver.__call__">(panocpy._panocpy.InnerSolver method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCSolver.__call__">(panocpy._panocpy.PANOCSolver method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGASolver.__call__">(panocpy._panocpy.PGASolver method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSSolver.__call__">(panocpy._panocpy.StructuredPANOCLBFGSSolver method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams.__init__">__init__() (panocpy._panocpy.ALMParams method)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.ALMSolver.__init__">(panocpy._panocpy.ALMSolver method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.Box.__init__">(panocpy._panocpy.Box method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAParams.__init__">(panocpy._panocpy.GAAPGAParams method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAProgressInfo.__init__">(panocpy._panocpy.GAAPGAProgressInfo method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGASolver.__init__">(panocpy._panocpy.GAAPGASolver method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.InnerSolver.__init__">(panocpy._panocpy.InnerSolver method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.InnerSolverStats.__init__">(panocpy._panocpy.InnerSolverStats method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSDirection.__init__">(panocpy._panocpy.LBFGSDirection method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSParams.__init__">(panocpy._panocpy.LBFGSParams method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSParamsCBFGS.__init__">(panocpy._panocpy.LBFGSParamsCBFGS method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSStepsize.__init__">(panocpy._panocpy.LBFGSStepsize method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.LipschitzEstimateParams.__init__">(panocpy._panocpy.LipschitzEstimateParams method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCDirection.__init__">(panocpy._panocpy.PANOCDirection method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCParams.__init__">(panocpy._panocpy.PANOCParams method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCProgressInfo.__init__">(panocpy._panocpy.PANOCProgressInfo method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCSolver.__init__">(panocpy._panocpy.PANOCSolver method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCStopCrit.__init__">(panocpy._panocpy.PANOCStopCrit method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAParams.__init__">(panocpy._panocpy.PGAParams method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAProgressInfo.__init__">(panocpy._panocpy.PGAProgressInfo method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGASolver.__init__">(panocpy._panocpy.PGASolver method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.Problem.__init__">(panocpy._panocpy.Problem method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.ProblemWithParam.__init__">(panocpy._panocpy.ProblemWithParam method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.SolverStatus.__init__">(panocpy._panocpy.SolverStatus method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams.__init__">(panocpy._panocpy.StructuredPANOCLBFGSParams method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSProgressInfo.__init__">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSSolver.__init__">(panocpy._panocpy.StructuredPANOCLBFGSSolver method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="A" class="genindex-section">
+  <h2>A</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams">ALMParams (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMSolver">ALMSolver (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PANOCParams.alternative_linesearch_cond">alternative_linesearch_cond (panocpy._panocpy.PANOCParams property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams.alternative_linesearch_cond">(panocpy._panocpy.StructuredPANOCLBFGSParams property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSDirection.apply">apply() (panocpy._panocpy.LBFGSDirection method)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCDirection.apply">(panocpy._panocpy.PANOCDirection method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PANOCStopCrit.ApproxKKT">ApproxKKT (panocpy._panocpy.PANOCStopCrit attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="B" class="genindex-section">
+  <h2>B</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSStepsize.BasedOnCurvature">BasedOnCurvature (panocpy._panocpy.LBFGSStepsize attribute)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSStepsize.BasedOnGradientStepSize">BasedOnGradientStepSize (panocpy._panocpy.LBFGSStepsize attribute)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.Box">Box (class in panocpy._panocpy)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="C" class="genindex-section">
+  <h2>C</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.Problem.C">C (panocpy._panocpy.Problem property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.ProblemWithParam.C">(panocpy._panocpy.ProblemWithParam property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSParams.cbfgs">cbfgs (panocpy._panocpy.LBFGSParams property)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSDirection.changed_">changed_γ() (panocpy._panocpy.LBFGSDirection method)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCDirection.changed_">(panocpy._panocpy.PANOCDirection method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy.casadi_problem.compile_and_load_problem">compile_and_load_problem() (in module panocpy.casadi_problem)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.SolverStatus.Converged">Converged (panocpy._panocpy.SolverStatus attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="D" class="genindex-section">
+  <h2>D</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.Problem.D">D (panocpy._panocpy.Problem property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.ProblemWithParam.D">(panocpy._panocpy.ProblemWithParam property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PANOCSolver.direction">direction (panocpy._panocpy.PANOCSolver property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="F" class="genindex-section">
+  <h2>F</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.Problem.f">f (panocpy._panocpy.Problem property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.ProblemWithParam.f">(panocpy._panocpy.ProblemWithParam property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAProgressInfo.fpr">fpr (panocpy._panocpy.GAAPGAProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCProgressInfo.fpr">(panocpy._panocpy.PANOCProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAProgressInfo.fpr">(panocpy._panocpy.PGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSProgressInfo.fpr">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PANOCStopCrit.FPRNorm">FPRNorm (panocpy._panocpy.PANOCStopCrit attribute)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams.full_augmented_hessian">full_augmented_hessian (panocpy._panocpy.StructuredPANOCLBFGSParams property)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAParams.full_flush_on__change">full_flush_on_γ_change (panocpy._panocpy.GAAPGAParams property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="G" class="genindex-section">
+  <h2>G</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.Problem.g">g (panocpy._panocpy.Problem property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.ProblemWithParam.g">(panocpy._panocpy.ProblemWithParam property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAParams">GAAPGAParams (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAProgressInfo">GAAPGAProgressInfo (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGASolver">GAAPGASolver (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy.casadi_problem.generate_and_compile_casadi_problem">generate_and_compile_casadi_problem() (in module panocpy.casadi_problem)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy.casadi_problem.generate_casadi_problem">generate_casadi_problem() (in module panocpy.casadi_problem)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.InnerSolver.get_name">get_name() (panocpy._panocpy.InnerSolver method)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSDirection.get_name">(panocpy._panocpy.LBFGSDirection method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCDirection.get_name">(panocpy._panocpy.PANOCDirection method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.InnerSolver.get_params">get_params() (panocpy._panocpy.InnerSolver method)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.Problem.grad_f">grad_f (panocpy._panocpy.Problem property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.ProblemWithParam.grad_f">(panocpy._panocpy.ProblemWithParam property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.Problem.grad_g_prod">grad_g_prod (panocpy._panocpy.Problem property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.ProblemWithParam.grad_g_prod">(panocpy._panocpy.ProblemWithParam property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.Problem.grad_gi">grad_gi (panocpy._panocpy.Problem property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.ProblemWithParam.grad_gi">(panocpy._panocpy.ProblemWithParam property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAProgressInfo.grad_">grad_ψ (panocpy._panocpy.GAAPGAProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCProgressInfo.grad_">(panocpy._panocpy.PANOCProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAProgressInfo.grad_">(panocpy._panocpy.PGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSProgressInfo.grad_">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAProgressInfo.grad__hat">grad_ψ_hat (panocpy._panocpy.GAAPGAProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCProgressInfo.grad__hat">(panocpy._panocpy.PANOCProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAProgressInfo.grad__hat">(panocpy._panocpy.PGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSProgressInfo.grad__hat">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="H" class="genindex-section">
+  <h2>H</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.Problem.hess_L">hess_L (panocpy._panocpy.Problem property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.ProblemWithParam.hess_L">(panocpy._panocpy.ProblemWithParam property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.Problem.hess_L_prod">hess_L_prod (panocpy._panocpy.Problem property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.ProblemWithParam.hess_L_prod">(panocpy._panocpy.ProblemWithParam property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams.hessian_vec_finited_differences">hessian_vec_finited_differences (panocpy._panocpy.StructuredPANOCLBFGSParams property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="I" class="genindex-section">
+  <h2>I</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSDirection.initialize">initialize() (panocpy._panocpy.LBFGSDirection method)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCDirection.initialize">(panocpy._panocpy.PANOCDirection method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMSolver.inner_solver">inner_solver (panocpy._panocpy.ALMSolver property)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.InnerSolver">InnerSolver (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.InnerSolverStats">InnerSolverStats (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.SolverStatus.Interrupted">Interrupted (panocpy._panocpy.SolverStatus attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="K" class="genindex-section">
+  <h2>K</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAProgressInfo.k">k (panocpy._panocpy.GAAPGAProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCProgressInfo.k">(panocpy._panocpy.PANOCProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAProgressInfo.k">(panocpy._panocpy.PGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSProgressInfo.k">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="L" class="genindex-section">
+  <h2>L</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAProgressInfo.L">L (panocpy._panocpy.GAAPGAProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCProgressInfo.L">(panocpy._panocpy.PANOCProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAProgressInfo.L">(panocpy._panocpy.PGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSProgressInfo.L">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LipschitzEstimateParams.L_0">L_0 (panocpy._panocpy.LipschitzEstimateParams property)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PANOCParams.lbfgs_stepsize">lbfgs_stepsize (panocpy._panocpy.PANOCParams property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams.lbfgs_stepsize">(panocpy._panocpy.StructuredPANOCLBFGSParams property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSDirection">LBFGSDirection (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSParams">LBFGSParams (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSParamsCBFGS">LBFGSParamsCBFGS (class in panocpy._panocpy)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSStepsize">LBFGSStepsize (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAParams.limitedqr_mem">limitedqr_mem (panocpy._panocpy.GAAPGAParams property)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAParams.Lipschitz">Lipschitz (panocpy._panocpy.GAAPGAParams property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCParams.Lipschitz">(panocpy._panocpy.PANOCParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAParams.Lipschitz">(panocpy._panocpy.PGAParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams.Lipschitz">(panocpy._panocpy.StructuredPANOCLBFGSParams property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LipschitzEstimateParams">LipschitzEstimateParams (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.load_casadi_problem">load_casadi_problem() (in module panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.load_casadi_problem_with_param">load_casadi_problem_with_param() (in module panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.Box.lowerbound">lowerbound (panocpy._panocpy.Box property)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LipschitzEstimateParams.L_factor">Lγ_factor (panocpy._panocpy.LipschitzEstimateParams property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="M" class="genindex-section">
+  <h2>M</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams.M">M (panocpy._panocpy.ALMParams property)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.Problem.m">m (panocpy._panocpy.Problem property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.ProblemWithParam.m">(panocpy._panocpy.ProblemWithParam property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams.max_iter">max_iter (panocpy._panocpy.ALMParams property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAParams.max_iter">(panocpy._panocpy.GAAPGAParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCParams.max_iter">(panocpy._panocpy.PANOCParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAParams.max_iter">(panocpy._panocpy.PGAParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams.max_iter">(panocpy._panocpy.StructuredPANOCLBFGSParams property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAParams.max_no_progress">max_no_progress (panocpy._panocpy.GAAPGAParams property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCParams.max_no_progress">(panocpy._panocpy.PANOCParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams.max_no_progress">(panocpy._panocpy.StructuredPANOCLBFGSParams property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams.max_num_initial_retries">max_num_initial_retries (panocpy._panocpy.ALMParams property)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams.max_num_retries">max_num_retries (panocpy._panocpy.ALMParams property)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams.max_time">max_time (panocpy._panocpy.ALMParams property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAParams.max_time">(panocpy._panocpy.GAAPGAParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCParams.max_time">(panocpy._panocpy.PANOCParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAParams.max_time">(panocpy._panocpy.PGAParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams.max_time">(panocpy._panocpy.StructuredPANOCLBFGSParams property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams.max_total_num_retries">max_total_num_retries (panocpy._panocpy.ALMParams property)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.SolverStatus.MaxIter">MaxIter (panocpy._panocpy.SolverStatus attribute)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.SolverStatus.MaxTime">MaxTime (panocpy._panocpy.SolverStatus attribute)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSParams.memory">memory (panocpy._panocpy.LBFGSParams property)</a>
+</li>
+        <li>
+    module
+
+        <ul>
+          <li><a href="reference/python-api.html#module-panocpy._panocpy">panocpy._panocpy</a>
+</li>
+          <li><a href="reference/python-api.html#module-panocpy.casadi_problem">panocpy.casadi_problem</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="N" class="genindex-section">
+  <h2>N</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.Problem.n">n (panocpy._panocpy.Problem property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.ProblemWithParam.n">(panocpy._panocpy.ProblemWithParam property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSStepsize.name">name (panocpy._panocpy.LBFGSStepsize property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCStopCrit.name">(panocpy._panocpy.PANOCStopCrit property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.SolverStatus.name">(panocpy._panocpy.SolverStatus property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams.nonmonotone_linesearch">nonmonotone_linesearch (panocpy._panocpy.StructuredPANOCLBFGSParams property)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.SolverStatus.NoProgress">NoProgress (panocpy._panocpy.SolverStatus attribute)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAProgressInfo.norm_sq_p">norm_sq_p (panocpy._panocpy.GAAPGAProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCProgressInfo.norm_sq_p">(panocpy._panocpy.PANOCProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAProgressInfo.norm_sq_p">(panocpy._panocpy.PGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSProgressInfo.norm_sq_p">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.SolverStatus.NotFinite">NotFinite (panocpy._panocpy.SolverStatus attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="P" class="genindex-section">
+  <h2>P</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAProgressInfo.p">p (panocpy._panocpy.GAAPGAProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCProgressInfo.p">(panocpy._panocpy.PANOCProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAProgressInfo.p">(panocpy._panocpy.PGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSProgressInfo.p">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/cpp-api.html#_CPPv42pa">pa (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParamsE">pa::ALMParams (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams1ME">pa::ALMParams::M (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams8max_iterE">pa::ALMParams::max_iter (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams23max_num_initial_retriesE">pa::ALMParams::max_num_initial_retries (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams15max_num_retriesE">pa::ALMParams::max_num_retries (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams8max_timeE">pa::ALMParams::max_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams21max_total_num_retriesE">pa::ALMParams::max_total_num_retries (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams15preconditioningE">pa::ALMParams::preconditioning (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams14print_intervalE">pa::ALMParams::print_interval (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams21single_penalty_factorE">pa::ALMParams::single_penalty_factor (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams1ΔE">pa::ALMParams::Δ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams1δE">pa::ALMParams::δ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams7Δ_lowerE">pa::ALMParams::Δ_lower (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams1εE">pa::ALMParams::ε (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams2ε₀E">pa::ALMParams::ε₀ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams11ε₀_increaseE">pa::ALMParams::ε₀_increase (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams1θE">pa::ALMParams::θ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams1ρE">pa::ALMParams::ρ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams10ρ_increaseE">pa::ALMParams::ρ_increase (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams5Σ_maxE">pa::ALMParams::Σ_max (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams5Σ_minE">pa::ALMParams::Σ_min (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams2Σ₀E">pa::ALMParams::Σ₀ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams8Σ₀_lowerE">pa::ALMParams::Σ₀_lower (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMParams2σ₀E">pa::ALMParams::σ₀ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa9ALMSolverE">pa::ALMSolver (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver9ALMSolverE6ParamsRK11InnerSolver">pa::ALMSolver::ALMSolver (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver9ALMSolverE6ParamsRR11InnerSolver">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa9ALMSolver8get_nameEv">pa::ALMSolver::get_name (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa9ALMSolver10get_paramsEv">pa::ALMSolver::get_params (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver12inner_solverE">pa::ALMSolver::inner_solver (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver11InnerSolverE">pa::ALMSolver::InnerSolver (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolverclERK7Problem4rvec4rvec">pa::ALMSolver::operator() (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver6ParamsE">pa::ALMSolver::Params (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver5StatsE">pa::ALMSolver::Stats (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver5Stats12elapsed_timeE">pa::ALMSolver::Stats::elapsed_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver5Stats23initial_penalty_reducedE">pa::ALMSolver::Stats::initial_penalty_reduced (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver5Stats5innerE">pa::ALMSolver::Stats::inner (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver5Stats26inner_convergence_failuresE">pa::ALMSolver::Stats::inner_convergence_failures (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver5Stats12norm_penaltyE">pa::ALMSolver::Stats::norm_penalty (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver5Stats16outer_iterationsE">pa::ALMSolver::Stats::outer_iterations (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver5Stats15penalty_reducedE">pa::ALMSolver::Stats::penalty_reduced (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver5Stats6statusE">pa::ALMSolver::Stats::status (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver5Stats1δE">pa::ALMSolver::Stats::δ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver5Stats1εE">pa::ALMSolver::Stats::ε (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9ALMSolver4stopEv">pa::ALMSolver::stop (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13AndersonAccelE">pa::AndersonAccel (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13AndersonAccel7computeERK3vecRK3vecR3vec">pa::AndersonAccel::compute (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa13AndersonAccel8get_nameEv">pa::AndersonAccel::get_name (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13AndersonAccel10initializeERK3vecRK3vec">pa::AndersonAccel::initialize (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13AndersonAccel12reinitializeE6real_t6real_t">pa::AndersonAccel::reinitialize (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13AndersonAccel5resetEv">pa::AndersonAccel::reset (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13AndersonAccel6resizeE6size_t6size_t">pa::AndersonAccel::resize (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16AtomicStopSignalE">pa::AtomicStopSignal (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16AtomicStopSignal16AtomicStopSignalERK16AtomicStopSignal">pa::AtomicStopSignal::AtomicStopSignal (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa16AtomicStopSignal16AtomicStopSignalERR16AtomicStopSignal">[1]</a>, <a href="reference/cpp-api.html#_CPPv4N2pa16AtomicStopSignal16AtomicStopSignalEv">[2]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16AtomicStopSignalaSERK16AtomicStopSignal">pa::AtomicStopSignal::operator= (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa16AtomicStopSignalaSERR16AtomicStopSignal">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16AtomicStopSignal4stopEv">pa::AtomicStopSignal::stop (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa16AtomicStopSignal14stop_requestedEv">pa::AtomicStopSignal::stop_requested (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa3BoxE">pa::Box (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa3Box10lowerboundE">pa::Box::lowerbound (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa3Box10upperboundE">pa::Box::upperbound (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa21CircularIndexIteratorE">pa::CircularIndexIterator (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21CircularIndexIterator21CircularIndexIteratorE7Indices5Index">pa::CircularIndexIterator::CircularIndexIterator (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa21CircularIndexIterator21CircularIndexIteratorEv">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21CircularIndexIterator15difference_typeE">pa::CircularIndexIterator::difference_type (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21CircularIndexIterator1iE">pa::CircularIndexIterator::i (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21CircularIndexIterator5IndexE">pa::CircularIndexIterator::Index (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21CircularIndexIterator7IndicesE">pa::CircularIndexIterator::Indices (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21CircularIndexIterator17iterator_categoryE">pa::CircularIndexIterator::iterator_category (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21CircularIndexIterator3maxE">pa::CircularIndexIterator::max (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa21CircularIndexIteratorneEb21CircularIndexIteratorI6IndexTE21CircularIndexIteratorI6IndexTE">pa::CircularIndexIterator::operator!= (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa21CircularIndexIteratormlEv">pa::CircularIndexIterator::operator* (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21CircularIndexIteratorppEi">pa::CircularIndexIterator::operator++ (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa21CircularIndexIteratorppEv">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21CircularIndexIteratormmEi">pa::CircularIndexIterator::operator-- (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa21CircularIndexIteratormmEv">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa21CircularIndexIteratoreqEb21CircularIndexIteratorI6IndexTE21CircularIndexIteratorI6IndexTE">pa::CircularIndexIterator::operator== (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21CircularIndexIterator7pointerE">pa::CircularIndexIterator::pointer (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21CircularIndexIterator9referenceE">pa::CircularIndexIterator::reference (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21CircularIndexIterator10value_typeE">pa::CircularIndexIterator::value_type (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa15CircularIndicesE">pa::CircularIndices (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15CircularIndices8circularE">pa::CircularIndices::circular (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15CircularIndices15CircularIndicesE5Index5Index">pa::CircularIndices::CircularIndices (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15CircularIndices5IndexE">pa::CircularIndices::Index (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa15CircularIndicesneEb15CircularIndicesI6IndexTE15CircularIndicesI6IndexTE">pa::CircularIndices::operator!= (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa15CircularIndiceseqEb15CircularIndicesI6IndexTE15CircularIndicesI6IndexTE">pa::CircularIndices::operator== (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15CircularIndices9zerobasedE">pa::CircularIndices::zerobased (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa13CircularRangeE">pa::CircularRange (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa13CircularRange5beginEv">pa::CircularRange::begin (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa13CircularRange6cbeginEv">pa::CircularRange::cbegin (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa13CircularRange4cendEv">pa::CircularRange::cend (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13CircularRange13CircularRangeE5Index5Index5Index5Index">pa::CircularRange::CircularRange (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13CircularRange14const_iteratorE">pa::CircularRange::const_iterator (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13CircularRange22const_reverse_iteratorE">pa::CircularRange::const_reverse_iterator (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa13CircularRange7crbeginEv">pa::CircularRange::crbegin (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa13CircularRange5crendEv">pa::CircularRange::crend (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa13CircularRange3endEv">pa::CircularRange::end (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13CircularRange5IndexE">pa::CircularRange::Index (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13CircularRange7IndicesE">pa::CircularRange::Indices (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13CircularRange8iteratorE">pa::CircularRange::iterator (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa13CircularRange6rbeginEv">pa::CircularRange::rbegin (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa13CircularRange4rendEv">pa::CircularRange::rend (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13CircularRange16reverse_iteratorE">pa::CircularRange::reverse_iterator (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5crmatE">pa::crmat (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5crvecE">pa::crvec (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6detailE">pa::detail (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6detail21apply_preconditioningERK7ProblemR7Problem5crvecR6real_tR3vec">pa::detail::apply_preconditioning (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6detail33calc_augmented_lagrangian_hessianERK7Problem5crvec5crvec5crvec5crvec4rvecR3mat4rvec">pa::detail::calc_augmented_lagrangian_hessian (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6detail41calc_augmented_lagrangian_hessian_prod_fdERK7Problem5crvec5crvec5crvec5crvec5crvec4rvec4rvec4rvec4rvec">pa::detail::calc_augmented_lagrangian_hessian_prod_fd (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6detail20calc_error_stop_critE13PANOCStopCrit5crvec6real_t5crvec5crvec5crvecRK3Box">pa::detail::calc_error_stop_crit (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6detail11calc_grad_ψERK7Problem5crvec5crvec5crvec4rvec4rvec4rvec">pa::detail::calc_grad_ψ (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6detail18calc_grad_ψ_from_ŷERK7Problem5crvec5crvec4rvec4rvec">pa::detail::calc_grad_ψ_from_ŷ (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6detail13calc_ψ_grad_ψERK7Problem5crvec5crvec5crvec4rvec4rvec4rvec">pa::detail::calc_ψ_grad_ψ (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6detail8calc_ψ_ŷERK7Problem5crvec5crvec5crvec4rvec">pa::detail::calc_ψ_ŷ (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I00EN2pa6detail25check_all_stop_conditionsE12SolverStatusRK7ParamsT9DurationTjRK16AtomicStopSignal6real_t6real_tj">pa::detail::check_all_stop_conditions (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6detail13descent_lemmaERK7Problem6real_t6real_t5crvec6real_t5crvec5crvec5crvec4rvec4rvec4rvecR6real_tR6real_tR6real_tR6real_tR6real_t">pa::detail::descent_lemma (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6detail26initial_lipschitz_estimateERK7Problem5crvec5crvec5crvec6real_t6real_tR6real_t4rvec4rvec4rvec4rvec4rvec">pa::detail::initial_lipschitz_estimate (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6detail18initialize_penaltyERK7ProblemRK9ALMParams5crvec4rvec">pa::detail::initialize_penalty (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6detail9project_yE4rvec5crvec5crvec6real_t">pa::detail::project_y (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6detail23projected_gradient_stepERK3Box6real_t5crvec5crvec">pa::detail::projected_gradient_step (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6detail22update_penalty_weightsERK9ALMParams6real_tb4rvec4rvec6real_t6real_t5crvec4rvec">pa::detail::update_penalty_weights (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12dist_squaredERK3vecRK3Box">pa::dist_squared (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa12dist_squaredERK3vecRK3BoxRK3vec">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9enum_nameE12SolverStatus">pa::enum_name (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa9enum_nameE13PANOCStopCrit">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11EvalCounterE">pa::EvalCounter (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11EvalCounter1fE">pa::EvalCounter::f (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11EvalCounter1gE">pa::EvalCounter::g (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11EvalCounter6grad_fE">pa::EvalCounter::grad_f (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11EvalCounter11grad_g_prodE">pa::EvalCounter::grad_g_prod (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11EvalCounter7grad_giE">pa::EvalCounter::grad_gi (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11EvalCounter6hess_LE">pa::EvalCounter::hess_L (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11EvalCounter11hess_L_prodE">pa::EvalCounter::hess_L_prod (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11EvalCounter5resetEv">pa::EvalCounter::reset (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGAParamsE">pa::GAAPGAParams (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGAParams22full_flush_on_γ_changeE">pa::GAAPGAParams::full_flush_on_γ_change (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGAParams13limitedqr_memE">pa::GAAPGAParams::limitedqr_mem (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGAParams9LipschitzE">pa::GAAPGAParams::Lipschitz (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGAParams8max_iterE">pa::GAAPGAParams::max_iter (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGAParams15max_no_progressE">pa::GAAPGAParams::max_no_progress (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGAParams8max_timeE">pa::GAAPGAParams::max_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGAParams14print_intervalE">pa::GAAPGAParams::print_interval (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGAParams37quadratic_upperbound_tolerance_factorE">pa::GAAPGAParams::quadratic_upperbound_tolerance_factor (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGAParams9stop_critE">pa::GAAPGAParams::stop_crit (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGAParams5γ_minE">pa::GAAPGAParams::γ_min (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfoE">pa::GAAPGAProgressInfo (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo6grad_ψE">pa::GAAPGAProgressInfo::grad_ψ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo10grad_ψ_hatE">pa::GAAPGAProgressInfo::grad_ψ_hat (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo1kE">pa::GAAPGAProgressInfo::k (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo1LE">pa::GAAPGAProgressInfo::L (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo9norm_sq_pE">pa::GAAPGAProgressInfo::norm_sq_p (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo1pE">pa::GAAPGAProgressInfo::p (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo6paramsE">pa::GAAPGAProgressInfo::params (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo7problemE">pa::GAAPGAProgressInfo::problem (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo1xE">pa::GAAPGAProgressInfo::x (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo5x_hatE">pa::GAAPGAProgressInfo::x_hat (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo1yE">pa::GAAPGAProgressInfo::y (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo1γE">pa::GAAPGAProgressInfo::γ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo1εE">pa::GAAPGAProgressInfo::ε (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo1ΣE">pa::GAAPGAProgressInfo::Σ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo1ψE">pa::GAAPGAProgressInfo::ψ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa18GAAPGAProgressInfo5ψ_hatE">pa::GAAPGAProgressInfo::ψ_hat (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGASolverE">pa::GAAPGASolver (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGASolver12GAAPGASolverERK6Params">pa::GAAPGASolver::GAAPGASolver (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa12GAAPGASolver8get_nameEv">pa::GAAPGASolver::get_name (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa12GAAPGASolver10get_paramsEv">pa::GAAPGASolver::get_params (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGASolverclERK7Problem5crvec6real_tb4rvec4rvec4rvec">pa::GAAPGASolver::operator() (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGASolver6ParamsE">pa::GAAPGASolver::Params (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGASolver12ProgressInfoE">pa::GAAPGASolver::ProgressInfo (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGASolver21set_progress_callbackENSt8functionIFvRK12ProgressInfoEEE">pa::GAAPGASolver::set_progress_callback (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGASolver5StatsE">pa::GAAPGASolver::Stats (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGASolver5Stats26accelerated_steps_acceptedE">pa::GAAPGASolver::Stats::accelerated_steps_accepted (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGASolver5Stats12elapsed_timeE">pa::GAAPGASolver::Stats::elapsed_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGASolver5Stats10iterationsE">pa::GAAPGASolver::Stats::iterations (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGASolver5Stats6statusE">pa::GAAPGASolver::Stats::status (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGASolver5Stats1εE">pa::GAAPGASolver::Stats::ε (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12GAAPGASolver4stopEv">pa::GAAPGASolver::stop (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa3infE">pa::inf (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa21InnerStatsAccumulatorE">pa::InnerStatsAccumulator (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4IEN2pa21InnerStatsAccumulatorI12GAAPGASolverEE">pa::InnerStatsAccumulator&lt;GAAPGASolver&gt; (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI12GAAPGASolverE26accelerated_steps_acceptedE">pa::InnerStatsAccumulator&lt;GAAPGASolver&gt;::accelerated_steps_accepted (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI12GAAPGASolverE12elapsed_timeE">pa::InnerStatsAccumulator&lt;GAAPGASolver&gt;::elapsed_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI12GAAPGASolverE10iterationsE">pa::InnerStatsAccumulator&lt;GAAPGASolver&gt;::iterations (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4II0E0EN2pa21InnerStatsAccumulatorI12LBFGSBSolverI11LineSearchTEEE">pa::InnerStatsAccumulator&lt;LBFGSBSolver&lt;LineSearchT&gt;&gt; (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI12LBFGSBSolverI11LineSearchTEE12elapsed_timeE">pa::InnerStatsAccumulator&lt;LBFGSBSolver&lt;LineSearchT&gt;&gt;::elapsed_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI12LBFGSBSolverI11LineSearchTEE10iterationsE">pa::InnerStatsAccumulator&lt;LBFGSBSolver&lt;LineSearchT&gt;&gt;::iterations (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa21InnerStatsAccumulatorI11PANOCSolverI17DirectionProviderEEE">pa::InnerStatsAccumulator&lt;PANOCSolver&lt;DirectionProvider&gt;&gt; (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI11PANOCSolverI17DirectionProviderEE7count_τE">pa::InnerStatsAccumulator&lt;PANOCSolver&lt;DirectionProvider&gt;&gt;::count_τ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI11PANOCSolverI17DirectionProviderEE12elapsed_timeE">pa::InnerStatsAccumulator&lt;PANOCSolver&lt;DirectionProvider&gt;&gt;::elapsed_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI11PANOCSolverI17DirectionProviderEE10iterationsE">pa::InnerStatsAccumulator&lt;PANOCSolver&lt;DirectionProvider&gt;&gt;::iterations (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI11PANOCSolverI17DirectionProviderEE14lbfgs_failuresE">pa::InnerStatsAccumulator&lt;PANOCSolver&lt;DirectionProvider&gt;&gt;::lbfgs_failures (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI11PANOCSolverI17DirectionProviderEE14lbfgs_rejectedE">pa::InnerStatsAccumulator&lt;PANOCSolver&lt;DirectionProvider&gt;&gt;::lbfgs_rejected (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI11PANOCSolverI17DirectionProviderEE19linesearch_failuresE">pa::InnerStatsAccumulator&lt;PANOCSolver&lt;DirectionProvider&gt;&gt;::linesearch_failures (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI11PANOCSolverI17DirectionProviderEE5sum_τE">pa::InnerStatsAccumulator&lt;PANOCSolver&lt;DirectionProvider&gt;&gt;::sum_τ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI11PANOCSolverI17DirectionProviderEE12τ_1_acceptedE">pa::InnerStatsAccumulator&lt;PANOCSolver&lt;DirectionProvider&gt;&gt;::τ_1_accepted (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4IEN2pa21InnerStatsAccumulatorI9PGASolverEE">pa::InnerStatsAccumulator&lt;PGASolver&gt; (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI9PGASolverE12elapsed_timeE">pa::InnerStatsAccumulator&lt;PGASolver&gt;::elapsed_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI9PGASolverE10iterationsE">pa::InnerStatsAccumulator&lt;PGASolver&gt;::iterations (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4IEN2pa21InnerStatsAccumulatorI22SecondOrderPANOCSolverEE">pa::InnerStatsAccumulator&lt;SecondOrderPANOCSolver&gt; (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI22SecondOrderPANOCSolverE7count_τE">pa::InnerStatsAccumulator&lt;SecondOrderPANOCSolver&gt;::count_τ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI22SecondOrderPANOCSolverE12elapsed_timeE">pa::InnerStatsAccumulator&lt;SecondOrderPANOCSolver&gt;::elapsed_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI22SecondOrderPANOCSolverE10iterationsE">pa::InnerStatsAccumulator&lt;SecondOrderPANOCSolver&gt;::iterations (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI22SecondOrderPANOCSolverE19linesearch_failuresE">pa::InnerStatsAccumulator&lt;SecondOrderPANOCSolver&gt;::linesearch_failures (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI22SecondOrderPANOCSolverE15newton_failuresE">pa::InnerStatsAccumulator&lt;SecondOrderPANOCSolver&gt;::newton_failures (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI22SecondOrderPANOCSolverE5sum_τE">pa::InnerStatsAccumulator&lt;SecondOrderPANOCSolver&gt;::sum_τ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI22SecondOrderPANOCSolverE12τ_1_acceptedE">pa::InnerStatsAccumulator&lt;SecondOrderPANOCSolver&gt;::τ_1_accepted (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4IEN2pa21InnerStatsAccumulatorI26StructuredPANOCLBFGSSolverEE">pa::InnerStatsAccumulator&lt;StructuredPANOCLBFGSSolver&gt; (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI26StructuredPANOCLBFGSSolverE7count_τE">pa::InnerStatsAccumulator&lt;StructuredPANOCLBFGSSolver&gt;::count_τ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI26StructuredPANOCLBFGSSolverE12elapsed_timeE">pa::InnerStatsAccumulator&lt;StructuredPANOCLBFGSSolver&gt;::elapsed_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI26StructuredPANOCLBFGSSolverE10iterationsE">pa::InnerStatsAccumulator&lt;StructuredPANOCLBFGSSolver&gt;::iterations (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI26StructuredPANOCLBFGSSolverE14lbfgs_failuresE">pa::InnerStatsAccumulator&lt;StructuredPANOCLBFGSSolver&gt;::lbfgs_failures (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI26StructuredPANOCLBFGSSolverE14lbfgs_rejectedE">pa::InnerStatsAccumulator&lt;StructuredPANOCLBFGSSolver&gt;::lbfgs_rejected (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI26StructuredPANOCLBFGSSolverE19linesearch_failuresE">pa::InnerStatsAccumulator&lt;StructuredPANOCLBFGSSolver&gt;::linesearch_failures (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI26StructuredPANOCLBFGSSolverE5sum_τE">pa::InnerStatsAccumulator&lt;StructuredPANOCLBFGSSolver&gt;::sum_τ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21InnerStatsAccumulatorI26StructuredPANOCLBFGSSolverE12τ_1_acceptedE">pa::InnerStatsAccumulator&lt;StructuredPANOCLBFGSSolver&gt;::τ_1_accepted (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5LBFGSE">pa::LBFGS (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I00EN2pa5LBFGS5applyEbRR3Vec6real_tRK8IndexVec">pa::LBFGS::apply (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4I0EN2pa5LBFGS5applyEbRR3Vec6real_t">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa5LBFGS8get_nameEv">pa::LBFGS::get_name (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa5LBFGS10get_paramsEv">pa::LBFGS::get_params (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa5LBFGS7historyEv">pa::LBFGS::history (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5LBFGS5LBFGSE6Params">pa::LBFGS::LBFGS (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa5LBFGS5LBFGSE6Params6size_t">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa5LBFGS1nEv">pa::LBFGS::n (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5LBFGS6ParamsE">pa::LBFGS::Params (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5LBFGS5resetEv">pa::LBFGS::reset (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5LBFGS6resizeE6size_t">pa::LBFGS::resize (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5LBFGS1sE6size_t">pa::LBFGS::s (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4NK2pa5LBFGS1sE6size_t">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5LBFGS7scale_yE6real_t">pa::LBFGS::scale_y (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5LBFGS4SignE">pa::LBFGS::Sign (C++ enum)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5LBFGS4Sign8NegativeE">pa::LBFGS::Sign::Negative (C++ enumerator)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5LBFGS4Sign8PositiveE">pa::LBFGS::Sign::Positive (C++ enumerator)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa5LBFGS4succE6size_t">pa::LBFGS::succ (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5LBFGS6updateERK3vecRK3vecRK3vecRK3vec4Signb">pa::LBFGS::update (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5LBFGS12update_validE11LBFGSParams6real_t6real_t6real_t">pa::LBFGS::update_valid (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5LBFGS1yE6size_t">pa::LBFGS::y (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4NK2pa5LBFGS1yE6size_t">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5LBFGS1αE6size_t">pa::LBFGS::α (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4NK2pa5LBFGS1αE6size_t">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa5LBFGS1ρE6size_t">pa::LBFGS::ρ (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4NK2pa5LBFGS1ρE6size_t">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4II0E0EN2pa12LBFGSBSolverE">pa::LBFGSBSolver (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa12LBFGSBSolver8get_nameEv">pa::LBFGSBSolver::get_name (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa12LBFGSBSolver10get_paramsEv">pa::LBFGSBSolver::get_params (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12LBFGSBSolver12LBFGSBSolverE6Params">pa::LBFGSBSolver::LBFGSBSolver (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12LBFGSBSolver10LineSearchE">pa::LBFGSBSolver::LineSearch (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12LBFGSBSolverclERK7Problem5crvec6real_tb4rvec4rvec4rvec">pa::LBFGSBSolver::operator() (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12LBFGSBSolver6ParamsE">pa::LBFGSBSolver::Params (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12LBFGSBSolver5StatsE">pa::LBFGSBSolver::Stats (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12LBFGSBSolver5Stats12elapsed_timeE">pa::LBFGSBSolver::Stats::elapsed_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12LBFGSBSolver5Stats10iterationsE">pa::LBFGSBSolver::Stats::iterations (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12LBFGSBSolver5Stats6statusE">pa::LBFGSBSolver::Stats::status (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12LBFGSBSolver5Stats1εE">pa::LBFGSBSolver::Stats::ε (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12LBFGSBSolver4stopEv">pa::LBFGSBSolver::stop (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSParamsE">pa::LBFGSParams (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSParams5cbfgsE">pa::LBFGSParams::cbfgs (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSParams6memoryE">pa::LBFGSParams::memory (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSParams22rescale_when_γ_changesE">pa::LBFGSParams::rescale_when_γ_changes (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4II0E0EN2pa11LBFGSSolverE">pa::LBFGSSolver (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa11LBFGSSolver8get_nameEv">pa::LBFGSSolver::get_name (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa11LBFGSSolver10get_paramsEv">pa::LBFGSSolver::get_params (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSSolver11LBFGSSolverE6Params">pa::LBFGSSolver::LBFGSSolver (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSSolver10LineSearchE">pa::LBFGSSolver::LineSearch (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSSolverclERK7Problem5crvec6real_tb4rvec4rvec4rvec">pa::LBFGSSolver::operator() (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSSolver6ParamsE">pa::LBFGSSolver::Params (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSSolver5StatsE">pa::LBFGSSolver::Stats (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSSolver5Stats12elapsed_timeE">pa::LBFGSSolver::Stats::elapsed_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSSolver5Stats10iterationsE">pa::LBFGSSolver::Stats::iterations (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSSolver5Stats14lbfgs_failuresE">pa::LBFGSSolver::Stats::lbfgs_failures (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSSolver5Stats14lbfgs_rejectedE">pa::LBFGSSolver::Stats::lbfgs_rejected (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSSolver5Stats19linesearch_failuresE">pa::LBFGSSolver::Stats::linesearch_failures (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSSolver5Stats6statusE">pa::LBFGSSolver::Stats::status (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSSolver5Stats1εE">pa::LBFGSSolver::Stats::ε (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11LBFGSSolver4stopEv">pa::LBFGSSolver::stop (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13LBFGSStepSizeE">pa::LBFGSStepSize (C++ enum)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13LBFGSStepSize16BasedOnCurvatureE">pa::LBFGSStepSize::BasedOnCurvature (C++ enumerator)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13LBFGSStepSize23BasedOnGradientStepSizeE">pa::LBFGSStepSize::BasedOnGradientStepSize (C++ enumerator)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15LimitedMemoryQRE">pa::LimitedMemoryQR (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa15LimitedMemoryQR10add_columnEvRK4VecV">pa::LimitedMemoryQR::add_column (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15LimitedMemoryQR18clear_reorth_countEv">pa::LimitedMemoryQR::clear_reorth_count (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa15LimitedMemoryQR10get_full_REv">pa::LimitedMemoryQR::get_full_R (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa15LimitedMemoryQR5get_QEv">pa::LimitedMemoryQR::get_Q (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa15LimitedMemoryQR5get_REv">pa::LimitedMemoryQR::get_R (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa15LimitedMemoryQR9get_raw_QEv">pa::LimitedMemoryQR::get_raw_Q (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa15LimitedMemoryQR9get_raw_REv">pa::LimitedMemoryQR::get_raw_R (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa15LimitedMemoryQR16get_reorth_countEv">pa::LimitedMemoryQR::get_reorth_count (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15LimitedMemoryQR15LimitedMemoryQRE6size_t6size_t">pa::LimitedMemoryQR::LimitedMemoryQR (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa15LimitedMemoryQR15LimitedMemoryQREv">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa15LimitedMemoryQR1mEv">pa::LimitedMemoryQR::m (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa15LimitedMemoryQR1nEv">pa::LimitedMemoryQR::n (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa15LimitedMemoryQR11num_columnsEv">pa::LimitedMemoryQR::num_columns (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15LimitedMemoryQR13remove_columnEv">pa::LimitedMemoryQR::remove_column (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15LimitedMemoryQR5resetEv">pa::LimitedMemoryQR::reset (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15LimitedMemoryQR6resizeE6size_t6size_t">pa::LimitedMemoryQR::resize (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa15LimitedMemoryQR9ring_headEv">pa::LimitedMemoryQR::ring_head (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa15LimitedMemoryQR9ring_iterEv">pa::LimitedMemoryQR::ring_iter (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa15LimitedMemoryQR9ring_nextE6size_t">pa::LimitedMemoryQR::ring_next (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa15LimitedMemoryQR9ring_prevE6size_t">pa::LimitedMemoryQR::ring_prev (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa15LimitedMemoryQR17ring_reverse_iterEv">pa::LimitedMemoryQR::ring_reverse_iter (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa15LimitedMemoryQR9ring_tailEv">pa::LimitedMemoryQR::ring_tail (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15LimitedMemoryQR7scale_RE6real_t">pa::LimitedMemoryQR::scale_R (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I00ENK2pa15LimitedMemoryQR5solveEvRK4MatBR4MatX">pa::LimitedMemoryQR::solve (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa15LimitedMemoryQR5solveERK3mat">[1]</a>, <a href="reference/cpp-api.html#_CPPv4N2pa15LimitedMemoryQR5solveERK3vec">[2]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I00ENK2pa15LimitedMemoryQR9solve_colEvRK4VecBR4VecX">pa::LimitedMemoryQR::solve_col (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa23LipschitzEstimateParamsE">pa::LipschitzEstimateParams (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa23LipschitzEstimateParams9Lγ_factorE">pa::LipschitzEstimateParams::Lγ_factor (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa23LipschitzEstimateParams2L₀E">pa::LipschitzEstimateParams::L₀ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa23LipschitzEstimateParams1δE">pa::LipschitzEstimateParams::δ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa23LipschitzEstimateParams1εE">pa::LipschitzEstimateParams::ε (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa23load_CasADi_constraintsEPKcPKc">pa::load_CasADi_constraints (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa37load_CasADi_gradient_constraints_prodEPKcPKc">pa::load_CasADi_gradient_constraints_prod (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa30load_CasADi_gradient_objectiveEPKcPKc">pa::load_CasADi_gradient_objective (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa30load_CasADi_hessian_lagrangianEPKcPKc">pa::load_CasADi_hessian_lagrangian (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa35load_CasADi_hessian_lagrangian_prodEPKcPKc">pa::load_CasADi_hessian_lagrangian_prod (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa21load_CasADi_objectiveEPKcPKc">pa::load_CasADi_objective (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19load_CasADi_problemEPKcjjb">pa::load_CasADi_problem (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa30load_CasADi_problem_with_paramEPKcjjb">pa::load_CasADi_problem_with_param (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa3matE">pa::mat (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa24minimize_update_andersonER15LimitedMemoryQRR3matRK3vecRK3vecRK3vecR3vecR3vec">pa::minimize_update_anderson (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa3NaNE">pa::NaN (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2paplE11EvalCounter11EvalCounter">pa::operator+ (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2papLER21InnerStatsAccumulatorI11PANOCSolverI17DirectionProviderEER21InnerStatsAccumulatorI11PANOCSolverI17DirectionProviderEEKN11PANOCSolverI17DirectionProviderE5StatsE">pa::operator+= (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4II0E0EN2papLER21InnerStatsAccumulatorI12LBFGSBSolverI11LineSearchTEER21InnerStatsAccumulatorI12LBFGSBSolverI11LineSearchTEEKN12LBFGSBSolverI11LineSearchTE5StatsE">[1]</a>, <a href="reference/cpp-api.html#_CPPv4N2papLER11EvalCounter11EvalCounter">[2]</a>, <a href="reference/cpp-api.html#_CPPv4N2papLER21InnerStatsAccumulatorI12GAAPGASolverEKN12GAAPGASolver5StatsE">[3]</a>, <a href="reference/cpp-api.html#_CPPv4N2papLER21InnerStatsAccumulatorI22SecondOrderPANOCSolverEKN22SecondOrderPANOCSolver5StatsE">[4]</a>, <a href="reference/cpp-api.html#_CPPv4N2papLER21InnerStatsAccumulatorI26StructuredPANOCLBFGSSolverEKN26StructuredPANOCLBFGSSolver5StatsE">[5]</a>, <a href="reference/cpp-api.html#_CPPv4N2papLER21InnerStatsAccumulatorI9PGASolverEKN9PGASolver5StatsE">[6]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2palsERNSt7ostreamE12SolverStatus">pa::operator&lt;&lt; (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2palsERNSt7ostreamE13PANOCStopCrit">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa14PANOCDirectionE">pa::PANOCDirection (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirection5applyER18DirectionProviderTRK3vecRK3vecRK3vec6real_tR3vec">pa::PANOCDirection::apply (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirection9changed_γER18DirectionProviderT6real_t6real_t">pa::PANOCDirection::changed_γ (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirection10initializeER18DirectionProviderTRK3vecRK3vecRK3vecRK3vec">pa::PANOCDirection::initialize (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirection6updateER18DirectionProviderTRK3vecRK3vecRK3vecRK3vecRK3vecRK3Box6real_t">pa::PANOCDirection::update (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4IEN2pa14PANOCDirectionI13AndersonAccelEE">pa::PANOCDirection&lt;AndersonAccel&gt; (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI13AndersonAccelE5applyER13AndersonAccelRK3vecRK3vecRK3vec6real_tR3vec">pa::PANOCDirection&lt;AndersonAccel&gt;::apply (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI13AndersonAccelE9changed_γER13AndersonAccel6real_t6real_t">pa::PANOCDirection&lt;AndersonAccel&gt;::changed_γ (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI13AndersonAccelE10initializeER13AndersonAccelRK3vecRK3vecRK3vecRK3vec">pa::PANOCDirection&lt;AndersonAccel&gt;::initialize (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI13AndersonAccelE6updateER13AndersonAccelRK3vecRK3vecRK3vecRK3vecRK3vecRK3Box6real_t">pa::PANOCDirection&lt;AndersonAccel&gt;::update (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4IEN2pa14PANOCDirectionI5LBFGSEE">pa::PANOCDirection&lt;LBFGS&gt; (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI5LBFGSE5applyERK3vecRK3vecRK3vec6real_tR3vec">pa::PANOCDirection&lt;LBFGS&gt;::apply (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI5LBFGSE9changed_γE6real_t6real_t">pa::PANOCDirection&lt;LBFGS&gt;::changed_γ (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa14PANOCDirectionI5LBFGSE8get_nameEv">pa::PANOCDirection&lt;LBFGS&gt;::get_name (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa14PANOCDirectionI5LBFGSE10get_paramsEv">pa::PANOCDirection&lt;LBFGS&gt;::get_params (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI5LBFGSE10initializeERK3vecRK3vecRK3vecRK3vec">pa::PANOCDirection&lt;LBFGS&gt;::initialize (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI5LBFGSE5lbfgsE">pa::PANOCDirection&lt;LBFGS&gt;::lbfgs (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI5LBFGSE14PANOCDirectionERK11LBFGSParams">pa::PANOCDirection&lt;LBFGS&gt;::PANOCDirection (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI5LBFGSE14PANOCDirectionERK5LBFGS">[1]</a>, <a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI5LBFGSE14PANOCDirectionERR5LBFGS">[2]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI5LBFGSE5resetEv">pa::PANOCDirection&lt;LBFGS&gt;::reset (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI5LBFGSE6updateERK3vecRK3vecRK3vecRK3vecRK3vecRK3Box6real_t">pa::PANOCDirection&lt;LBFGS&gt;::update (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4IEN2pa14PANOCDirectionI16SpecializedLBFGSEE">pa::PANOCDirection&lt;SpecializedLBFGS&gt; (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI16SpecializedLBFGSE5applyER16SpecializedLBFGSRK3vecRK3vecRK3vec6real_tR3vec">pa::PANOCDirection&lt;SpecializedLBFGS&gt;::apply (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI16SpecializedLBFGSE9changed_γER16SpecializedLBFGS6real_t6real_t">pa::PANOCDirection&lt;SpecializedLBFGS&gt;::changed_γ (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI16SpecializedLBFGSE10initializeER16SpecializedLBFGSRK3vecRK3vecRK3vecRK3vec">pa::PANOCDirection&lt;SpecializedLBFGS&gt;::initialize (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa14PANOCDirectionI16SpecializedLBFGSE6updateER16SpecializedLBFGSRK3vecRK3vecRK3vecRK3vecRK3vecRK3Box6real_t">pa::PANOCDirection&lt;SpecializedLBFGS&gt;::update (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCParamsE">pa::PANOCParams (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCParams27alternative_linesearch_condE">pa::PANOCParams::alternative_linesearch_cond (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCParams14lbfgs_stepsizeE">pa::PANOCParams::lbfgs_stepsize (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCParams9LipschitzE">pa::PANOCParams::Lipschitz (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCParams8max_iterE">pa::PANOCParams::max_iter (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCParams15max_no_progressE">pa::PANOCParams::max_no_progress (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCParams8max_timeE">pa::PANOCParams::max_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCParams14print_intervalE">pa::PANOCParams::print_interval (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCParams37quadratic_upperbound_tolerance_factorE">pa::PANOCParams::quadratic_upperbound_tolerance_factor (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCParams9stop_critE">pa::PANOCParams::stop_crit (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCParams30update_lipschitz_in_linesearchE">pa::PANOCParams::update_lipschitz_in_linesearch (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCParams5γ_minE">pa::PANOCParams::γ_min (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCParams5τ_minE">pa::PANOCParams::τ_min (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfoE">pa::PANOCProgressInfo (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo6grad_ψE">pa::PANOCProgressInfo::grad_ψ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo10grad_ψ_hatE">pa::PANOCProgressInfo::grad_ψ_hat (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo1kE">pa::PANOCProgressInfo::k (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo1LE">pa::PANOCProgressInfo::L (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo9norm_sq_pE">pa::PANOCProgressInfo::norm_sq_p (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo1pE">pa::PANOCProgressInfo::p (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo6paramsE">pa::PANOCProgressInfo::params (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo7problemE">pa::PANOCProgressInfo::problem (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo1xE">pa::PANOCProgressInfo::x (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo5x_hatE">pa::PANOCProgressInfo::x_hat (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo1yE">pa::PANOCProgressInfo::y (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo1γE">pa::PANOCProgressInfo::γ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo1εE">pa::PANOCProgressInfo::ε (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo1ΣE">pa::PANOCProgressInfo::Σ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo1τE">pa::PANOCProgressInfo::τ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo2φγE">pa::PANOCProgressInfo::φγ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo1ψE">pa::PANOCProgressInfo::ψ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa17PANOCProgressInfo5ψ_hatE">pa::PANOCProgressInfo::ψ_hat (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa11PANOCSolverE">pa::PANOCSolver (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver18direction_providerE">pa::PANOCSolver::direction_provider (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver17DirectionProviderE">pa::PANOCSolver::DirectionProvider (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa11PANOCSolver8get_nameEv">pa::PANOCSolver::get_name (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa11PANOCSolver10get_paramsEv">pa::PANOCSolver::get_params (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolverclERK7Problem5crvec6real_tb4rvec4rvec4rvec">pa::PANOCSolver::operator() (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver11PANOCSolverE6ParamsRK14PANOCDirectionI17DirectionProviderE">pa::PANOCSolver::PANOCSolver (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver11PANOCSolverE6ParamsRR14PANOCDirectionI17DirectionProviderE">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver6ParamsE">pa::PANOCSolver::Params (C++ type)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver12ProgressInfoE">pa::PANOCSolver::ProgressInfo (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver21set_progress_callbackENSt8functionIFvRK12ProgressInfoEEE">pa::PANOCSolver::set_progress_callback (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver5StatsE">pa::PANOCSolver::Stats (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver5Stats7count_τE">pa::PANOCSolver::Stats::count_τ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver5Stats12elapsed_timeE">pa::PANOCSolver::Stats::elapsed_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver5Stats10iterationsE">pa::PANOCSolver::Stats::iterations (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver5Stats14lbfgs_failuresE">pa::PANOCSolver::Stats::lbfgs_failures (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver5Stats14lbfgs_rejectedE">pa::PANOCSolver::Stats::lbfgs_rejected (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver5Stats19linesearch_failuresE">pa::PANOCSolver::Stats::linesearch_failures (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver5Stats6statusE">pa::PANOCSolver::Stats::status (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver5Stats5sum_τE">pa::PANOCSolver::Stats::sum_τ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver5Stats1εE">pa::PANOCSolver::Stats::ε (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver5Stats12τ_1_acceptedE">pa::PANOCSolver::Stats::τ_1_accepted (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa11PANOCSolver4stopEv">pa::PANOCSolver::stop (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13PANOCStopCritE">pa::PANOCStopCrit (C++ enum)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13PANOCStopCrit9ApproxKKTE">pa::PANOCStopCrit::ApproxKKT (C++ enumerator)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13PANOCStopCrit7FPRNormE">pa::PANOCStopCrit::FPRNorm (C++ enumerator)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13PANOCStopCrit12ProjGradNormE">pa::PANOCStopCrit::ProjGradNorm (C++ enumerator)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa13PANOCStopCrit16ProjGradUnitNormE">pa::PANOCStopCrit::ProjGradUnitNorm (C++ enumerator)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGAParamsE">pa::PGAParams (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGAParams9LipschitzE">pa::PGAParams::Lipschitz (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGAParams8max_iterE">pa::PGAParams::max_iter (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGAParams8max_timeE">pa::PGAParams::max_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGAParams14print_intervalE">pa::PGAParams::print_interval (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGAParams37quadratic_upperbound_tolerance_factorE">pa::PGAParams::quadratic_upperbound_tolerance_factor (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGAParams9stop_critE">pa::PGAParams::stop_crit (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGAParams5γ_minE">pa::PGAParams::γ_min (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfoE">pa::PGAProgressInfo (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo6grad_ψE">pa::PGAProgressInfo::grad_ψ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo10grad_ψ_hatE">pa::PGAProgressInfo::grad_ψ_hat (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo1kE">pa::PGAProgressInfo::k (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo1LE">pa::PGAProgressInfo::L (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo9norm_sq_pE">pa::PGAProgressInfo::norm_sq_p (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo1pE">pa::PGAProgressInfo::p (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo6paramsE">pa::PGAProgressInfo::params (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo7problemE">pa::PGAProgressInfo::problem (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo1xE">pa::PGAProgressInfo::x (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo5x_hatE">pa::PGAProgressInfo::x_hat (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo1yE">pa::PGAProgressInfo::y (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo1γE">pa::PGAProgressInfo::γ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo1εE">pa::PGAProgressInfo::ε (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo1ΣE">pa::PGAProgressInfo::Σ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo1ψE">pa::PGAProgressInfo::ψ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa15PGAProgressInfo5ψ_hatE">pa::PGAProgressInfo::ψ_hat (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGASolverE">pa::PGASolver (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa9PGASolver8get_nameEv">pa::PGASolver::get_name (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa9PGASolver10get_paramsEv">pa::PGASolver::get_params (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGASolverclERK7Problem5crvec6real_tb4rvec4rvec4rvec">pa::PGASolver::operator() (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGASolver6ParamsE">pa::PGASolver::Params (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGASolver9PGASolverERK6Params">pa::PGASolver::PGASolver (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGASolver12ProgressInfoE">pa::PGASolver::ProgressInfo (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGASolver21set_progress_callbackENSt8functionIFvRK12ProgressInfoEEE">pa::PGASolver::set_progress_callback (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGASolver5StatsE">pa::PGASolver::Stats (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGASolver5Stats12elapsed_timeE">pa::PGASolver::Stats::elapsed_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGASolver5Stats10iterationsE">pa::PGASolver::Stats::iterations (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGASolver5Stats6statusE">pa::PGASolver::Stats::status (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGASolver5Stats1εE">pa::PGASolver::Stats::ε (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa9PGASolver4stopEv">pa::PGASolver::stop (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19PhonyNameDueToError1αE">pa::PhonyNameDueToError::α (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19PhonyNameDueToError1ϵE">pa::PhonyNameDueToError::ϵ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7ProblemE">pa::Problem (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem1CE">pa::Problem::C (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem1DE">pa::Problem::D (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem1fE">pa::Problem::f (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem5f_sigE">pa::Problem::f_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem1gE">pa::Problem::g (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem5g_sigE">pa::Problem::g_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem6grad_fE">pa::Problem::grad_f (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem10grad_f_sigE">pa::Problem::grad_f_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem11grad_g_prodE">pa::Problem::grad_g_prod (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem15grad_g_prod_sigE">pa::Problem::grad_g_prod_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem7grad_giE">pa::Problem::grad_gi (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem11grad_gi_sigE">pa::Problem::grad_gi_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem6hess_LE">pa::Problem::hess_L (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem11hess_L_prodE">pa::Problem::hess_L_prod (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem15hess_L_prod_sigE">pa::Problem::hess_L_prod_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem10hess_L_sigE">pa::Problem::hess_L_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem1mE">pa::Problem::m (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem1nE">pa::Problem::n (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7Problem7ProblemEjj">pa::Problem::Problem (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa7Problem7ProblemEjj3Box3BoxNSt8functionI5f_sigEENSt8functionI10grad_f_sigEENSt8functionI5g_sigEENSt8functionI15grad_g_prod_sigEENSt8functionI11grad_gi_sigEENSt8functionI15hess_L_prod_sigEENSt8functionI10hess_L_sigEE">[1]</a>, <a href="reference/cpp-api.html#_CPPv4N2pa7Problem7ProblemEv">[2]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyDE">pa::ProblemOnlyD (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD1CE">pa::ProblemOnlyD::C (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD1DE">pa::ProblemOnlyD::D (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD1fE">pa::ProblemOnlyD::f (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD5f_sigE">pa::ProblemOnlyD::f_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD1gE">pa::ProblemOnlyD::g (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD5g_sigE">pa::ProblemOnlyD::g_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD6grad_fE">pa::ProblemOnlyD::grad_f (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD10grad_f_sigE">pa::ProblemOnlyD::grad_f_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD11grad_g_prodE">pa::ProblemOnlyD::grad_g_prod (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD15grad_g_prod_sigE">pa::ProblemOnlyD::grad_g_prod_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD7grad_giE">pa::ProblemOnlyD::grad_gi (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD11grad_gi_sigE">pa::ProblemOnlyD::grad_gi_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD6hess_LE">pa::ProblemOnlyD::hess_L (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD11hess_L_prodE">pa::ProblemOnlyD::hess_L_prod (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD15hess_L_prod_sigE">pa::ProblemOnlyD::hess_L_prod_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD10hess_L_sigE">pa::ProblemOnlyD::hess_L_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD1mE">pa::ProblemOnlyD::m (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD1nE">pa::ProblemOnlyD::n (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD12ProblemOnlyDERK7Problem">pa::ProblemOnlyD::ProblemOnlyD (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa12ProblemOnlyD12ProblemOnlyDERR7Problem">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problemsE">pa::problems (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems18himmelblau_problemEv">pa::problems::himmelblau_problem (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems22riskaverse_mpc_problemEv">pa::problems::riskaverse_mpc_problem (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems17RiskaverseProblemE">pa::problems::RiskaverseProblem (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems17RiskaverseProblem1AE">pa::problems::RiskaverseProblem::A (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems17RiskaverseProblem1BE">pa::problems::RiskaverseProblem::B (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems17RiskaverseProblem4DiagE">pa::problems::RiskaverseProblem::Diag (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa8problems17RiskaverseProblem1fE5crvec">pa::problems::RiskaverseProblem::f (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa8problems17RiskaverseProblem1gE5crvec4rvec">pa::problems::RiskaverseProblem::g (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa8problems17RiskaverseProblem5get_CEv">pa::problems::RiskaverseProblem::get_C (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa8problems17RiskaverseProblem5get_DEv">pa::problems::RiskaverseProblem::get_D (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa8problems17RiskaverseProblem6grad_fE5crvec4rvec">pa::problems::RiskaverseProblem::grad_f (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa8problems17RiskaverseProblem6grad_gE5crvec5crvec4rvec">pa::problems::RiskaverseProblem::grad_g (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems17RiskaverseProblem1mE">pa::problems::RiskaverseProblem::m (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa8problems17RiskaverseProblem12mpc_dynamicsE5crvec5crvec">pa::problems::RiskaverseProblem::mpc_dynamics (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems17RiskaverseProblem1nE">pa::problems::RiskaverseProblem::n (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems17RiskaverseProblem2nsE">pa::problems::RiskaverseProblem::ns (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems17RiskaverseProblem2nuE">pa::problems::RiskaverseProblem::nu (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems17RiskaverseProblem2nxE">pa::problems::RiskaverseProblem::nx (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems17RiskaverseProblem2nyE">pa::problems::RiskaverseProblem::ny (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems17RiskaverseProblem1QE">pa::problems::RiskaverseProblem::Q (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems17RiskaverseProblem1RE">pa::problems::RiskaverseProblem::R (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems17RiskaverseProblem17RiskaverseProblemEv">pa::problems::RiskaverseProblem::RiskaverseProblem (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0ENK2pa8problems17RiskaverseProblem1sEDaRR4VecX">pa::problems::RiskaverseProblem::s (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems17RiskaverseProblem2TsE">pa::problems::RiskaverseProblem::Ts (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0ENK2pa8problems17RiskaverseProblem1uEDaRR4VecX">pa::problems::RiskaverseProblem::u (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8problems17RiskaverseProblem2x0E">pa::problems::RiskaverseProblem::x0 (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0ENK2pa8problems17RiskaverseProblem1yEDaRR4VecX">pa::problems::RiskaverseProblem::y (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCountersE">pa::ProblemWithCounters (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters1CE">pa::ProblemWithCounters::C (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters1DE">pa::ProblemWithCounters::D (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters11evaluationsE">pa::ProblemWithCounters::evaluations (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters1fE">pa::ProblemWithCounters::f (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters5f_sigE">pa::ProblemWithCounters::f_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters1gE">pa::ProblemWithCounters::g (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters5g_sigE">pa::ProblemWithCounters::g_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters6grad_fE">pa::ProblemWithCounters::grad_f (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters10grad_f_sigE">pa::ProblemWithCounters::grad_f_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters11grad_g_prodE">pa::ProblemWithCounters::grad_g_prod (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters15grad_g_prod_sigE">pa::ProblemWithCounters::grad_g_prod_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters7grad_giE">pa::ProblemWithCounters::grad_gi (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters11grad_gi_sigE">pa::ProblemWithCounters::grad_gi_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters6hess_LE">pa::ProblemWithCounters::hess_L (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters11hess_L_prodE">pa::ProblemWithCounters::hess_L_prod (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters15hess_L_prod_sigE">pa::ProblemWithCounters::hess_L_prod_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters10hess_L_sigE">pa::ProblemWithCounters::hess_L_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters1mE">pa::ProblemWithCounters::m (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters1nE">pa::ProblemWithCounters::n (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCountersaSERK19ProblemWithCounters">pa::ProblemWithCounters::operator= (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCountersaSERR19ProblemWithCounters">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters19ProblemWithCountersERK19ProblemWithCounters">pa::ProblemWithCounters::ProblemWithCounters (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters19ProblemWithCountersERK7Problem">[1]</a>, <a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters19ProblemWithCountersERR19ProblemWithCounters">[2]</a>, <a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters19ProblemWithCountersERR7Problem">[3]</a>, <a href="reference/cpp-api.html#_CPPv4N2pa19ProblemWithCounters19ProblemWithCountersEv">[4]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParamE">pa::ProblemWithParam (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam1CE">pa::ProblemWithParam::C (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam1DE">pa::ProblemWithParam::D (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam1fE">pa::ProblemWithParam::f (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam5f_sigE">pa::ProblemWithParam::f_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam1gE">pa::ProblemWithParam::g (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam5g_sigE">pa::ProblemWithParam::g_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam9get_paramEv">pa::ProblemWithParam::get_param (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4NK2pa16ProblemWithParam9get_paramEv">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa16ProblemWithParam13get_param_ptrEv">pa::ProblemWithParam::get_param_ptr (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam6grad_fE">pa::ProblemWithParam::grad_f (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam10grad_f_sigE">pa::ProblemWithParam::grad_f_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam11grad_g_prodE">pa::ProblemWithParam::grad_g_prod (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam15grad_g_prod_sigE">pa::ProblemWithParam::grad_g_prod_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam7grad_giE">pa::ProblemWithParam::grad_gi (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam11grad_gi_sigE">pa::ProblemWithParam::grad_gi_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam6hess_LE">pa::ProblemWithParam::hess_L (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam11hess_L_prodE">pa::ProblemWithParam::hess_L_prod (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam15hess_L_prod_sigE">pa::ProblemWithParam::hess_L_prod_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam10hess_L_sigE">pa::ProblemWithParam::hess_L_sig (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam1mE">pa::ProblemWithParam::m (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam1nE">pa::ProblemWithParam::n (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam9set_paramEN2pa5crvecE">pa::ProblemWithParam::set_param (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa16ProblemWithParam9set_paramERRN2pa3vecE">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa7projectEDaRK3VecRK3Box">pa::project (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa21projecting_differenceEDaRK3VecRK3Box">pa::projecting_difference (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa6real_tE">pa::real_t (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7realmatE">pa::realmat (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa7realvecE">pa::realvec (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa28ReverseCircularIndexIteratorE">pa::ReverseCircularIndexIterator (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIterator15difference_typeE">pa::ReverseCircularIndexIterator::difference_type (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIterator9forwarditE">pa::ReverseCircularIndexIterator::forwardit (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIterator15ForwardIteratorE">pa::ReverseCircularIndexIterator::ForwardIterator (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIterator5IndexE">pa::ReverseCircularIndexIterator::Index (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIterator7IndicesE">pa::ReverseCircularIndexIterator::Indices (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIterator17iterator_categoryE">pa::ReverseCircularIndexIterator::iterator_category (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa28ReverseCircularIndexIteratorneEb28ReverseCircularIndexIteratorI6IndexTE28ReverseCircularIndexIteratorI6IndexTE">pa::ReverseCircularIndexIterator::operator!= (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa28ReverseCircularIndexIteratormlEv">pa::ReverseCircularIndexIterator::operator* (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIteratorppEi">pa::ReverseCircularIndexIterator::operator++ (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIteratorppEv">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIteratormmEi">pa::ReverseCircularIndexIterator::operator-- (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIteratormmEv">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa28ReverseCircularIndexIteratoreqEb28ReverseCircularIndexIteratorI6IndexTE28ReverseCircularIndexIteratorI6IndexTE">pa::ReverseCircularIndexIterator::operator== (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIterator7pointerE">pa::ReverseCircularIndexIterator::pointer (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIterator9referenceE">pa::ReverseCircularIndexIterator::reference (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIterator28ReverseCircularIndexIteratorE15ForwardIterator">pa::ReverseCircularIndexIterator::ReverseCircularIndexIterator (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIterator28ReverseCircularIndexIteratorE7Indices5Index">[1]</a>, <a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIterator28ReverseCircularIndexIteratorEv">[2]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa28ReverseCircularIndexIterator10value_typeE">pa::ReverseCircularIndexIterator::value_type (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa20ReverseCircularRangeE">pa::ReverseCircularRange (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa20ReverseCircularRange5beginEv">pa::ReverseCircularRange::begin (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa20ReverseCircularRange6cbeginEv">pa::ReverseCircularRange::cbegin (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa20ReverseCircularRange4cendEv">pa::ReverseCircularRange::cend (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa20ReverseCircularRange14const_iteratorE">pa::ReverseCircularRange::const_iterator (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa20ReverseCircularRange22const_reverse_iteratorE">pa::ReverseCircularRange::const_reverse_iterator (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa20ReverseCircularRange7crbeginEv">pa::ReverseCircularRange::crbegin (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa20ReverseCircularRange5crendEv">pa::ReverseCircularRange::crend (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa20ReverseCircularRange3endEv">pa::ReverseCircularRange::end (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa20ReverseCircularRange12ForwardRangeE">pa::ReverseCircularRange::ForwardRange (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa20ReverseCircularRange5IndexE">pa::ReverseCircularRange::Index (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa20ReverseCircularRange7IndicesE">pa::ReverseCircularRange::Indices (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa20ReverseCircularRange8iteratorE">pa::ReverseCircularRange::iterator (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa20ReverseCircularRange6rbeginEv">pa::ReverseCircularRange::rbegin (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa20ReverseCircularRange4rendEv">pa::ReverseCircularRange::rend (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa20ReverseCircularRange16reverse_iteratorE">pa::ReverseCircularRange::reverse_iterator (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa20ReverseCircularRange20ReverseCircularRangeE5Index5Index5Index5Index">pa::ReverseCircularRange::ReverseCircularRange (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa20ReverseCircularRange20ReverseCircularRangeERK12ForwardRange">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa4rmatE">pa::rmat (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa4rvecE">pa::rvec (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCParamsE">pa::SecondOrderPANOCParams (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCParams27alternative_linesearch_condE">pa::SecondOrderPANOCParams::alternative_linesearch_cond (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCParams9LipschitzE">pa::SecondOrderPANOCParams::Lipschitz (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCParams8max_iterE">pa::SecondOrderPANOCParams::max_iter (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCParams15max_no_progressE">pa::SecondOrderPANOCParams::max_no_progress (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCParams8max_timeE">pa::SecondOrderPANOCParams::max_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCParams14print_intervalE">pa::SecondOrderPANOCParams::print_interval (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCParams37quadratic_upperbound_tolerance_factorE">pa::SecondOrderPANOCParams::quadratic_upperbound_tolerance_factor (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCParams9stop_critE">pa::SecondOrderPANOCParams::stop_crit (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCParams30update_lipschitz_in_linesearchE">pa::SecondOrderPANOCParams::update_lipschitz_in_linesearch (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCParams5γ_minE">pa::SecondOrderPANOCParams::γ_min (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCParams5τ_minE">pa::SecondOrderPANOCParams::τ_min (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolverE">pa::SecondOrderPANOCSolver (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa22SecondOrderPANOCSolver8get_nameEv">pa::SecondOrderPANOCSolver::get_name (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa22SecondOrderPANOCSolver10get_paramsEv">pa::SecondOrderPANOCSolver::get_params (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolverclERK7Problem5crvec6real_tb4rvec4rvec4rvec">pa::SecondOrderPANOCSolver::operator() (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver6ParamsE">pa::SecondOrderPANOCSolver::Params (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfoE">pa::SecondOrderPANOCSolver::ProgressInfo (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo6grad_ψE">pa::SecondOrderPANOCSolver::ProgressInfo::grad_ψ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo10grad_ψ_hatE">pa::SecondOrderPANOCSolver::ProgressInfo::grad_ψ_hat (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo1kE">pa::SecondOrderPANOCSolver::ProgressInfo::k (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo1LE">pa::SecondOrderPANOCSolver::ProgressInfo::L (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo9norm_sq_pE">pa::SecondOrderPANOCSolver::ProgressInfo::norm_sq_p (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo1pE">pa::SecondOrderPANOCSolver::ProgressInfo::p (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo6paramsE">pa::SecondOrderPANOCSolver::ProgressInfo::params (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo7problemE">pa::SecondOrderPANOCSolver::ProgressInfo::problem (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo1xE">pa::SecondOrderPANOCSolver::ProgressInfo::x (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo5x_hatE">pa::SecondOrderPANOCSolver::ProgressInfo::x_hat (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo1yE">pa::SecondOrderPANOCSolver::ProgressInfo::y (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo1γE">pa::SecondOrderPANOCSolver::ProgressInfo::γ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo1εE">pa::SecondOrderPANOCSolver::ProgressInfo::ε (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo1ΣE">pa::SecondOrderPANOCSolver::ProgressInfo::Σ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo1ψE">pa::SecondOrderPANOCSolver::ProgressInfo::ψ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver12ProgressInfo5ψ_hatE">pa::SecondOrderPANOCSolver::ProgressInfo::ψ_hat (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver22SecondOrderPANOCSolverE6Params">pa::SecondOrderPANOCSolver::SecondOrderPANOCSolver (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver21set_progress_callbackENSt8functionIFvRK12ProgressInfoEEE">pa::SecondOrderPANOCSolver::set_progress_callback (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver5StatsE">pa::SecondOrderPANOCSolver::Stats (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver5Stats7count_τE">pa::SecondOrderPANOCSolver::Stats::count_τ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver5Stats12elapsed_timeE">pa::SecondOrderPANOCSolver::Stats::elapsed_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver5Stats10iterationsE">pa::SecondOrderPANOCSolver::Stats::iterations (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver5Stats19linesearch_failuresE">pa::SecondOrderPANOCSolver::Stats::linesearch_failures (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver5Stats15newton_failuresE">pa::SecondOrderPANOCSolver::Stats::newton_failures (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver5Stats6statusE">pa::SecondOrderPANOCSolver::Stats::status (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver5Stats5sum_τE">pa::SecondOrderPANOCSolver::Stats::sum_τ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver5Stats1εE">pa::SecondOrderPANOCSolver::Stats::ε (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver5Stats12τ_1_acceptedE">pa::SecondOrderPANOCSolver::Stats::τ_1_accepted (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa22SecondOrderPANOCSolver4stopEv">pa::SecondOrderPANOCSolver::stop (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12SolverStatusE">pa::SolverStatus (C++ enum)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12SolverStatus9ConvergedE">pa::SolverStatus::Converged (C++ enumerator)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12SolverStatus11InterruptedE">pa::SolverStatus::Interrupted (C++ enumerator)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12SolverStatus7MaxIterE">pa::SolverStatus::MaxIter (C++ enumerator)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12SolverStatus7MaxTimeE">pa::SolverStatus::MaxTime (C++ enumerator)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12SolverStatus10NoProgressE">pa::SolverStatus::NoProgress (C++ enumerator)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12SolverStatus9NotFiniteE">pa::SolverStatus::NotFinite (C++ enumerator)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa12SolverStatus7UnknownE">pa::SolverStatus::Unknown (C++ enumerator)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGSE">pa::SpecializedLBFGS (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa16SpecializedLBFGS5applyEvRR3Vec">pa::SpecializedLBFGS::apply (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS11full_updateERK3vecRK3vecRK3vecRK3vecRK3vecRK3Box6real_t">pa::SpecializedLBFGS::full_update (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS1gE6size_t">pa::SpecializedLBFGS::g (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4NK2pa16SpecializedLBFGS1gE6size_t">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa16SpecializedLBFGS8get_nameEv">pa::SpecializedLBFGS::get_name (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa16SpecializedLBFGS7historyEv">pa::SpecializedLBFGS::history (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS10initializeERK3vecRK3vec">pa::SpecializedLBFGS::initialize (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa16SpecializedLBFGS1nEv">pa::SpecializedLBFGS::n (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS1pEv">pa::SpecializedLBFGS::p (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4NK2pa16SpecializedLBFGS1pEv">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS6ParamsE">pa::SpecializedLBFGS::Params (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa16SpecializedLBFGS4predE6size_t">pa::SpecializedLBFGS::pred (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS5resetEv">pa::SpecializedLBFGS::reset (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS6resizeE6size_t6size_t">pa::SpecializedLBFGS::resize (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS1sE6size_t">pa::SpecializedLBFGS::s (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4NK2pa16SpecializedLBFGS1sE6size_t">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS16SpecializedLBFGSE6Params">pa::SpecializedLBFGS::SpecializedLBFGS (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS16SpecializedLBFGSE6Params6size_t6size_t">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS15standard_updateERK3vecRK3vecRK3vecRK3vecRK3vec">pa::SpecializedLBFGS::standard_update (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa16SpecializedLBFGS4succE6size_t">pa::SpecializedLBFGS::succ (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS6updateERK3vecRK3vecRK3vecRK3vecRK3vecRK3Box6real_t">pa::SpecializedLBFGS::update (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS1wEv">pa::SpecializedLBFGS::w (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4NK2pa16SpecializedLBFGS1wEv">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS1xE6size_t">pa::SpecializedLBFGS::x (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4NK2pa16SpecializedLBFGS1xE6size_t">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS1yE6size_t">pa::SpecializedLBFGS::y (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4NK2pa16SpecializedLBFGS1yE6size_t">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS1αE6size_t">pa::SpecializedLBFGS::α (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4NK2pa16SpecializedLBFGS1αE6size_t">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa16SpecializedLBFGS1ρE6size_t">pa::SpecializedLBFGS::ρ (C++ function)</a>, <a href="reference/cpp-api.html#_CPPv4NK2pa16SpecializedLBFGS1ρE6size_t">[1]</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParamsE">pa::StructuredPANOCLBFGSParams (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParams27alternative_linesearch_condE">pa::StructuredPANOCLBFGSParams::alternative_linesearch_cond (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParams22full_augmented_hessianE">pa::StructuredPANOCLBFGSParams::full_augmented_hessian (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParams31hessian_vec_finited_differencesE">pa::StructuredPANOCLBFGSParams::hessian_vec_finited_differences (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParams14lbfgs_stepsizeE">pa::StructuredPANOCLBFGSParams::lbfgs_stepsize (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParams9LipschitzE">pa::StructuredPANOCLBFGSParams::Lipschitz (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParams8max_iterE">pa::StructuredPANOCLBFGSParams::max_iter (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParams15max_no_progressE">pa::StructuredPANOCLBFGSParams::max_no_progress (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParams8max_timeE">pa::StructuredPANOCLBFGSParams::max_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParams22nonmonotone_linesearchE">pa::StructuredPANOCLBFGSParams::nonmonotone_linesearch (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParams14print_intervalE">pa::StructuredPANOCLBFGSParams::print_interval (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParams37quadratic_upperbound_tolerance_factorE">pa::StructuredPANOCLBFGSParams::quadratic_upperbound_tolerance_factor (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParams9stop_critE">pa::StructuredPANOCLBFGSParams::stop_crit (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParams30update_lipschitz_in_linesearchE">pa::StructuredPANOCLBFGSParams::update_lipschitz_in_linesearch (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParams5γ_minE">pa::StructuredPANOCLBFGSParams::γ_min (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSParams5τ_minE">pa::StructuredPANOCLBFGSParams::τ_min (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfoE">pa::StructuredPANOCLBFGSProgressInfo (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo6grad_ψE">pa::StructuredPANOCLBFGSProgressInfo::grad_ψ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo10grad_ψ_hatE">pa::StructuredPANOCLBFGSProgressInfo::grad_ψ_hat (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo1kE">pa::StructuredPANOCLBFGSProgressInfo::k (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo1LE">pa::StructuredPANOCLBFGSProgressInfo::L (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo9norm_sq_pE">pa::StructuredPANOCLBFGSProgressInfo::norm_sq_p (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo1pE">pa::StructuredPANOCLBFGSProgressInfo::p (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo6paramsE">pa::StructuredPANOCLBFGSProgressInfo::params (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo7problemE">pa::StructuredPANOCLBFGSProgressInfo::problem (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo1xE">pa::StructuredPANOCLBFGSProgressInfo::x (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo5x_hatE">pa::StructuredPANOCLBFGSProgressInfo::x_hat (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo1yE">pa::StructuredPANOCLBFGSProgressInfo::y (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo1γE">pa::StructuredPANOCLBFGSProgressInfo::γ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo1εE">pa::StructuredPANOCLBFGSProgressInfo::ε (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo1ΣE">pa::StructuredPANOCLBFGSProgressInfo::Σ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo1τE">pa::StructuredPANOCLBFGSProgressInfo::τ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo2φγE">pa::StructuredPANOCLBFGSProgressInfo::φγ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo1ψE">pa::StructuredPANOCLBFGSProgressInfo::ψ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa32StructuredPANOCLBFGSProgressInfo5ψ_hatE">pa::StructuredPANOCLBFGSProgressInfo::ψ_hat (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolverE">pa::StructuredPANOCLBFGSSolver (C++ class)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa26StructuredPANOCLBFGSSolver8get_nameEv">pa::StructuredPANOCLBFGSSolver::get_name (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4NK2pa26StructuredPANOCLBFGSSolver10get_paramsEv">pa::StructuredPANOCLBFGSSolver::get_params (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver5lbfgsE">pa::StructuredPANOCLBFGSSolver::lbfgs (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolverclERK7Problem5crvec6real_tb4rvec4rvec4rvec">pa::StructuredPANOCLBFGSSolver::operator() (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver6ParamsE">pa::StructuredPANOCLBFGSSolver::Params (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver12ProgressInfoE">pa::StructuredPANOCLBFGSSolver::ProgressInfo (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver21set_progress_callbackENSt8functionIFvRK12ProgressInfoEEE">pa::StructuredPANOCLBFGSSolver::set_progress_callback (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver5StatsE">pa::StructuredPANOCLBFGSSolver::Stats (C++ struct)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver5Stats7count_τE">pa::StructuredPANOCLBFGSSolver::Stats::count_τ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver5Stats12elapsed_timeE">pa::StructuredPANOCLBFGSSolver::Stats::elapsed_time (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver5Stats10iterationsE">pa::StructuredPANOCLBFGSSolver::Stats::iterations (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver5Stats14lbfgs_failuresE">pa::StructuredPANOCLBFGSSolver::Stats::lbfgs_failures (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver5Stats14lbfgs_rejectedE">pa::StructuredPANOCLBFGSSolver::Stats::lbfgs_rejected (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver5Stats19linesearch_failuresE">pa::StructuredPANOCLBFGSSolver::Stats::linesearch_failures (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver5Stats6statusE">pa::StructuredPANOCLBFGSSolver::Stats::status (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver5Stats5sum_τE">pa::StructuredPANOCLBFGSSolver::Stats::sum_τ (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver5Stats1εE">pa::StructuredPANOCLBFGSSolver::Stats::ε (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver5Stats12τ_1_acceptedE">pa::StructuredPANOCLBFGSSolver::Stats::τ_1_accepted (C++ member)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver4stopEv">pa::StructuredPANOCLBFGSSolver::stop (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa26StructuredPANOCLBFGSSolver26StructuredPANOCLBFGSSolverE6Params11LBFGSParams">pa::StructuredPANOCLBFGSSolver::StructuredPANOCLBFGSSolver (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa3vecE">pa::vec (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4N2pa8vec_utilE">pa::vec_util (C++ type)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I0EN2pa8vec_util8norm_infE6real_tRK3Vec">pa::vec_util::norm_inf (C++ function)</a>
+</li>
+        <li><a href="reference/cpp-api.html#_CPPv4I00EN2pa8vec_util21norm_squared_weightedEDaRR1VRR1M">pa::vec_util::norm_squared_weighted (C++ function)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PANOCDirection">PANOCDirection (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PANOCParams">PANOCParams (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PANOCProgressInfo">PANOCProgressInfo (class in panocpy._panocpy)</a>
+</li>
+        <li>
+    panocpy._panocpy
+
+        <ul>
+          <li><a href="reference/python-api.html#module-panocpy._panocpy">module</a>
+</li>
+        </ul></li>
+        <li>
+    panocpy.casadi_problem
+
+        <ul>
+          <li><a href="reference/python-api.html#module-panocpy.casadi_problem">module</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PANOCSolver">PANOCSolver (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PANOCStopCrit">PANOCStopCrit (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ProblemWithParam.param">param (panocpy._panocpy.ProblemWithParam property)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMSolver.params">params (panocpy._panocpy.ALMSolver property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGASolver.params">(panocpy._panocpy.GAAPGASolver property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSDirection.params">(panocpy._panocpy.LBFGSDirection property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCSolver.params">(panocpy._panocpy.PANOCSolver property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGASolver.params">(panocpy._panocpy.PGASolver property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSSolver.params">(panocpy._panocpy.StructuredPANOCLBFGSSolver property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PGAParams">PGAParams (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PGAProgressInfo">PGAProgressInfo (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PGASolver">PGASolver (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams.preconditioning">preconditioning (panocpy._panocpy.ALMParams property)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams.print_interval">print_interval (panocpy._panocpy.ALMParams property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAParams.print_interval">(panocpy._panocpy.GAAPGAParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCParams.print_interval">(panocpy._panocpy.PANOCParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAParams.print_interval">(panocpy._panocpy.PGAParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams.print_interval">(panocpy._panocpy.StructuredPANOCLBFGSParams property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.Problem">Problem (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ProblemWithParam">ProblemWithParam (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PANOCStopCrit.ProjGradNorm">ProjGradNorm (panocpy._panocpy.PANOCStopCrit attribute)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PANOCStopCrit.ProjGradUnitNorm">ProjGradUnitNorm (panocpy._panocpy.PANOCStopCrit attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Q" class="genindex-section">
+  <h2>Q</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAParams.quadratic_upperbound_tolerance_factor">quadratic_upperbound_tolerance_factor (panocpy._panocpy.GAAPGAParams property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCParams.quadratic_upperbound_tolerance_factor">(panocpy._panocpy.PANOCParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAParams.quadratic_upperbound_tolerance_factor">(panocpy._panocpy.PGAParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams.quadratic_upperbound_tolerance_factor">(panocpy._panocpy.StructuredPANOCLBFGSParams property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="R" class="genindex-section">
+  <h2>R</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSParams.rescale_when__changes">rescale_when_γ_changes (panocpy._panocpy.LBFGSParams property)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSDirection.reset">reset() (panocpy._panocpy.LBFGSDirection method)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCDirection.reset">(panocpy._panocpy.PANOCDirection method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="S" class="genindex-section">
+  <h2>S</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGASolver.set_progress_callback">set_progress_callback() (panocpy._panocpy.GAAPGASolver method)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCSolver.set_progress_callback">(panocpy._panocpy.PANOCSolver method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGASolver.set_progress_callback">(panocpy._panocpy.PGASolver method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSSolver.set_progress_callback">(panocpy._panocpy.StructuredPANOCLBFGSSolver method)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams.single_penalty_factor">single_penalty_factor (panocpy._panocpy.ALMParams property)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.SolverStatus">SolverStatus (class in panocpy._panocpy)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.InnerSolver.stop">stop() (panocpy._panocpy.InnerSolver method)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAParams.stop_crit">stop_crit (panocpy._panocpy.GAAPGAParams property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAParams.stop_crit">(panocpy._panocpy.PGAParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams.stop_crit">(panocpy._panocpy.StructuredPANOCLBFGSParams property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams">StructuredPANOCLBFGSParams (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSProgressInfo">StructuredPANOCLBFGSProgressInfo (class in panocpy._panocpy)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSSolver">StructuredPANOCLBFGSSolver (class in panocpy._panocpy)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="T" class="genindex-section">
+  <h2>T</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams.to_dict">to_dict() (panocpy._panocpy.ALMParams method)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAParams.to_dict">(panocpy._panocpy.GAAPGAParams method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSParams.to_dict">(panocpy._panocpy.LBFGSParams method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSParamsCBFGS.to_dict">(panocpy._panocpy.LBFGSParamsCBFGS method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.LipschitzEstimateParams.to_dict">(panocpy._panocpy.LipschitzEstimateParams method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCParams.to_dict">(panocpy._panocpy.PANOCParams method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAParams.to_dict">(panocpy._panocpy.PGAParams method)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams.to_dict">(panocpy._panocpy.StructuredPANOCLBFGSParams method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="U" class="genindex-section">
+  <h2>U</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.SolverStatus.Unknown">Unknown (panocpy._panocpy.SolverStatus attribute)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSDirection.update">update() (panocpy._panocpy.LBFGSDirection method)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCDirection.update">(panocpy._panocpy.PANOCDirection method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.PANOCParams.update_lipschitz_in_linesearch">update_lipschitz_in_linesearch (panocpy._panocpy.PANOCParams property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams.update_lipschitz_in_linesearch">(panocpy._panocpy.StructuredPANOCLBFGSParams property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.Box.upperbound">upperbound (panocpy._panocpy.Box property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="V" class="genindex-section">
+  <h2>V</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSStepsize.value">value (panocpy._panocpy.LBFGSStepsize property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCStopCrit.value">(panocpy._panocpy.PANOCStopCrit property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.SolverStatus.value">(panocpy._panocpy.SolverStatus property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="X" class="genindex-section">
+  <h2>X</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAProgressInfo.x">x (panocpy._panocpy.GAAPGAProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCProgressInfo.x">(panocpy._panocpy.PANOCProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAProgressInfo.x">(panocpy._panocpy.PGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSProgressInfo.x">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAProgressInfo.x_hat">x_hat (panocpy._panocpy.GAAPGAProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCProgressInfo.x_hat">(panocpy._panocpy.PANOCProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAProgressInfo.x_hat">(panocpy._panocpy.PGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSProgressInfo.x_hat">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Y" class="genindex-section">
+  <h2>Y</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAProgressInfo.y">y (panocpy._panocpy.GAAPGAProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCProgressInfo.y">(panocpy._panocpy.PANOCProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAProgressInfo.y">(panocpy._panocpy.PGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSProgressInfo.y">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Α" class="genindex-section">
+  <h2>Α</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.LBFGSParamsCBFGS.">α (panocpy._panocpy.LBFGSParamsCBFGS property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Γ" class="genindex-section">
+  <h2>Γ</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#id16">γ (panocpy._panocpy.GAAPGAProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#id30">(panocpy._panocpy.PANOCProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#id37">(panocpy._panocpy.PGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#id41">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAParams._min">γ_min (panocpy._panocpy.GAAPGAParams property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCParams._min">(panocpy._panocpy.PANOCParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAParams._min">(panocpy._panocpy.PGAParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSParams._min">(panocpy._panocpy.StructuredPANOCLBFGSParams property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Δ" class="genindex-section">
+  <h2>Δ</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams.">Δ (panocpy._panocpy.ALMParams property)</a>
+</li>
+        <li><a href="reference/python-api.html#id0">δ (panocpy._panocpy.ALMParams property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.LipschitzEstimateParams.">(panocpy._panocpy.LipschitzEstimateParams property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams._lower">Δ_lower (panocpy._panocpy.ALMParams property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Ε" class="genindex-section">
+  <h2>Ε</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#id9">ε (panocpy._panocpy.ALMParams property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#id17">(panocpy._panocpy.GAAPGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#id26">(panocpy._panocpy.LipschitzEstimateParams property)</a>
+</li>
+          <li><a href="reference/python-api.html#id31">(panocpy._panocpy.PANOCProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#id38">(panocpy._panocpy.PGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#id42">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#id10">ε_0 (panocpy._panocpy.ALMParams property)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams._0_increase">ε_0_increase (panocpy._panocpy.ALMParams property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Θ" class="genindex-section">
+  <h2>Θ</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#id11">θ (panocpy._panocpy.ALMParams property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Ρ" class="genindex-section">
+  <h2>Ρ</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#id12">ρ (panocpy._panocpy.ALMParams property)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams._increase">ρ_increase (panocpy._panocpy.ALMParams property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Σ" class="genindex-section">
+  <h2>Σ</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAProgressInfo.">Σ (panocpy._panocpy.GAAPGAProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCProgressInfo.">(panocpy._panocpy.PANOCProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAProgressInfo.">(panocpy._panocpy.PGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSProgressInfo.">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams._0">Σ_0 (panocpy._panocpy.ALMParams property)</a>
+</li>
+        <li><a href="reference/python-api.html#id13">σ_0 (panocpy._panocpy.ALMParams property)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams._0_lower">Σ_0_lower (panocpy._panocpy.ALMParams property)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams._max">Σ_max (panocpy._panocpy.ALMParams property)</a>
+</li>
+        <li><a href="reference/python-api.html#panocpy._panocpy.ALMParams._min">Σ_min (panocpy._panocpy.ALMParams property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Τ" class="genindex-section">
+  <h2>Τ</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#id32">τ (panocpy._panocpy.PANOCProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#id43">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#id29">τ_min (panocpy._panocpy.PANOCParams property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#id40">(panocpy._panocpy.StructuredPANOCLBFGSParams property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Φ" class="genindex-section">
+  <h2>Φ</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#id33">φγ (panocpy._panocpy.PANOCProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#id44">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Ψ" class="genindex-section">
+  <h2>Ψ</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#id18">ψ (panocpy._panocpy.GAAPGAProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#id34">(panocpy._panocpy.PANOCProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#id39">(panocpy._panocpy.PGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#id45">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#panocpy._panocpy.GAAPGAProgressInfo._hat">ψ_hat (panocpy._panocpy.GAAPGAProgressInfo property)</a>
+
+        <ul>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PANOCProgressInfo._hat">(panocpy._panocpy.PANOCProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.PGAProgressInfo._hat">(panocpy._panocpy.PGAProgressInfo property)</a>
+</li>
+          <li><a href="reference/python-api.html#panocpy._panocpy.StructuredPANOCLBFGSProgressInfo._hat">(panocpy._panocpy.StructuredPANOCLBFGSProgressInfo property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Ε" class="genindex-section">
+  <h2>Ε</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/python-api.html#id23">ϵ (panocpy._panocpy.LBFGSParamsCBFGS property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+
+        <div class="related-information">
+              Copyright &#169; 2021, Pieter Pas
+            |
+            Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+              and
+              <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+              <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/main.js"></script>
+    </body>
+</html>

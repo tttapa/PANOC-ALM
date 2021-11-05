@@ -1,0 +1,14 @@
+<map id="projected_gradient_step" name="projected_gradient_step">
+<area shape="rect" id="node1" title="Projected gradient step." alt="" coords="716,244,895,271"/>
+<area shape="rect" id="node2" href="$namespacepa_1_1detail.html#a886972efd9fe413c62efea5eb2cdd0e9" title=" " alt="" coords="301,244,451,271"/>
+<area shape="rect" id="node7" href="$namespacepa_1_1detail.html#ac32d0e6b012b801731e55225b7505fa9" title=" " alt="" coords="555,143,618,169"/>
+<area shape="rect" id="node10" href="$classpa_1_1SpecializedLBFGS.html#a71d9f5b74a18b1ef994683c1aa4914da" title="L&#45;BFGS update when changing the step size γ, recomputing everything." alt="" coords="505,321,668,362"/>
+<area shape="rect" id="node3" href="$classpa_1_1SecondOrderPANOCSolver.html#acb04b3f19dafad9b4e7e7c1c19018d19" title=" " alt="" coords="19,194,233,235"/>
+<area shape="rect" id="node4" href="$classpa_1_1StructuredPANOCLBFGSSolver.html#ade95d8a7a1892d4087d6fffc958cde6e" title=" " alt="" coords="5,129,247,170"/>
+<area shape="rect" id="node5" href="$classpa_1_1GAAPGASolver.html#a570ec001ea8eee359be8a1b90b782cfb" title=" " alt="" coords="19,77,233,104"/>
+<area shape="rect" id="node6" href="$classpa_1_1PGASolver.html#af516b794e244432023aea7ba3cd0d1d8" title=" " alt="" coords="33,260,219,287"/>
+<area shape="rect" id="node8" href="$namespacepa_1_1detail.html#adb5e65f5b5c52143daa1fc61c0f95d4e" title="Increase the estimate of the Lipschitz constant of the objective gradient and decrease the step size ..." alt="" coords="313,92,439,119"/>
+<area shape="rect" id="node9" href="$classpa_1_1PANOCSolver.html#aaa9758a40bd362331202fb232b4bb7ae" title=" " alt="" coords="23,5,229,32"/>
+<area shape="rect" id="node11" href="$classpa_1_1SpecializedLBFGS.html#a8032c3cbff7a91765be22979ccd4f79b" title="Update the inverse Hessian approximation using the new vectors xₖ₊₁ and pₖ₊₁." alt="" coords="295,346,457,387"/>
+<area shape="rect" id="node12" href="$structpa_1_1PANOCDirection_3_01SpecializedLBFGS_01_4.html#a1932af68886cf467a0300e371e94a2c3" title=" " alt="" coords="42,339,210,395"/>
+</map>

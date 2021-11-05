@@ -1,0 +1,25 @@
+<map id="panoc" name="panoc">
+<area shape="rect" id="node1" title=" " alt="" coords="5,257,67,283"/>
+<area shape="rect" id="node2" href="$namespacepa.html#a2b97bf67604c439eca0a540664930d61" title=" " alt="" coords="115,257,212,283"/>
+<area shape="rect" id="node3" href="$classpa_1_1vec__allocator.html#afa36e1f076dd1627a83324e717038836" title=" " alt="" coords="281,20,423,61"/>
+<area shape="rect" id="node6" href="$namespacepa_1_1detail.html#a886972efd9fe413c62efea5eb2cdd0e9" title=" " alt="" coords="275,99,429,140"/>
+<area shape="rect" id="node9" href="$namespacepa_1_1detail.html#a65e07c07e714bb62d30f35802076a3b2" title=" " alt="" coords="507,173,639,199"/>
+<area shape="rect" id="node10" href="$namespacepa_1_1detail.html#aa916ebec71616d1d0379aaaaca02fc19" title="Check all stop conditions (required tolerance reached, out of time, maximum number of iterations exce..." alt="" coords="276,281,428,323"/>
+<area shape="rect" id="node12" href="$namespacepa_1_1detail.html#ac7d4fa127500b38a8cec94984c4f598d" title="Increase the estimate of the Lipschitz constant of the objective gradient and decrease the step size ..." alt="" coords="281,216,423,257"/>
+<area shape="rect" id="node16" href="$classpa_1_1vec__allocator.html#a455bb0797853d67addd58875c671acef" title=" " alt="" coords="269,347,435,374"/>
+<area shape="rect" id="node19" href="$namespacepa_1_1detail.html#a92963cadf7f44fcf9f3ab6bddff08796" title="Estimate the Lipschitz constant of the gradient &#160;using finite differences." alt="" coords="278,435,426,476"/>
+<area shape="rect" id="node23" href="$namespacepa_1_1detail.html#aea72ee13ae482d948d1b994deb457578" title=" " alt="" coords="260,501,444,527"/>
+<area shape="rect" id="node4" href="$classpa_1_1vec__allocator.html#ac6f0ae398f6cbe67f4b845dcede0874a" title=" " alt="" coords="503,5,644,47"/>
+<area shape="rect" id="node5" href="$classpa_1_1vec__allocator.html#a259cb5a711406a8c3e5d937eb9350cca" title=" " alt="" coords="704,13,871,39"/>
+<area shape="rect" id="node7" href="$namespacepa_1_1vec__util.html#af8e650634ec3d7b82a78a4d313632ed0" title="Get the maximum or infinity&#45;norm of the given vector." alt="" coords="492,71,655,98"/>
+<area shape="rect" id="node8" href="$namespacepa_1_1detail.html#a8ed4d487878856942843707b5a131b85" title="Projected gradient step." alt="" coords="711,140,863,181"/>
+<area shape="rect" id="node11" href="$classpa_1_1AtomicStopSignal.html#aa0097deccc19b49f8ab5344d8d6d5cf6" title=" " alt="" coords="493,275,654,316"/>
+<area shape="rect" id="node13" href="$namespacepa_1_1detail.html#a82a03662e6ce5bcfd57ee2df719aec21" title="Calculate both ψ(x) and the vector ŷ that can later be used to compute ∇ψ." alt="" coords="713,419,861,446"/>
+<area shape="rect" id="node14" href="$namespacepa.html#aee505a26e46aa4c0ce09d0fed72f0dac" title="Get the difference between the given vector and its projection." alt="" coords="920,478,1079,505"/>
+<area shape="rect" id="node15" href="$namespacepa.html#a5414901c2fb62f1fd47857642964cc71" title="Project a vector onto a box." alt="" coords="1127,478,1193,505"/>
+<area shape="rect" id="node17" href="$structpa_1_1vec__allocator_1_1findstack.html#ad950587c89b4306f927b08b5e5cb7e89" title=" " alt="" coords="503,340,644,381"/>
+<area shape="rect" id="node18" href="$structpa_1_1vec__allocator_1_1findstack.html#a7727305d5e1ec66a181e22c43af9a581" title=" " alt="" coords="503,405,644,447"/>
+<area shape="rect" id="node20" href="$namespacepa_1_1detail.html#a6572cf745448d2b40e9d5e977d17d5e2" title="Calculate the gradient ∇ψ(x)." alt="" coords="703,537,872,563"/>
+<area shape="rect" id="node21" href="$namespacepa_1_1detail.html#aa986daa1d5f0dfdbc75c143d2aae2919" title="Calculate both ψ(x) and its gradient ∇ψ(x)." alt="" coords="507,471,640,512"/>
+<area shape="rect" id="node22" href="$namespacepa_1_1detail.html#a908a0589ddf8734417f5481395e197d2" title="Calculate ∇ψ(x) using ŷ." alt="" coords="711,471,864,512"/>
+</map>

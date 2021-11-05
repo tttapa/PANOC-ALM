@@ -1,0 +1,13 @@
+<map id="calc_ψ_ŷ" name="calc_ψ_ŷ">
+<area shape="rect" id="node1" title="Calculate both ψ(x) and the vector ŷ that can later be used to compute ∇ψ." alt="" coords="732,233,811,260"/>
+<area shape="rect" id="node2" href="$namespacepa_1_1detail.html#aa986daa1d5f0dfdbc75c143d2aae2919" title="Calculate both ψ(x) and its gradient ∇ψ(x)." alt="" coords="563,334,679,361"/>
+<area shape="rect" id="node4" href="$classpa_1_1SecondOrderPANOCSolver.html#acb04b3f19dafad9b4e7e7c1c19018d19" title=" " alt="" coords="19,312,233,354"/>
+<area shape="rect" id="node5" href="$classpa_1_1StructuredPANOCLBFGSSolver.html#ade95d8a7a1892d4087d6fffc958cde6e" title=" " alt="" coords="5,128,247,170"/>
+<area shape="rect" id="node6" href="$classpa_1_1PGASolver.html#af516b794e244432023aea7ba3cd0d1d8" title=" " alt="" coords="33,400,219,426"/>
+<area shape="rect" id="node7" href="$classpa_1_1PANOCSolver.html#aaa9758a40bd362331202fb232b4bb7ae" title=" " alt="" coords="299,182,505,209"/>
+<area shape="rect" id="node8" href="$classpa_1_1LBFGSSolver.html#a8540540028b02dfe8b7e3ec0c49c07dd" title=" " alt="" coords="301,486,503,513"/>
+<area shape="rect" id="node9" href="$classpa_1_1LBFGSBSolver.html#a8540540028b02dfe8b7e3ec0c49c07dd" title=" " alt="" coords="297,537,507,564"/>
+<area shape="rect" id="node10" href="$classpa_1_1GAAPGASolver.html#a570ec001ea8eee359be8a1b90b782cfb" title=" " alt="" coords="295,233,509,260"/>
+<area shape="rect" id="node11" href="$namespacepa_1_1detail.html#adb5e65f5b5c52143daa1fc61c0f95d4e" title="Increase the estimate of the Lipschitz constant of the objective gradient and decrease the step size ..." alt="" coords="557,132,684,158"/>
+<area shape="rect" id="node3" href="$namespacepa_1_1detail.html#a24c0ce181607512a70dae43aa90fea5f" title=" " alt="" coords="309,385,495,412"/>
+</map>

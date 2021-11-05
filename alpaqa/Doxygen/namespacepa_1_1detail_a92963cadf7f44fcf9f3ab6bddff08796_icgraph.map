@@ -1,0 +1,10 @@
+<map id="initial_lipschitz_estimate" name="initial_lipschitz_estimate">
+<area shape="rect" id="node1" title="Estimate the Lipschitz constant of the gradient &#160;using finite differences." alt="" coords="627,137,812,163"/>
+<area shape="rect" id="node2" href="$classpa_1_1SecondOrderPANOCSolver.html#acb04b3f19dafad9b4e7e7c1c19018d19" title=" " alt="" coords="351,5,565,47"/>
+<area shape="rect" id="node3" href="$classpa_1_1StructuredPANOCLBFGSSolver.html#ade95d8a7a1892d4087d6fffc958cde6e" title=" " alt="" coords="337,71,579,112"/>
+<area shape="rect" id="node4" href="$classpa_1_1GAAPGASolver.html#a570ec001ea8eee359be8a1b90b782cfb" title=" " alt="" coords="351,137,565,163"/>
+<area shape="rect" id="node5" href="$classpa_1_1PGASolver.html#af516b794e244432023aea7ba3cd0d1d8" title=" " alt="" coords="365,187,551,214"/>
+<area shape="rect" id="node6" href="$namespacepa.html#a2b97bf67604c439eca0a540664930d61" title=" " alt="" coords="397,238,519,265"/>
+<area shape="rect" id="node7" href="$namespacepa.html#adf74e7674514afed3ae1c356ffcb9e45" title=" " alt="" coords="204,238,289,265"/>
+<area shape="rect" id="node8" href="$alpaqa_8cpp.html#a52c00cccef0976f125d4a27f9906c36b" title=" " alt="" coords="5,238,156,265"/>
+</map>

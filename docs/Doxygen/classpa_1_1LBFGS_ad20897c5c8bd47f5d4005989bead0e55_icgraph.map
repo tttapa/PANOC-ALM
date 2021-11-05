@@ -1,0 +1,6 @@
+<map id="reset" name="reset">
+<area shape="rect" id="node1" title="Throw away the approximation and all previous vectors s and y." alt="" coords="404,35,459,61"/>
+<area shape="rect" id="node2" href="$classpa_1_1LBFGS.html#a57b2556ee8993b06958b9c14511fd4ba" title="Re&#45;allocate storage for a problem with a different size." alt="" coords="295,35,356,61"/>
+<area shape="rect" id="node3" href="$classpa_1_1LBFGS.html#af78287282b1c23d282a586aa2386a15a" title=" " alt="" coords="94,5,158,32"/>
+<area shape="rect" id="node4" href="$classpa_1_1StructuredPANOCLBFGSSolver.html#ade95d8a7a1892d4087d6fffc958cde6e" title=" " alt="" coords="5,57,247,98"/>
+</map>

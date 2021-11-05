@@ -1,0 +1,10 @@
+<map id="stop_requested" name="stop_requested">
+<area shape="rect" id="node1" title=" " alt="" coords="553,162,676,189"/>
+<area shape="rect" id="node2" href="$namespacepa_1_1detail.html#aa916ebec71616d1d0379aaaaca02fc19" title="Check all stop conditions (required tolerance reached, out of time, maximum number of iterations exce..." alt="" coords="324,71,476,112"/>
+<area shape="rect" id="node6" href="$classpa_1_1LBFGSSolver.html#a8540540028b02dfe8b7e3ec0c49c07dd" title=" " alt="" coords="299,137,501,163"/>
+<area shape="rect" id="node7" href="$classpa_1_1LBFGSBSolver.html#a8540540028b02dfe8b7e3ec0c49c07dd" title=" " alt="" coords="295,187,505,214"/>
+<area shape="rect" id="node8" href="$classpa_1_1PGASolver.html#af516b794e244432023aea7ba3cd0d1d8" title=" " alt="" coords="307,238,493,265"/>
+<area shape="rect" id="node3" href="$classpa_1_1SecondOrderPANOCSolver.html#acb04b3f19dafad9b4e7e7c1c19018d19" title=" " alt="" coords="19,5,233,47"/>
+<area shape="rect" id="node4" href="$classpa_1_1StructuredPANOCLBFGSSolver.html#ade95d8a7a1892d4087d6fffc958cde6e" title=" " alt="" coords="5,71,247,112"/>
+<area shape="rect" id="node5" href="$classpa_1_1GAAPGASolver.html#a570ec001ea8eee359be8a1b90b782cfb" title=" " alt="" coords="19,137,233,163"/>
+</map>

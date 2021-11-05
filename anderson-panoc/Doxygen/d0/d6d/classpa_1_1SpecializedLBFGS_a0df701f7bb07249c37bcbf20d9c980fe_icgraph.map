@@ -1,0 +1,7 @@
+<map id="succ" name="succ">
+<area shape="rect" id="node1" title="Get the next index in the circular buffer of previous s, y, x and g vectors." alt="" coords="515,31,565,57"/>
+<area shape="rect" id="node2" href="$d0/d6d/classpa_1_1SpecializedLBFGS.html#a71d9f5b74a18b1ef994683c1aa4914da" title="L&#45;BFGS update when changing the step size γ, recomputing everything." alt="" coords="354,5,449,32"/>
+<area shape="rect" id="node5" href="$d0/d6d/classpa_1_1SpecializedLBFGS.html#ae20511c5fb7ae45113aeba25b63c6d55" title="Standard L&#45;BFGS update without changing the step size γ." alt="" coords="336,56,467,83"/>
+<area shape="rect" id="node3" href="$d0/d6d/classpa_1_1SpecializedLBFGS.html#a8032c3cbff7a91765be22979ccd4f79b" title="Update the inverse Hessian approximation using the new vectors xₖ₊₁ and pₖ₊₁." alt="" coords="221,31,288,57"/>
+<area shape="rect" id="node4" href="$d3/df9/structpa_1_1PANOCDirection_3_01SpecializedLBFGS_01_4.html#a1932af68886cf467a0300e371e94a2c3" title=" " alt="" coords="5,16,173,72"/>
+</map>

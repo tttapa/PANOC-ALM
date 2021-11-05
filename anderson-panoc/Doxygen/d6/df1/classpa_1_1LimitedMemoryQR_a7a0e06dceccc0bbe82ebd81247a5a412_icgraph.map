@@ -1,0 +1,12 @@
+<map id="ring_iter" name="ring_iter">
+<area shape="rect" id="node1" title="Get iterators in the circular buffer." alt="" coords="1029,81,1105,108"/>
+<area shape="rect" id="node2" href="$de/d4f/namespacepa.html#a04d9e05002d02fd15c58766c259ef0d7" title="Solve one step of Anderson acceleration to find a fixed point of a function g(x):" alt="" coords="512,97,671,138"/>
+<area shape="rect" id="node6" href="$d6/df1/classpa_1_1LimitedMemoryQR.html#a53110c85b0c151a290bf8d29533cd370" title="Get reverse iterators in the circular buffer." alt="" coords="849,5,981,32"/>
+<area shape="rect" id="node7" href="$d6/df1/classpa_1_1LimitedMemoryQR.html#a7a60dfe0a5f68bc1efec69e406a2b619" title="Solve the least squares problem Ax = b." alt="" coords="719,48,801,75"/>
+<area shape="rect" id="node10" href="$d6/df1/classpa_1_1LimitedMemoryQR.html#adf11f99cb8b119423c86498dbaab9820" title="Multiply the matrix R by a scalar." alt="" coords="724,159,796,185"/>
+<area shape="rect" id="node3" href="$da/db8/classpa_1_1AndersonAccel.html#a631bbbe30343f7e51af52d3d4e7804c6" title=" " alt="" coords="279,97,430,138"/>
+<area shape="rect" id="node5" href="$d8/d33/classpa_1_1GuardedAAPGA.html#a656a1117248ac02387eb817ee135df0e" title=" " alt="" coords="245,163,464,189"/>
+<area shape="rect" id="node4" href="$db/d62/structpa_1_1PANOCDirection_3_01AndersonAccel_01_4.html#ab6c112897f55aafb9f1aeef9541a5272" title=" " alt="" coords="5,97,197,138"/>
+<area shape="rect" id="node8" href="$d6/df1/classpa_1_1LimitedMemoryQR.html#a9ec3e86c6cbb239ba0642378b564af41" title="Solve the least squares problem AX = B." alt="" coords="563,45,620,72"/>
+<area shape="rect" id="node9" href="$d6/df1/classpa_1_1LimitedMemoryQR.html#a1a581dbbeed876108b943e45451d0abf" title="Solve the least squares problem AX = B." alt="" coords="326,45,383,72"/>
+</map>

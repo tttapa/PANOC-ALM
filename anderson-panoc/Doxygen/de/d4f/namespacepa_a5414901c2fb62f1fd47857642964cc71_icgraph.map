@@ -1,0 +1,16 @@
+<map id="project" name="project">
+<area shape="rect" id="node1" title="Project a vector onto a box." alt="" coords="900,190,967,217"/>
+<area shape="rect" id="node2" href="$d0/d51/namespacepa_1_1detail.html#a225d0fe6546c099f7ce35cc4bc6113e1" title="Calculate the error between ẑ and g(x)." alt="" coords="272,227,428,254"/>
+<area shape="rect" id="node5" href="$d8/d33/classpa_1_1GuardedAAPGA.html#a656a1117248ac02387eb817ee135df0e" title=" " alt="" coords="5,177,224,203"/>
+<area shape="rect" id="node7" href="$de/d4f/namespacepa.html#aa429bb0575bc9b9e6a92bd7665072704" title="Get the distance squared between the given vector and its projection in the Σ norm." alt="" coords="720,266,825,293"/>
+<area shape="rect" id="node8" href="$de/d4f/namespacepa.html#aee505a26e46aa4c0ce09d0fed72f0dac" title="Get the difference between the given vector and its projection." alt="" coords="693,165,852,191"/>
+<area shape="rect" id="node3" href="$d4/db1/classpa_1_1LBFGSSolver.html#a0502175e94da732139ba833c02a80ff5" title=" " alt="" coords="13,329,216,355"/>
+<area shape="rect" id="node4" href="$dc/d82/classpa_1_1LBFGSBSolver.html#a0502175e94da732139ba833c02a80ff5" title=" " alt="" coords="9,387,220,414"/>
+<area shape="rect" id="node6" href="$d1/d91/classpa_1_1PGA.html#a2524c14cb1e9f67d7b3694ab5dbb24e4" title=" " alt="" coords="41,253,188,279"/>
+<area shape="rect" id="node9" href="$d0/d51/namespacepa_1_1detail.html#a2d370812ad8bb9dd2e4d2362b8c410e8" title="Calculate the gradient ∇ψ(x)." alt="" coords="476,101,645,127"/>
+<area shape="rect" id="node11" href="$d0/d51/namespacepa_1_1detail.html#a2482fb93eca998a4c4dc815e784f526e" title="Calculate both ψ(x) and the vector ŷ that can later be used to compute ∇ψ." alt="" coords="487,303,635,330"/>
+<area shape="rect" id="node14" href="$de/d4f/namespacepa.html#a6dfe1ad7846f0becf790c95f9303c392" title="Get the distance squared between the given vector and its projection." alt="" coords="508,165,613,191"/>
+<area shape="rect" id="node10" href="$d3/dba/secondorderpanoc_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="323,126,377,153"/>
+<area shape="rect" id="node12" href="$d0/d51/namespacepa_1_1detail.html#a04141b21eae7f6171a7cd031d7305ed8" title="Calculate both ψ(x) and its gradient ∇ψ(x)." alt="" coords="283,380,417,421"/>
+<area shape="rect" id="node13" href="$db/d9c/classpa_1_1PANOCSolver.html#a046eb909dc292ea710c9e93ff49d66ab" title=" " alt="" coords="12,467,217,494"/>
+</map>

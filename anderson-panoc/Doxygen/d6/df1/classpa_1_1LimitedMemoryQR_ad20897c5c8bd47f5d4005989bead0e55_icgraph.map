@@ -1,0 +1,10 @@
+<map id="reset" name="reset">
+<area shape="rect" id="node1" title="Reset all indices, clearing the Q and R matrices." alt="" coords="800,64,855,91"/>
+<area shape="rect" id="node2" href="$d8/d33/classpa_1_1GuardedAAPGA.html#a656a1117248ac02387eb817ee135df0e" title=" " alt="" coords="533,5,752,32"/>
+<area shape="rect" id="node3" href="$da/db8/classpa_1_1AndersonAccel.html#ad20897c5c8bd47f5d4005989bead0e55" title=" " alt="" coords="567,57,718,98"/>
+<area shape="rect" id="node6" href="$d6/df1/classpa_1_1LimitedMemoryQR.html#a94d70718a4b923a645b928bc68524916" title="Re&#45;allocate storage for a problem with a different size." alt="" coords="612,123,673,149"/>
+<area shape="rect" id="node4" href="$da/db8/classpa_1_1AndersonAccel.html#af1f7f1b0b1868cb2e03aa548c0ae2e85" title=" " alt="" coords="307,57,458,98"/>
+<area shape="rect" id="node5" href="$db/d62/structpa_1_1PANOCDirection_3_01AndersonAccel_01_4.html#aec1a817f12307745a2f7b39cce9b0a9b" title=" " alt="" coords="5,57,232,98"/>
+<area shape="rect" id="node7" href="$db/d9c/classpa_1_1PANOCSolver.html#a046eb909dc292ea710c9e93ff49d66ab" title=" " alt="" coords="280,123,485,149"/>
+<area shape="rect" id="node8" href="$da/db8/classpa_1_1AndersonAccel.html#a94d70718a4b923a645b928bc68524916" title=" " alt="" coords="307,174,458,215"/>
+</map>

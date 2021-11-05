@@ -1,0 +1,6 @@
+<map id="check_all_stop_conditions" name="check_all_stop_conditions">
+<area shape="rect" id="node1" title="Check all stop conditions (required tolerance reached, out of time, maximum number of iterations exce..." alt="" coords="295,78,487,105"/>
+<area shape="rect" id="node2" href="$classpa_1_1SecondOrderPANOCSolver.html#acb04b3f19dafad9b4e7e7c1c19018d19" title=" " alt="" coords="19,5,233,47"/>
+<area shape="rect" id="node3" href="$classpa_1_1StructuredPANOCLBFGSSolver.html#ade95d8a7a1892d4087d6fffc958cde6e" title=" " alt="" coords="5,71,247,112"/>
+<area shape="rect" id="node4" href="$classpa_1_1GAAPGASolver.html#a570ec001ea8eee359be8a1b90b782cfb" title=" " alt="" coords="19,137,233,163"/>
+</map>

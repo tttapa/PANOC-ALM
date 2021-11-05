@@ -1,0 +1,13 @@
+<map id="compute" name="compute">
+<area shape="rect" id="node1" title=" " alt="" coords="5,209,84,236"/>
+<area shape="rect" id="node2" href="$namespacepa.html#a04d9e05002d02fd15c58766c259ef0d7" title="Solve one step of Anderson acceleration to find a fixed point of a function g(x):" alt="" coords="132,202,291,243"/>
+<area shape="rect" id="node3" href="$classpa_1_1LimitedMemoryQR.html#a5e3077223e98c1e4e286e01503f220d5" title="Add the given column to the right." alt="" coords="339,71,507,113"/>
+<area shape="rect" id="node4" href="$classpa_1_1LimitedMemoryQR.html#af83f6287b8ea07acdcfa4670af30cbbf" title=" " alt="" coords="987,104,1176,131"/>
+<area shape="rect" id="node6" href="$classpa_1_1LimitedMemoryQR.html#a98e2d9685769a3ebb2c0c9600a4c77b2" title="Get the number of columns that are currently stored." alt="" coords="339,137,507,178"/>
+<area shape="rect" id="node7" href="$classpa_1_1LimitedMemoryQR.html#a436c4dbbf0476354ca67a104bc005e55" title="Remove the leftmost column." alt="" coords="339,202,507,243"/>
+<area shape="rect" id="node8" href="$classpa_1_1LimitedMemoryQR.html#a7a0e06dceccc0bbe82ebd81247a5a412" title="Get iterators in the circular buffer." alt="" coords="771,287,939,329"/>
+<area shape="rect" id="node9" href="$classpa_1_1LimitedMemoryQR.html#a25b6259a3ee886a9a54f3a66ab019084" title="Get the tail index of the circular buffer (points to one past the most recent element)." alt="" coords="339,319,507,361"/>
+<area shape="rect" id="node10" href="$classpa_1_1LimitedMemoryQR.html#a7a60dfe0a5f68bc1efec69e406a2b619" title="Solve the least squares problem Ax = b." alt="" coords="339,385,507,426"/>
+<area shape="rect" id="node5" href="$classpa_1_1LimitedMemoryQR.html#abb2e912e6196e7c6996d3f43fea78237" title="Get the next index in the circular storage for R." alt="" coords="555,130,723,171"/>
+<area shape="rect" id="node11" href="$classpa_1_1LimitedMemoryQR.html#a53110c85b0c151a290bf8d29533cd370" title="Get reverse iterators in the circular buffer." alt="" coords="555,381,723,422"/>
+</map>

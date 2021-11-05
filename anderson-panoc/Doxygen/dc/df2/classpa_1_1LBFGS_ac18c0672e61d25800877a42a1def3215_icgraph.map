@@ -1,0 +1,9 @@
+<map id="y" name="y">
+<area shape="rect" id="node1" title=" " alt="" coords="344,78,383,105"/>
+<area shape="rect" id="node2" href="$dc/df2/classpa_1_1LBFGS.html#a37dd0ce624f9914a61118d8f02fa1c7f" title="Apply the inverse Hessian approximation to the given vector q." alt="" coords="231,21,290,47"/>
+<area shape="rect" id="node4" href="$dc/df2/classpa_1_1LBFGS.html#adeddc1e1eb8ce1c1bbaf931b6f9a5b9c" title="Scale the stored y vectors by the given factor." alt="" coords="225,78,296,105"/>
+<area shape="rect" id="node6" href="$dc/df2/classpa_1_1LBFGS.html#a677a5dd81ca75f82285e954dd44f5d55" title="Update the inverse Hessian approximation using the new vectors xₖ₊₁ and pₖ₊₁." alt="" coords="227,135,294,162"/>
+<area shape="rect" id="node3" href="$dd/d35/structpa_1_1PANOCDirection_3_01LBFGS_01_4.html#a086ef300ea233088638220edcbabfe98" title=" " alt="" coords="16,5,167,47"/>
+<area shape="rect" id="node5" href="$dd/d35/structpa_1_1PANOCDirection_3_01LBFGS_01_4.html#a2062932d7b974ee031bed6949b0d15e5" title=" " alt="" coords="5,71,177,112"/>
+<area shape="rect" id="node7" href="$dd/d35/structpa_1_1PANOCDirection_3_01LBFGS_01_4.html#ab8e196bebf1bd26d5fd8012a236a6c3d" title=" " alt="" coords="16,136,167,177"/>
+</map>

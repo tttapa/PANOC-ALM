@@ -1,0 +1,8 @@
+<map id="stop" name="stop">
+<area shape="rect" id="node1" title=" " alt="" coords="244,107,295,133"/>
+<area shape="rect" id="node2" href="$db/d9c/classpa_1_1PANOCSolver.html#a8c528baf37154d347366083f0f816846" title=" " alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node3" href="$d8/d33/classpa_1_1GuardedAAPGA.html#a8c528baf37154d347366083f0f816846" title=" " alt="" coords="9,56,192,83"/>
+<area shape="rect" id="node4" href="$d4/db1/classpa_1_1LBFGSSolver.html#a8c528baf37154d347366083f0f816846" title=" " alt="" coords="18,107,183,133"/>
+<area shape="rect" id="node5" href="$dc/d82/classpa_1_1LBFGSBSolver.html#a8c528baf37154d347366083f0f816846" title=" " alt="" coords="13,157,188,184"/>
+<area shape="rect" id="node6" href="$d1/d91/classpa_1_1PGA.html#a8c528baf37154d347366083f0f816846" title=" " alt="" coords="46,208,155,235"/>
+</map>
